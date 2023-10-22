@@ -1,0 +1,67 @@
+.clase-base {
+width: 167px;
+height: 50px;
+padding: 10px 24px;
+font-size: 16px;
+border-radius: 4px;
+text-align: center;
+margin-bottom: 15px;
+
+}
+.primary{
+    color: #f3f2f0;
+    background: #B78607;
+  
+    scale: 1;
+}
+.primary::after{
+
+    content: '';
+    background-image: url(https://stealthmonitoring.com/wp-content/themes/sm-theme/assets/img/btn-corner-white.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: scroll;
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+
+.clase-base:hover{
+
+    background-color: #B78607;
+    color:white;
+    box-shadow:  0 0 10px #B78607, 0 0 10px #B78607;
+    -webkit-text-stroke-color:#B78607;
+    -webkit-text-stroke-width:0.2px; 
+    scale: 1.1;
+    transition: 300ms ease-in;
+}
+.secondary {
+    
+    color: #B78607;
+    border: 1.5px solid #B78607;
+    background: #a3a3a102;
+    display: flex;
+
+    width: fit-content;
+    justify-content: space-between;
+    align-items: center;
+    -webkit-text-stroke-color:#B78607;
+    -webkit-text-stroke-width:0.2px; 
+
+}
+
+.secondary:hover{
+
+    background-color: #B78607;
+    color:white;
+    box-shadow:  0 0 10px #B78607, 0 0 10px #B78607;
+    -webkit-text-stroke-color:#B78607;
+    -webkit-text-stroke-width:0.2px; 
+    scale: 1.1;
+    transition: 300ms ease-in;
+}

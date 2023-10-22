@@ -1,0 +1,9 @@
+.locations{
+  background: url(../../assets/medellin.jpg) center, linear-gradient(rgba(6, 6, 6, 0.562),rgba(36, 36, 36, 0.708));
+  background-size: cover;
+  background-blend-mode: overlay;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 100;
+  position: relative;
+}

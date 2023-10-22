@@ -1,0 +1,196 @@
+{
+  "header": {
+    "message1": "In Innova we take your safety very seriously",
+    "message2": "Your peace of mind is our priority. With advanced technology and monitoring experts, we protect what matters most to you.Trust Innova Monitoring for worry-free security."
+  },
+  "services": {
+    "title": "FEATURED SERVICES",
+    "service1title": "MONITORING AND SURVEILLANCE 24H",
+    "service1description": "Protect your home or business 24 hours a day with our reliable camera monitoring service.",
+    "service2title": "INTEGRAL REMOTE SUPPORT",
+    "service2description": "Receive Remote Support for your monitoring systems from the best professionals.",
+    "service3title": "ADVISORY AND CONSULTING SERVICES",
+    "service3description": "Enhance your security with our expert monitoring and camera installation consultancy."
+  },
+  "about": {
+    "title": "ABOUT US",
+    "desc1": "Innova Monitoring is the future of security. With 15+ years of experience, we reinvent and mitigate liability while delivering excellent results",
+    "desc2": "Our expertise, innovative solutions, and friendly approach set us apart as we lead the way in creating a secure environment for our clients."
+  },
+  "reports": {
+    "title": "Incidents Reports",
+    "desc1": "At Innova Monitoring, we go beyond just monitoring incidents - we keep you informed in real-time and provide detailed insights into the actions taken to address any issues. ",
+    "desc2": "Our intuitive portal ensures that you are always aware of the steps we've taken to keep your property safe."
+  },
+
+  "DashInfo": {
+    "prev": "Premium Plan",
+    "desc": "By opting for our Premium Package, you unlock the full potential of our dashboard. Gain convenient access to comprehensive incident reports, effortlessly check camera statuses and viewing angles, request camera relocation with the assistance of our property drawings, and delve into detailed statistics - all at your fingertips. Experience a plethora of features and functionalities that will empower you to take full control of your monitoring experience.",
+    "item1": "All reports available on our portal",
+    "item1Desc": "Here you will find all the reports that were sent via email, where you can see detailed information about each one.",
+    "item2": "Camera status",
+    "item2Desc": "You will be able to see the live status of all cameras on your property",
+    "item3": "Statistics",
+    "item3Desc": "Here you will have statistics on the reports month by month to have an overall picture of what is happening in your property over time.",
+    "item4": "Report Extractions",
+    "item4Desc": "With this tool you will be able to extract any incident report with our written statement, videos and more."
+  },
+  "Offices": {
+    "title": "Take a tour of our offices",
+    "welcome": "Welcome to our operation centers, we are located in Florida in the United States. In addition to this, we have a second location in Medellin Colombia. We encourage you to visit us.",
+    "mainTitle": "MAIN OFFICE",
+    "mainDesc": "Our main office, currently serving all of South Florida location and worldwide!",
+    "secondTitle": "SECOND OPERATIONS CENTER",
+    "secondDesc": "Our secondary location is an strength to our Main office providing continued support for all clients worldwide."
+  },
+
+  "team": {
+    "title": "ABOUT US",
+    "h1": "We Are Innova Monitoring.",
+    "h3": " YOUR SAFETY IN THE HANDS OF PROFESSIONALS",
+    "desc1": "Welcome to Innova Monitoring, leaders in camera monitoring and security solutions. We pride ourselves on providing reliable, the latest in technology to protect our customers and ensure their peace of mind in an increasingly challenging world. At Innova, we understand the importance of security in all aspects of life, whether in homes, businesses or public spaces. Our highly trained and dedicated team strives to provide customized solutions that are tailored to each client's individual needs.",
+    "desc2": "In today's digital age, surveillance and video monitoring are essential to ensure security in different environments, whether in offices, stores, homes or public areas. Our high-resolution, state-of-the-art camera systems provide a clear and detailed view of events in real time, allowing us to quickly detect and respond to potentially dangerous situations. In addition, we offer 24/7 remote monitoring services to provide continuous protection and peace of mind to our customers.",
+    "our": "Our",
+    "culture": "Culture",
+    "security": "SECURITY",
+    "securityText": "Security is our core value and our top priority. We recognize the importance of providing our customers with reliable protection and complete peace of mind. We are committed to ensuring the integrity of our camera monitoring systems and the confidentiality of the information captured.",
+    "confidence": "CONFIDENCE",
+    "confidenceText": "Trust is an overriding value that guides all our actions and business relationships. We strive to earn the trust of our customers by providing them with reliable, high-quality camera surveillance solutions. We value transparency and honesty in every interaction, and are committed to delivering on our promises and exceeding expectations.",
+    "techTitle": "TECHNOLOGICAL INNOVATION",
+    "techText": "Technological innovation is one of our fundamental characteristics. We are passionate about being at the forefront of technology and using the latest tools and solutions to continuously improve our camera surveillance services.",
+    "CTATitle": "WE ARE INNOVA MONITORING",
+    "CTAText":"Contact us today to find out how we can help you strengthen your security and protect what matters most to you!"
+  },
+  "support1": {
+    "prev": "INNOVA TECH SUPPORT",
+    "title": "ALREADY A CLIENT OF INNOVA?",
+    "desc": "If you are already an Innova Monitoring customer you will have an excellent technical team available to provide the most efficient support. By clicking on the following link you can request assistance from our technical operations center.",
+    "01": "IT Support",
+    "02": "Installation assistance",
+    "03": "Guidance and technical advice",
+    "04": "Device configuration",
+    "05": "Network and connection configuration",
+    "06": "Personalized assistance"
+  },
+  "Contact": {
+    "contact":"Contact Us",
+    "title": "GET IN TOUCH WITH US",
+     "desc": "We would love to hear from you! If you have any questions, comments or would like more information about our services, please do not hesitate to contact us. Our customer service team is available to provide you with personalized assistance. You can reach us via the contact form below, by email or by phone. We are here to help you and look forward to serving all your needs and hope to hear from you soon!",
+     "location": "Our Location",  
+     "locationDesc": "Hollywood, FL, EE. UU.",
+     "phone": "Phone Number",
+     "phoneNumber": "(+1)954-400-1317",
+     "Email":"Email Address",
+     "EmailAdress":"danny@innovatechcorp.net"
+
+  },
+
+  "Monitoring": {
+    "prev": "TRUST THE BEST",
+    "title": "24H MONITORING AND SURVEILLANCE",
+    "desc": "Continuous protection for your peace of mind. At Innova Monitoring, we offer state-of-the-art monitoring, rapid response and customized solutions. Trust us to take care of what you value most.",
+    "reports": "INCIDENT REPORT",
+    "reportsDesc":"Receive detailed incident reports with evidence of all events and incidents occurring on your property.",
+    "communication": "ACTIVE COMMUNICATION",
+    "communicationDesc": "You will have direct communication 24 hours a day with our monitoring team, they will be in charge of keeping you informed all the time about what is happening in your property or business.",
+    "response": "IMMEDIATE RESPONSE",
+    "responseDesc": "Rest assured that our immediate response is not just a claim, but a proven track record. Our commendations from multiple Law Enforcement Agencies highlight the seriousness with which they treat our calls. You can trust that Law Enforcement will respond promptly and efficiently, prioritizing your safety and security.",
+    "reportsNum": "REPORTS THIS YEAR",
+    "camerasNum": "CAMERAS MONITORED",
+    "monitoringTime": "MONITORING TIME",
+    "how": "HOW DOES IT WORKS?",
+    "howDesc": "Incident reports are detailed reports about the events that occur on your property. We are not only concerned with reducing crime, but also with the integrity of the whole and the well-being of your community. Multiple clients have indicated that our work has made a huge difference.",
+    "howDesc1": " Our incident reports are shared with you via email and then stored in the cloud where they are available whenever you need them.",
+    "level1": "Level 1",
+    "level1Desc": "Are not the most urgent, but they are important to keep your property clean and contribute to a healthy coexistence. healthy coexistence.",
+    "drinking": "Drinking Alcohol",
+    "debris": "Debris - Grabage",
+    "Traffic": "Traffic control",
+    "level2": "Level 2",
+    "narcotics": "Narcotics",
+    "damage": "Damage to property",
+    "medical": "Medical Emergency",
+    "level2Desc": "Level two are more complex cases ranging from narcotics use, medical emergencies, vandalism and more.",
+    "level3": "Level 3",
+    "level3Desc": "These level three cases are more urgent cases that commonly require police assistance.",
+    "weapon":"Carrying Weapon",
+    "arrest":"Police Arrest",
+    "vandalism":"Vandalism",
+    "thef": "Thef",
+    "level4": "Level 4",
+    "shooting":"Shooting",
+    "Death": "Death",
+    "naturalDisasters": "Natural Disasters",
+    "level4Desc": "Level 4 cases are the strongest cases we report, they are urgent cases ranging from fights, shootings, fires and robberies."
+  },
+
+  "cta":{
+    "title": "Let's start reducing crime",
+    "message": "Enhance your company's security with our high-quality video surveillance monitoring service - request a free security assessment!"
+  },
+  "support": {
+    "support": "Technical Support",
+    "title1": "Remote Technical Assistance",
+    "item1Desc": "Our support team is available to provide you with real-time remote technical assistance. Through a secure connection, we can diagnose and resolve problems, provide step-by-step guidance for the configuration of your cameras and software.",
+    "title2": "Software Installation & Configuration",
+    "item2Desc": "If you need help installing or configuring software for your cameras or monitoring systems, our technicians can guide you through the process.",
+    "title3": "License Purchases And Camera Activation",
+    "item3Desc": "If you need to purchase additional licenses for your camera software or activate new cameras on your existing system, our team can assist you through the entire process. We will guide you through the selection of the right licenses, the purchase of the licenses and their proper activation so that you can get the most out of your monitoring systems.",
+    "title4": "Software Optimization And Update",
+    "item4Desc": "Our support service also includes the periodic optimization and update of your monitoring software. We will make sure that you are using the latest software versions and that all settings are configured to ensure optimal performance of your security systems.",
+    "softwares": "Software And Licenses",
+    "ctaTitle": "TRUST THE BEST",
+    "ctaMessage": "Get in touch with Innova Monitoring's technical team and solve your doubts once and for all, the best technology and highly trained personnel are at your disposal!"
+  },
+  
+  "consulting": {
+    "title":" ADVICE AND CONSULTING FOR YOUR BUSINESS",
+    "Itemtitle1":"CONSULTING SERVICES",
+    "ItemDesc1":"At our monitoring company, we offer specialized consulting and advisory services to help you optimize your operations and get the most out of your monitoring systems. Our team of experts has extensive experience in the field and is committed to providing you with customized solutions that fit your organization's needs. Whether you need guidance in implementing an efficient monitoring system or are looking to improve your current practices, we are here to provide you with the support and knowledge you need.",
+    "Itemtitle2":"Support Throughout Your Monitoring Journey",
+    "ItemDesc2":"Our consulting and advisory services are not limited to the initial implementation, but we also offer ongoing support throughout your monitoring journey. We are committed to keeping you up to date with the latest trends and technological advances, and will provide you with guidance to adapt to changes in the business environment and maintain a competitive edge. Whether you are looking to optimize your existing infrastructure, enhance the security of your systems or expand your monitoring capabilities, our team will be there to help you achieve your goals and succeed in your monitoring operations.",
+    "Itemtitle3":"Technology At The Vanguard",
+    "ItemDesc3":"Skilled professionals and the best technology are available for your projects from Innova Monitoring."
+  },
+
+  "footer": {
+    "message":" Innova Monitoring, Reinventing Security!",
+    "number":"(+1) 954-400-1317" ,
+    "resources": "Resources",
+    "support": " Tech Support",
+    "dashboard":"Dashboard",
+    "company":"Company",
+    "about": " About us",
+    "services" : "Our Services",
+    "contact": "Contact",
+    "links": "Quick Links",
+    "monitoring": "Monitoring",
+    "installations":"Installations",
+    "consulting":"Consulting",
+    "DataCenter":"Data Center",
+    "Follow": "Follow Us On"
+  },
+  "navbar":{
+    "home": "HOME",
+    "about": "ABOUT",
+    "support": "SUPPORT",
+    "contact": "CONTACT",
+    "services": "SERVICES"
+  },
+  "dropdown": {
+    "monitoring": "Monitoring Services",
+    "support": "Support Service",
+    "consulting": "Advisory & Consulting"
+  },
+  "login":{
+    "title": "Innova Monitoring Dashboard",
+    "text": "Welcome to our data center, if you are an Innova Monitioring customer you will have access to our dashboard where you will be able to view all incident reports, camera status, statistics, notifications relevant to your property or business and more!"
+  },
+  "buttons":{
+    "contact": "CONTACT US",
+    "learn": "LEARN MORE",
+    "start":"GET STARTED!",
+    "message":"SEND MESSAGE",
+    "talk":"TALK TO SUPPORT"
+  }
+}

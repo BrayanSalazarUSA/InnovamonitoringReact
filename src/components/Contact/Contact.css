@@ -1,0 +1,13 @@
+.contact{
+    background-image: url('../../assets/medellin.jpg'),  linear-gradient(rgba(6, 6, 6, 0.795),rgba(16, 16, 16, 0.637));
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 100;
+
+}
+
+/* .formulario{
+    background-color: rebeccapurple;
+} */

@@ -1,0 +1,10 @@
+.text {
+  font-size: 36px;
+  text-transform: uppercase;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+ background: linear-gradient(to right, #d6aa25 0%, #835c0e 100%);
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
+}

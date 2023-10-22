@@ -1,0 +1,46 @@
+.efecto1 {
+    background-image: linear-gradient(
+      to right,
+      #B78607,
+      #B78607 50%,
+      #fff 50%
+    );
+   
+  }
+
+  .efecto2 {
+    background-image: linear-gradient(
+      to right,
+      #B78607,
+      #B78607 50%,
+      #2b2a2a 50%
+    );
+  }
+  
+  .efecto-basic{
+    background-size: 200% 100%;
+    background-position: -100%;
+    position: relative;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+  }
+  .efecto-basic:before{
+    content: '';
+    background: #B78607;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .efecto-basic:hover {
+   background-position: 0;
+  }
+  
+  .efecto-basic:hover::before{
+    width: 100%;
+  }

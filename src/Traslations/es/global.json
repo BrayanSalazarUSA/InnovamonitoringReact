@@ -1,0 +1,194 @@
+{
+  "header": {
+    "message1": "En Innova nos tomamos tu seguridad muy en serio",
+    "message2": "Su tranquilidad es nuestra prioridad. Con tecnología avanzada y expertos en monitorización, protegemos lo que más le importa. Confíe en Innova Monitoring para una seguridad sin preocupaciones."
+  },
+
+  "services": {
+    "title": "SERVICIOS DESTACADOS",
+    "service1title": "MONITOREO Y VIGILANCIA 24H",
+    "service1description": "Proteja su hogar o negocio las 24 horas del día con nuestro fiable servicio de vigilancia por cámara.",
+    "service2title": "SOPORTE INTEGRAL A DISTANCIA",
+    "service2description": "Reciba Asistencia Remota para sus sistemas de monitorización de la mano de los mejores profesionales.",
+    "service3title": "ASESORAMIENTO Y CONSULTORÍA",
+    "service3description": "Mejore su seguridad con nuestro asesoramiento experto en vigilancia e instalación de cámaras."
+  },
+  "about": {
+    "title": "SOBRE NOSOTROS",
+    "desc1": "Innova Monitoring es una empresa de seguridad enfocada al monitoreo y vigilancia a través de cámaras, su seguridad en manos de profesionales con más de 15 años de experiencia en el mercado.",
+    "desc2": "Además de esto, en Innova Monitoreo contamos con la mejor tecnología para brindarte un servicio de excelencia y que cumple con los más altos estándares de calidad, esto para que te sientas seguro y que tu seguridad está en manos de los mejores."
+  },
+  "reports": {
+    "title": "Reportes de incidentes",
+    "desc1": "En Innova Monitoring tenemos un factor diferencial que nos hace ser los mejores, no solo monitorizamos sino que en todo momento estarás informado de lo que está ocurriendo.",
+    "desc2": "Realizamos informes de incidentes con información detallada y con evidencias claras para que estés informado de absolutamente todo. Informamos desde casos menores como consumo de bebidas alcohólicas y venta ilegal hasta estupefacientes y casos más urgentes como porte de armas, robos, vandalismo y mucho más."
+  },
+
+  "DashInfo": {
+    "prev": "Plan Premium",
+    "desc": "Si eres cliente premium tendrás acceso a nuestro dashboard donde podrás disponer de todos los reportes de incidente, estado de las cámaras de tu propiedad, estadísticas y más información importante para ti desde nuestro portal.",
+    "item1": "Todos los informes disponibles en nuestro portal",
+    "item1Desc": "Aquí encontrará todos los informes que se enviaron por correo electrónico, donde podrá ver información detallada sobre cada uno de ellos.",
+    "item2": "Estado de la cámara",
+    "item2Desc": "Podrá ver el estado en directo de todas las cámaras de su propiedad",
+    "item3": "Estadísticas",
+    "item3Desc": "Aquí dispondrás de estadísticas en los informes mes a mes para tener una visión global de lo que ocurre en su propiedad a lo largo del tiempo."
+  },
+
+  "Offices": {
+    "title": "Explora nuestras oficinas",
+    "welcome": "Bienvenido a nuestros centros de operaciones, estamos ubicados en Florida en los Estados Unidos. Además de esto, tenemos una segunda ubicación en Medellín Colombia. Lo invitamos a visitarnos.",
+    "mainTitle": "OFICINA PRINCIPAL",
+    "mainDesc": "¡Nuestra oficina principal, que actualmente sirve a toda la ubicación del sur de Florida y en todo el mundo!",
+    "secondTitle": "SEGUNDO CENTRO DE OPERACIONES",
+    "secondDesc": "¡Nuestra sede secundaria es un punto fuerte de nuestra oficina principal que ofrece asistencia continua a todos los clientes del mundo."
+  },
+
+  "team": {
+    "title": "SOBRE NOSOTROS",
+    "h1": "Somos Innova Monitoring.",
+    "h3": "TU SEGURIDAD EN MANOS DE PROFESIONALES",
+    "desc1": "Bienvenido a Innova Monitoring, líderes en soluciones de monitoreo de cámaras y seguridad. Nos enorgullecemos de ofrecer fiabilidad y lo último en tecnología para proteger a nuestros clientes y garantizar su tranquilidad en un mundo cada vez más desafiante. En Innova, entendemos la importancia de la seguridad en todos los aspectos de la vida, ya sea en hogares, negocios o espacios públicos. Nuestro equipo altamente capacitado y dedicado se esfuerza por ofrecer soluciones personalizadas que se adapten a las necesidades individuales de cada cliente.",
+    "desc2": "En la era digital actual, la vigilancia y la supervisión por vídeo son esenciales para garantizar la seguridad en diferentes entornos, ya sea en oficinas, tiendas, hogares o zonas públicas. Nuestros sistemas de cámaras de alta resolución y última generación proporcionan una visión clara y detallada de los acontecimientos en tiempo real, lo que nos permite detectar y responder rápidamente a situaciones potencialmente peligrosas. Además, ofrecemos servicios de supervisión remota 24 horas al día, 7 días a la semana, para proporcionar protección continua y tranquilidad a nuestros clientes.",
+    "our": "Nuestra",
+    "culture": "Cultura",
+    "security": "SEGURIDAD",
+    "securityText": "La seguridad es nuestro valor fundamental y nuestra máxima prioridad. Reconocemos la importancia de proporcionar a nuestros clientes una protección fiable y una total tranquilidad. Nos comprometemos a garantizar la integridad de nuestros sistemas de vigilancia por cámara y la confidencialidad de la información captada.",
+    "confidence": "CONFIANZA",
+    "confidenceText": "La confianza es un valor primordial que guía todas nuestras acciones y relaciones comerciales. Nos esforzamos por ganarnos la confianza de nuestros clientes ofreciéndoles soluciones de vigilancia por cámara fiables y de alta calidad. Valoramos la transparencia y la honestidad en cada interacción, y nos comprometemos a cumplir nuestras promesas y superar las expectativas.",
+    "techTitle": "INNOVACIÓN TECNOLÓGICA",
+    "techText": "La innovación tecnológica es una de nuestras características fundamentales. Nos apasiona estar a la vanguardia de la tecnología y utilizar las últimas herramientas y soluciones para mejorar continuamente nuestros servicios de vigilancia por cámara.",
+    "CTATitle": "SOMOS INNOVA MONITORING",
+    "CTAText": "Póngase en contacto con nosotros hoy mismo para saber cómo podemos ayudarle a reforzar su seguridad y proteger lo que más le importa."
+  },
+  "support1": {
+    "prev": "SOPORTE TÉCNICO",
+    "title": "¿YA ERES CLIENTE DE INNOVA?",
+    "desc": "Si ya eres cliente de Innova Monitoring contaras con un excelente equipo técnico disponible para proporcionar el soporte más eficiente. Entrando en el siguiente enlace podrá solicitar ayuda a nuestro centro de operaciones técnicas.",
+    "01": "Soporte IT",
+    "02": "Asistencia en instalación",
+    "03": "Orientación y asesoramiento técnico",
+    "04": "Configuración de dispositivos",
+    "05": "Configuración de redes y conexiones",
+    "06": "Asistencia personalizada"
+  },
+
+  "Contact": {
+    "contact": "Contacto",
+    "title": "PÓNGASE EN CONTACTO CON NOSOTROS",
+    "desc": "Nos encantaría saber de usted. Si tiene alguna pregunta, comentario o desea más información sobre nuestros servicios, no dude en ponerse en contacto con nosotros. Nuestro equipo de atención al cliente está a su disposición para ofrecerle asistencia personalizada. Puede ponerse en contacto con nosotros a través del siguiente formulario, por correo electrónico o por teléfono. Estamos aquí para ayudarle y esperamos poder atender todas sus necesidades. ¡Esperamos tener noticias suyas pronto!",
+    "location": "Nuestra ubicación",
+    "locationDesc": "Sabaneta, Antioquia",
+    "phone": "Telefono",
+    "phoneNumber": "(+57)3006304401",
+    "Email": "Correo Electrónico",
+    "EmailAdress": "danny@innovatechcorp.net"
+  },
+  "Monitoring": {
+    "prev": "CONFÍA EN LOS MEJORES",
+    "title": "CONTROL Y VIGILANCIA LAS 24 HORAS",
+    "reports": "REPORTES DE INCIDENTE",
+    "desc": "Protección continua para su tranquilidad. En Innova Monitoring, ofrecemos monitorización de última generación, respuesta rápida y soluciones personalizadas. Confíe en nosotros para cuidar lo que más valora.ident report",
+    "reportsDesc": "Reciba informes detallados de incidentes con pruebas de todos los sucesos e incidentes ocurridos en su propiedad.",
+    "communication": "COMUNICACIÓN ACTIVA",
+    "communicationDesc": "Usted tendrá comunicación directa las 24 horas del día con nuestro equipo de monitoreo, ellos se encargarán de mantenerlo informado en todo momento sobre lo que sucede en su propiedad o negocio.",
+    "response": "RESPUESTA INMEDIATA",
+    "responseDesc": "Tenga la seguridad de que nuestra respuesta inmediata no es sólo una afirmación, sino un historial probado. Nuestros elogios por parte de múltiples Cuerpos y Fuerzas de Seguridad ponen de manifiesto la seriedad con la que tratan nuestras llamadas. Puede confiar en que las Fuerzas y Cuerpos de Seguridad responderán con prontitud y eficacia, dando prioridad a su seguridad.",
+    "reportsNum": "REPORTES DE ESTE AÑO",
+    "camerasNum": "CÁMARAS VIGILADAS",
+    "monitoringTime": "TIEMPO DE MONITOREO",
+    "how": "¿CÓMO FUNCIONA?",
+    "howDesc": "Los informes de incidentes son informes detallados sobre los hechos ocurridos en su propiedad. No sólo nos preocupa la reducción de la delincuencia, sino también la integridad de tu propiedad y el bienestar de su comunidad. Múltiples clientes han indicado que nuestro trabajo ha supuesto una gran diferencia. ",
+    "howDesc1": "Nuestros informes de incidentes se comparten con usted por correo electrónico y luego se almacenan en la nube, donde están disponibles siempre que los necesite.",
+    "level1": "Nivel 1",
+    "drinking": "Consumo de Alcohol",
+    "debris": "Escombros - Basuras",
+    "Traffic": "Control de tráfico",
+    "level1Desc": "Los casos de nivel 1 no son los más urgentes, pero son importantes para mantener su propiedad limpia y contribuir a una sana convivencia.",
+    "level2": "Nivel 2",
+    "narcotics": "Estupefacientes",
+    "damage": "Daño a la propiedad",
+    "medical": "Emeregencias Médicas",
+    "level2Desc": "Los niveles dos son casos de mayor complejidad que van desde el consumo de estupefacientes, urgencias médicas, vandalismos y más.",
+    "level3": "Nivel 3",
+    "weapon": "Porte de Armas",
+    "arrest": "Arrestos Policiales",
+    "vandalism": "Vandalismos",
+    "thef": "Robos",
+    "level3Desc": "Estos casos de nivel tres son casos más urgentes que suelen requerir asistencia policial y otras entidades de emergencia.",
+    "level4": "Nivel 4",
+    "shooting": "Disparos",
+    "Death": "Fallecimiento",
+    "naturalDisasters": "Desastres Naturales",
+    "level4Desc": "Los casos de nivel 4 son los más fuertes que reportamos, siendo estos casos urgentes que van desde peleas, tiroteos, incendios, robos y otros."
+  },
+  "cta": {
+    "title": "Empecemos a reducir la delincuencia",
+    "message": "Mejore la seguridad de su empresa con nuestro servicio de monitoreo de alta calidad: ¡solicite una evaluación de seguridad gratuita!"
+  },
+  "support": {
+    "support": "Asistencia técnica",
+    "title1": "Asistencia técnica a distancia",
+    "item1Desc": "Nuestro equipo de asistencia está a su disposición para ofrecerle asistencia técnica remota en tiempo real. A través de una conexión segura, podemos diagnosticar y resolver problemas, proporcionar orientación paso a paso para la configuración de sus cámaras y software.",
+    "title2": "Instalación y configuración del software",
+    "item2Desc": "Si necesita ayuda para instalar o configurar software para sus cámaras o sistemas de vigilancia, nuestros técnicos pueden guiarle en el proceso.",
+    "title3": "Compra de licencias y activación de cámaras",
+    "item3Desc": "Si necesita adquirir licencias adicionales para su software de cámaras o activar nuevas cámaras en su sistema actual, nuestro equipo puede ayudarle durante todo el proceso. Le guiaremos en la selección de las licencias adecuadas, la compra de las mismas y su correcta activación para que pueda sacar el máximo partido a sus sistemas de vigilancia.",
+    "title4": "Optimización y actualización de software",
+    "item4Desc": "Nuestro servicio de asistencia también incluye la optimización y actualización periódicas de su software de vigilancia. Nos aseguraremos de que esté utilizando las últimas versiones de software y de que todos los ajustes estén configurados para garantizar un rendimiento óptimo de sus sistemas de seguridad.",
+    "softwares": "Software y Licencias",
+    "ctaTitle": "CONFÍA EN LOS MEJORES",
+    "ctaMessage": "Póngase en contacto con el equipo técnico de Innova Monitoring y resuelva sus dudas de una vez por todas, la mejor tecnología y personal altamente capacitado están a su disposición."
+  },
+
+  "consulting": {
+    "title":"ASESORÍA Y CONSULTORÍA PARA SU NEGOCIO",
+    "Itemtitle1":"SERVICIOS DE CONSULTORÍA",
+    "ItemDesc1":"En Innova Monitoring, ofrecemos servicios especializados de consultoría y asesoramiento para ayudarle a optimizar sus operaciones y sacar el máximo partido de sus sistemas de vigilancia. Nuestro equipo de expertos cuenta con una amplia experiencia en este campo y se compromete a ofrecerle soluciones personalizadas que se adapten a las necesidades de su organización. Tanto si necesita orientación para implantar un sistema de supervisión eficaz como si desea mejorar sus prácticas actuales, estamos aquí para proporcionarle el apoyo y los conocimientos que necesita.",
+    "Itemtitle2":"Asistencia durante todo el proceso de vigilancia",
+    "ItemDesc2":"Nuestros servicios de consultoría y asesoramiento no se limitan a la implantación inicial, sino que también le ofrecemos apoyo continuo a lo largo de su viaje de vigilancia. Nos comprometemos a mantenerle al día de las últimas tendencias y avances tecnológicos, y le orientaremos para que se adapte a los cambios del entorno empresarial y mantenga una ventaja competitiva. Tanto si busca optimizar su infraestructura actual como mejorar la seguridad de sus sistemas o ampliar sus capacidades de supervisión, nuestro equipo estará ahí para ayudarle a alcanzar sus objetivos y tener éxito en sus operaciones de supervisión.",
+    "Itemtitle3":"Tecnología de vanguardia",
+    "ItemDesc3":"Innova Monitoring pone a su disposición profesionales cualificados y la mejor tecnología para sus proyectos."
+  },
+  "footer": {
+    "message":"Innova Monitoring, reinventando la seguridad!",
+    "number":"+57 300 6304401" ,
+    "resources": "Recursos",
+    "support": "Soporte Tecnico",
+    "dashboard":"Dashboard",
+    "company":"Compañía",
+    "about": "Sobre nosotros",
+    "services" : "Servicios",
+    "contact": "Contacto",
+    "links": "Links",
+    "monitoring": "Monitoreo",
+    "installations":"Instalaciones",
+    "consulting":"Consultoría",
+    "DataCenter":"Centro de Datos",
+    "Follow": "Siguenos"
+  },
+  "navbar":{
+    "home": "HOME",
+    "about": "NOSOTOS",
+    "support": "SOPORTE",
+    "contact": "CONTACTO",
+    "services": "SERVICIOS"
+  },
+  "dropdown": {
+    "monitoring": "Monitoreo y Vigilancia",
+    "support": "Servicio de Soporte Tecnico",
+    "consulting": "Asesoría y Consultoría"
+  }
+  ,
+  "login":{
+    "title": "Innova Monitoring Dashboard",
+    "text": "Bienvenido a nuestro centro de datos, si es cliente de Innova Monitioring tendrá acceso a nuestro panel de control donde podrá ver todos los informes de incidentes, estado de las cámaras, estadísticas, notificaciones relevantes para su propiedad o negocio y mucho más."
+  },
+  "buttons":{
+    "contact": "CONTACTO",
+    "learn": "VER MÁS",
+    "start":"EMPECEMOS!",
+    "message":"Enviar Mensaje",
+    "talk":"SOLICITA SOPORTE"
+  }
+}

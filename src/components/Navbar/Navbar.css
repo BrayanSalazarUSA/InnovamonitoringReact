@@ -1,0 +1,14 @@
+.navbar{
+     height: 130px;
+     padding: 20px 0 0 0;
+     margin: 0;
+     
+     
+ }
+ 
+
+.rr{
+    background-color: rebeccapurple;
+    position: absolute;
+    z-index: 100000 !important;
+}

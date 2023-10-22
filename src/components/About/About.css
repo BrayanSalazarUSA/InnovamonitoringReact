@@ -1,0 +1,23 @@
+
+.about{
+    background: url(../../assets/images/securityImages.jpg) center, linear-gradient(rgba(6, 6, 6, 0.562),rgba(36, 36, 36, 0.708));
+    background-size: cover;
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 100;
+    position: relative;
+}
+
+ .logo-about{
+    height: 500px;
+    width: 500px;
+    object-fit: cover;
+}
+
+.logo-about{
+    height: 600px;
+    width: 600px;
+    object-fit: cover;
+}
