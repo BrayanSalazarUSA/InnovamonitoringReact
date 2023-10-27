@@ -1,62 +1,48 @@
-import React from 'react'
+import React from 'react';
 import Swal from 'sweetalert2';
 
+// Función para mostrar un mensaje de error
+const showError = (message) => {
+  Swal.fire({
+    icon: "error",
+    title: "Error",
+    text: message,
+  });
+};
 
+// Función para obtener usuarios
 export const getUsers = async (navigate) => {
- 
-    let resp = {};
-    let usersMapped = []
-    const url = `${process.env.REACT_APP_SERVER_IP}/users`;
-    let data = {};
-    try {
-      resp = await fetch(url);
-  
-      data = await resp.json();
+  const url = `${process.env.REACT_APP_SERVER_IP}/users`;
 
-      usersMapped = data.map((user) => {
-        let userImg = "";
-        let link = user.image?.split("/");
-        if(link){
+  try {
+    const resp = await fetch(url);
 
-          let idImg = link[5] ? link[5] : "";
-          userImg = "https://drive.google.com/uc?export=view&id=" + idImg;
-        }
-   
-        return {
-    
-          ProductImage: userImg,
-          StatusBg: "#8BE78B",
-            Email: user.email,
-            Name: user.name,
-            Rol: user.rol.rolName,
-            user,
-            id:user.id
-        };
-      });
-
-
-      
-      
-    } catch (error) {
-      Swal.fire({
-        icon: "error",
-        title: "Error",
-        text: error,
-      });
+    if (resp.status === 404) {
+      showError("Error al buscar la información de los usuarios en la base de datos.");
+      return [];
     }
-  
-    if (resp.status == 404) {
-      Swal.fire({
-        icon: "error",
-        title: "Error",
-        text: "Error al buscar la informacion de la propiedad en la base de datos",
-      });
-  
 
-      return;
-    }
-  
-    console.log(usersMapped);
+    const data = await resp.json();
+
+    const usersMapped = data.map((user) => {
+      const link = user.image?.split("/");
+      const idImg = link && link[5] ? link[5] : "";
+      const userImg = idImg ? `https://drive.google.com/uc?export=view&id=${idImg}` : "";
+
+      return {
+        ProductImage: userImg,
+        StatusBg: "#8BE78B",
+        Email: user.email,
+        Name: user.name,
+        Rol: user.rol.rolName,
+        user,
+        id: user.id,
+      };
+    });
+
     return usersMapped;
-  };
-  
+  } catch (error) {
+    showError(error.message);
+    return [];
+  }
+};
