@@ -2,7 +2,7 @@
 ### SpringBoot Application
 
 
-![](https://img.shields.io/badge/ReactJS-18.2.0-blue) ![](https://img.shields.io/badge/Tailwindcss-blue) ![](https://img.shields.io/badge/leaftlet-1.9.4-green) ![](https://img.shields.io/badge/syncfusion ej2-19.4.48-yellow)
+![](https://img.shields.io/badge/ReactJS-18.2.0-blue) ![](https://img.shields.io/badge/Tailwindcss-blue) ![](https://img.shields.io/badge/leaftlet-1.9.4-green) ![](https://img.shields.io/badge/syncfusion/ej2-19.4.48-yellow)
 
 [InnovaMonitoring Frontend](http:/https://innovamonitoring.net/ "InnovaMonitoring Frontend")
 
@@ -26,7 +26,10 @@ This application features responsive design, multi-language, various forms, anim
 
 ![](https://i.imgur.com/3IzceSY.png)
 
-![](https://i.imgur.com/aW8J08g.png)
+
+
+
+
 ### `npm start`
 
 Runs the app in the development mode.\
