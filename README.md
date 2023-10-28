@@ -1,5 +1,5 @@
-## Backend Innovamonitoring Dashboard
-### SpringBoot Application
+## Frontend Innovamonitoring
+### ReactJS Application
 
 
 ![](https://img.shields.io/badge/ReactJS-18.2.0-blue) ![](https://img.shields.io/badge/Tailwindcss-blue) ![](https://img.shields.io/badge/leaftlet-1.9.4-green) ![](https://img.shields.io/badge/syncfusion/ej2-19.4.48-yellow)
