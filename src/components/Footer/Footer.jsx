@@ -16,7 +16,7 @@ const Footer = () => {
                 href="javascript:void(0)"
                 class="mb-6 inline-block max-w-[250px]"
               >
-                <img src={logo} alt="logo" class="max-w-full"/>
+                <img src={logo} alt="logo" class="max-w-full" />
               </a>
               <p class="text-body-color mb-7 p-0 text-base">
                 {t("footer.message")}
@@ -43,21 +43,21 @@ const Footer = () => {
               <h4 class="text-dark mb-9 text-lg font-semibold">{t("footer.resources")}</h4>
               <ul>
                 <li>
-                <Link
+                  <Link
                     reloadDocument
                     to={"/support"}
                     class="efecto-basic efecto2 text-body-color hover:text-primary mb-2 inline-block text-base leading-loose"
                   >
-                   {t("footer.support")}
+                    {t("footer.support")}
                   </Link>
                 </li>
                 <li>
-                <Link
+                  <Link
                     reloadDocument
                     to={"/login"}
                     class="efecto-basic efecto2 text-body-color hover:text-primary mb-2 inline-block text-base leading-loose"
                   >
-                   Dashboard
+                    Dashboard
                   </Link>
                 </li>
 
@@ -82,7 +82,7 @@ const Footer = () => {
                     to={"/about"}
                     class="efecto-basic efecto2 text-body-color hover:text-primary mb-2 inline-block text-base leading-loose"
                   >
-                  {t("footer.about")}
+                    {t("footer.about")}
                   </Link>
                 </li>
                 <li>
@@ -151,7 +151,7 @@ const Footer = () => {
                     to={"/login"}
                     class="efecto-basic efecto2 text-body-color hover:text-primary mb-2 inline-block text-base leading-loose"
                   >
-                   {t("footer.DataCenter")}
+                    {t("footer.DataCenter")}
                   </Link>
                 </li>
               </ul>
@@ -212,12 +212,14 @@ const Footer = () => {
                     class="text-dark hover:bg-primary hover:border-primary mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-[#E5E5E5] hover:text-yellow-600 hover:scale-130 sm:mr-4 lg:mr-3 xl:mr-4"
                   >
                     <svg
-                      width="14"
-                      height="14"
-                      viewBox="0 0 14 14"
-                      class="fill-current"
-                    >
-                      <path d="M13.0214 0H1.02084C0.453707 0 0 0.451613 0 1.01613V12.9839C0 13.5258 0.453707 14 1.02084 14H12.976C13.5432 14 13.9969 13.5484 13.9969 12.9839V0.993548C14.0422 0.451613 13.5885 0 13.0214 0ZM4.15142 11.9H2.08705V5.23871H4.15142V11.9ZM3.10789 4.3129C2.42733 4.3129 1.90557 3.77097 1.90557 3.11613C1.90557 2.46129 2.45002 1.91935 3.10789 1.91935C3.76577 1.91935 4.31022 2.46129 4.31022 3.11613C4.31022 3.77097 3.81114 4.3129 3.10789 4.3129ZM11.9779 11.9H9.9135V8.67097C9.9135 7.90323 9.89082 6.8871 8.82461 6.8871C7.73571 6.8871 7.57691 7.74516 7.57691 8.60323V11.9H5.51254V5.23871H7.53154V6.16452H7.55423C7.84914 5.62258 8.50701 5.08065 9.52785 5.08065C11.6376 5.08065 12.0232 6.43548 12.0232 8.2871V11.9H11.9779Z" />
+                     xmlns="http://www.w3.org/2000/svg" 
+                     x="0px" 
+                     y="0px" 
+                     width="20" 
+                     height="50" 
+                     viewBox="0 0 50 50"
+                     class="fill-current">
+                      <path d="M 16 3 C 8.83 3 3 8.83 3 16 L 3 34 C 3 41.17 8.83 47 16 47 L 34 47 C 41.17 47 47 41.17 47 34 L 47 16 C 47 8.83 41.17 3 34 3 L 16 3 z M 37 11 C 38.1 11 39 11.9 39 13 C 39 14.1 38.1 15 37 15 C 35.9 15 35 14.1 35 13 C 35 11.9 35.9 11 37 11 z M 25 14 C 31.07 14 36 18.93 36 25 C 36 31.07 31.07 36 25 36 C 18.93 36 14 31.07 14 25 C 14 18.93 18.93 14 25 14 z M 25 16 C 20.04 16 16 20.04 16 25 C 16 29.96 20.04 34 25 34 C 29.96 34 34 29.96 34 25 C 34 20.04 29.96 16 25 16 z"></path>
                     </svg>
                   </a>
                 </TooltipComponent>

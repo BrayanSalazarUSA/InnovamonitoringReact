@@ -3,7 +3,6 @@
     "message1": "En Innova nos tomamos tu seguridad muy en serio",
     "message2": "Su tranquilidad es nuestra prioridad. Con tecnología avanzada y expertos en monitorización, protegemos lo que más le importa. Confíe en Innova Monitoring para una seguridad sin preocupaciones."
   },
-
   "services": {
     "title": "SERVICIOS DESTACADOS",
     "service1title": "MONITOREO Y VIGILANCIA 24H",
@@ -23,7 +22,6 @@
     "desc1": "En Innova Monitoring tenemos un factor diferencial que nos hace ser los mejores, no solo monitorizamos sino que en todo momento estarás informado de lo que está ocurriendo.",
     "desc2": "Realizamos informes de incidentes con información detallada y con evidencias claras para que estés informado de absolutamente todo. Informamos desde casos menores como consumo de bebidas alcohólicas y venta ilegal hasta estupefacientes y casos más urgentes como porte de armas, robos, vandalismo y mucho más."
   },
-
   "DashInfo": {
     "prev": "Plan Premium",
     "desc": "Si eres cliente premium tendrás acceso a nuestro dashboard donde podrás disponer de todos los reportes de incidente, estado de las cámaras de tu propiedad, estadísticas y más información importante para ti desde nuestro portal.",
@@ -34,7 +32,6 @@
     "item3": "Estadísticas",
     "item3Desc": "Aquí dispondrás de estadísticas en los informes mes a mes para tener una visión global de lo que ocurre en su propiedad a lo largo del tiempo."
   },
-
   "Offices": {
     "title": "Explora nuestras oficinas",
     "welcome": "Bienvenido a nuestros centros de operaciones, estamos ubicados en Florida en los Estados Unidos. Además de esto, tenemos una segunda ubicación en Medellín Colombia. Lo invitamos a visitarnos.",
@@ -43,7 +40,6 @@
     "secondTitle": "SEGUNDO CENTRO DE OPERACIONES",
     "secondDesc": "¡Nuestra sede secundaria es un punto fuerte de nuestra oficina principal que ofrece asistencia continua a todos los clientes del mundo."
   },
-
   "team": {
     "title": "SOBRE NOSOTROS",
     "h1": "Somos Innova Monitoring.",
@@ -72,7 +68,6 @@
     "05": "Configuración de redes y conexiones",
     "06": "Asistencia personalizada"
   },
-
   "Contact": {
     "contact": "Contacto",
     "title": "PÓNGASE EN CONTACTO CON NOSOTROS",
@@ -80,15 +75,15 @@
     "location": "Nuestra ubicación",
     "locationDesc": "Sabaneta, Antioquia",
     "phone": "Telefono",
-    "phoneNumber": "(+57)3006304401",
+    "phoneNumber": "(+57) 3006304401",
     "Email": "Correo Electrónico",
-    "EmailAdress": "danny@innovatechcorp.net"
+    "EmailAdress": "info@innovatechcorp.net"
   },
   "Monitoring": {
     "prev": "CONFÍA EN LOS MEJORES",
     "title": "CONTROL Y VIGILANCIA LAS 24 HORAS",
     "reports": "REPORTES DE INCIDENTE",
-    "desc": "Protección continua para su tranquilidad. En Innova Monitoring, ofrecemos monitorización de última generación, respuesta rápida y soluciones personalizadas. Confíe en nosotros para cuidar lo que más valora.ident report",
+    "desc": "Protección continua para su tranquilidad. En Innova Monitoring, ofrecemos monitorización de última generación, respuesta rápida y soluciones personalizadas. Confíe en nosotros para cuidar lo que más valora.",
     "reportsDesc": "Reciba informes detallados de incidentes con pruebas de todos los sucesos e incidentes ocurridos en su propiedad.",
     "communication": "COMUNICACIÓN ACTIVA",
     "communicationDesc": "Usted tendrá comunicación directa las 24 horas del día con nuestro equipo de monitoreo, ellos se encargarán de mantenerlo informado en todo momento sobre lo que sucede en su propiedad o negocio.",
@@ -140,35 +135,34 @@
     "ctaTitle": "CONFÍA EN LOS MEJORES",
     "ctaMessage": "Póngase en contacto con el equipo técnico de Innova Monitoring y resuelva sus dudas de una vez por todas, la mejor tecnología y personal altamente capacitado están a su disposición."
   },
-
   "consulting": {
-    "title":"ASESORÍA Y CONSULTORÍA PARA SU NEGOCIO",
-    "Itemtitle1":"SERVICIOS DE CONSULTORÍA",
-    "ItemDesc1":"En Innova Monitoring, ofrecemos servicios especializados de consultoría y asesoramiento para ayudarle a optimizar sus operaciones y sacar el máximo partido de sus sistemas de vigilancia. Nuestro equipo de expertos cuenta con una amplia experiencia en este campo y se compromete a ofrecerle soluciones personalizadas que se adapten a las necesidades de su organización. Tanto si necesita orientación para implantar un sistema de supervisión eficaz como si desea mejorar sus prácticas actuales, estamos aquí para proporcionarle el apoyo y los conocimientos que necesita.",
-    "Itemtitle2":"Asistencia durante todo el proceso de vigilancia",
-    "ItemDesc2":"Nuestros servicios de consultoría y asesoramiento no se limitan a la implantación inicial, sino que también le ofrecemos apoyo continuo a lo largo de su viaje de vigilancia. Nos comprometemos a mantenerle al día de las últimas tendencias y avances tecnológicos, y le orientaremos para que se adapte a los cambios del entorno empresarial y mantenga una ventaja competitiva. Tanto si busca optimizar su infraestructura actual como mejorar la seguridad de sus sistemas o ampliar sus capacidades de supervisión, nuestro equipo estará ahí para ayudarle a alcanzar sus objetivos y tener éxito en sus operaciones de supervisión.",
-    "Itemtitle3":"Tecnología de vanguardia",
-    "ItemDesc3":"Innova Monitoring pone a su disposición profesionales cualificados y la mejor tecnología para sus proyectos."
+    "title": "ASESORÍA Y CONSULTORÍA PARA SU NEGOCIO",
+    "Itemtitle1": "SERVICIOS DE CONSULTORÍA",
+    "ItemDesc1": "En Innova Monitoring, ofrecemos servicios especializados de consultoría y asesoramiento para ayudarle a optimizar sus operaciones y sacar el máximo partido de sus sistemas de vigilancia. Nuestro equipo de expertos cuenta con una amplia experiencia en este campo y se compromete a ofrecerle soluciones personalizadas que se adapten a las necesidades de su organización. Tanto si necesita orientación para implantar un sistema de supervisión eficaz como si desea mejorar sus prácticas actuales, estamos aquí para proporcionarle el apoyo y los conocimientos que necesita.",
+    "Itemtitle2": "Asistencia durante todo el proceso de vigilancia",
+    "ItemDesc2": "Nuestros servicios de consultoría y asesoramiento no se limitan a la implantación inicial, sino que también le ofrecemos apoyo continuo a lo largo de su viaje de vigilancia. Nos comprometemos a mantenerle al día de las últimas tendencias y avances tecnológicos, y le orientaremos para que se adapte a los cambios del entorno empresarial y mantenga una ventaja competitiva. Tanto si busca optimizar su infraestructura actual como mejorar la seguridad de sus sistemas o ampliar sus capacidades de supervisión, nuestro equipo estará ahí para ayudarle a alcanzar sus objetivos y tener éxito en sus operaciones de supervisión.",
+    "Itemtitle3": "Tecnología de vanguardia",
+    "ItemDesc3": "Innova Monitoring pone a su disposición profesionales cualificados y la mejor tecnología para sus proyectos."
   },
   "footer": {
-    "message":"Innova Monitoring, reinventando la seguridad!",
-    "number":"+57 300 6304401" ,
+    "message": "Innova Monitoring, reinventando la seguridad!",
+    "number": "+57 300 6304401",
     "resources": "Recursos",
     "support": "Soporte Tecnico",
-    "dashboard":"Dashboard",
-    "company":"Compañía",
+    "dashboard": "Dashboard",
+    "company": "Compañía",
     "about": "Sobre nosotros",
-    "services" : "Servicios",
+    "services": "Servicios",
     "contact": "Contacto",
     "links": "Links",
     "monitoring": "Monitoreo",
-    "installations":"Instalaciones",
-    "consulting":"Consultoría",
-    "DataCenter":"Centro de Datos",
+    "installations": "Instalaciones",
+    "consulting": "Consultoría",
+    "DataCenter": "Centro de Datos",
     "Follow": "Siguenos"
   },
-  "navbar":{
-    "home": "HOME",
+  "navbar": {
+    "home": "INICIO",
     "about": "NOSOTROS",
     "support": "SOPORTE",
     "contact": "CONTACTO",
@@ -178,17 +172,81 @@
     "monitoring": "Monitoreo y Vigilancia",
     "support": "Servicio de Soporte Tecnico",
     "consulting": "Asesoría y Consultoría"
-  }
-  ,
-  "login":{
+  },
+  "login": {
     "title": "Innova Monitoring Dashboard",
     "text": "Bienvenido a nuestro centro de datos, si es cliente de Innova Monitioring tendrá acceso a nuestro panel de control donde podrá ver todos los informes de incidentes, estado de las cámaras, estadísticas, notificaciones relevantes para su propiedad o negocio y mucho más."
   },
-  "buttons":{
+  "buttons": {
     "contact": "CONTACTO",
     "learn": "VER MÁS",
-    "start":"EMPECEMOS!",
-    "message":"Enviar Mensaje",
-    "talk":"SOLICITA SOPORTE"
+    "start": "EMPECEMOS!",
+    "message": "Enviar Mensaje",
+    "talk": "SOLICITA SOPORTE"
+  },
+  "form_Page": {
+    "contact_Us": "Contactanos",
+    "monitorin_plan": "¡Configura tu plan de monitoreo!",
+    "friendly_Team": "Nuestro equipo siempre está aquí para escucharte, nos encantaría saber de usted."
+  },
+  "categories": {
+    "title": "¿Qué te motivó a contratar un servicio de monitoreo?",
+    "personal_security": "Seguridad personal",
+    "decrease_property_crime": "Disminuir los delitos en su propiedad",
+    "compliance_with_regulations": "Cumplimiento de las normas",
+    "theft_prevention": "Prevención de robos",
+    "protection_of_assets": "Protección de activos de alto valor",
+    "other": "Otros",
+    "tell_us": "Cuéntennos, ¿que es lo mas importante para ti en el servicio de monitoreo?",
+    "text_box": "Obtener información precisa y en tiempo real sobre los eventos que ocurran en mi propiedad en cualquier momento."
+  },
+  "multiple_Step_Form": {
+    "first_step": "Primer paso"
+  },
+  "plan_section": {
+    "cameras": "Camaras",
+    "hours": "Horas",
+    "number_cameras": "Ingresa el número de cámaras a monitorear.",
+    "hours_monitoring": "Horas de monitoreo por dia",
+    "cameras_property": "¿Actualmente cuentas con camaras en tu propiedad?",
+    "property_internet": "¿Tu propiedad cuenta con servicio de internet?"
+  },
+  "personal_section": {
+    "name_label": "Primer nombre",
+    "name_placeholder": "Ingresa tu primer nombre",
+    "last_name_label": "Segundo nombre",
+    "last_name_placeholder": "Ingresa tu segundo nombre",
+    "country_label": "Pais",
+    "country_placeholder": "Ingresa tu pais",
+    "state_label": "Estado",
+    "state_placeholder": "Ingresa tu estado/departamento"
+  },
+  "property_section": {
+    "property_header": "Tipo de propiedad",
+    "property_placeholder": "Seleccione el tipo de propiedad",
+    "property_type_list1": "Complejo residencial",
+    "property_type_list2": "Edificio",
+    "property_type_list3": "Fábrica o almacén",
+    "property_type_list4": "Propiedad en construccion",
+    "property_type_list5": "Casa",
+    "property_type_list6": "Otro",
+    "property_name_label": "Nombre de la propiedad",
+    "property_name_placeholder": "Ingresa el nombre de la propiedad",
+    "property_address_label": "Direccion de la propiedad",
+    "property_address_placeholder": "Ingresa la direccion de la propiedad",
+    "property_size_label": "Tamaño de la propiedad",
+    "property_size_placeholder": "Ingresa el tamaño de la propiedad"
+  },
+  "contact_section":{
+    "e_mail_label": "Correo electrónico",
+    "e_mail_placeholder": "Ingresa tu correo electrónico",
+    "phone_number_label": "Numero de celular",
+    "phone_number_placeholder": "Ingresa tu numero de celular",
+    "alternate_phone_label": "Numero alternativo",
+    "alternate_phone_placeholder": "Ingresa un numero alternativo"
+  },
+  "form_button": {
+    "back": "Anterior",
+    "next": "Siguiente"
   }
 }

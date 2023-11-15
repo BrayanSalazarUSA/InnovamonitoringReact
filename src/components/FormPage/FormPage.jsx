@@ -4,7 +4,9 @@ import Footer from "../Footer/Footer";
 import Navbar from "../Navbar/Navbar";
 import contract from "../../assets/images/contract.jpg"
 import { FormProvider } from "../../context/FormProvide";
+import { useTranslation } from "react-i18next";
 export const FormPage = () => {
+  const [t, i18n] = useTranslation("global");
   return (
     <>
     <FormProvider>
@@ -15,15 +17,15 @@ export const FormPage = () => {
           <div>
             <div className=" p-3 px-5">
             <p className="font-medium text-yellow-600 ">
-              Contact us
+                  {t("form_Page.contact_Us")}
             </p>
 
             <h1 className="mt-2 text-2xl font-semibold text-gray-300 md:text-3xl dark:text-white">
-            Set up your monitoring plan!
+                  {t("form_Page.monitorin_plan")}
             </h1>
 
             <p className="my-3 text-gray-300">
-              Our friendly team is always here to chat, we’d love to hear from you.
+                  {t("form_Page.friendly_Team")}
             </p>
             <img class="hidden my-3 object-cover mx-auto rounded-full lg:block shrink-0 w-96 h-96" src={contract} alt="" />
             </div>

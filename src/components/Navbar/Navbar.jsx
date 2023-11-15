@@ -23,14 +23,13 @@ function classNames(...classes) {
 
 const Navbar = ({ TextColor = "text-gray-700", efecto = "efecto1" }) => {
 
-  const [t, i18n] = useTranslation("global");
-  const handleChangeLanguge = (lang) => {
-    i18n.changeLanguage(lang);
-  };
+    const [t, i18n] = useTranslation("global");
+    const handleChangeLanguge = (lang) => {
+      i18n.changeLanguage(lang);
+    };
 
   return (
-    <>
-      <Disclosure as="nav" className="navbar">
+    <Disclosure as="nav" className="navbar">
         {({ open }) => (
           <>
             <div className="mx-auto max-w-6xl px-2 sm:px-6 lg:px-8 ">
@@ -187,7 +186,6 @@ const Navbar = ({ TextColor = "text-gray-700", efecto = "efecto1" }) => {
           </>
         )}
       </Disclosure>
-    </>
   );
 };
 

@@ -22,7 +22,6 @@
     "desc1": "At Innova Monitoring, we go beyond just monitoring incidents - we keep you informed in real-time and provide detailed insights into the actions taken to address any issues. ",
     "desc2": "Our intuitive portal ensures that you are always aware of the steps we've taken to keep your property safe."
   },
-
   "DashInfo": {
     "prev": "Premium Plan",
     "desc": "By opting for our Premium Package, you unlock the full potential of our dashboard. Gain convenient access to comprehensive incident reports, effortlessly check camera statuses and viewing angles, request camera relocation with the assistance of our property drawings, and delve into detailed statistics - all at your fingertips. Experience a plethora of features and functionalities that will empower you to take full control of your monitoring experience.",
@@ -43,7 +42,6 @@
     "secondTitle": "SECOND OPERATIONS CENTER",
     "secondDesc": "Our secondary location is an strength to our Main office providing continued support for all clients worldwide."
   },
-
   "team": {
     "title": "ABOUT US",
     "h1": "We Are Innova Monitoring.",
@@ -59,7 +57,7 @@
     "techTitle": "TECHNOLOGICAL INNOVATION",
     "techText": "Technological innovation is one of our fundamental characteristics. We are passionate about being at the forefront of technology and using the latest tools and solutions to continuously improve our camera surveillance services.",
     "CTATitle": "WE ARE INNOVA MONITORING",
-    "CTAText":"Contact us today to find out how we can help you strengthen your security and protect what matters most to you!"
+    "CTAText": "Contact us today to find out how we can help you strengthen your security and protect what matters most to you!"
   },
   "support1": {
     "prev": "INNOVA TECH SUPPORT",
@@ -73,24 +71,22 @@
     "06": "Personalized assistance"
   },
   "Contact": {
-    "contact":"Contact Us",
+    "contact": "Contact Us",
     "title": "GET IN TOUCH WITH US",
-     "desc": "We would love to hear from you! If you have any questions, comments or would like more information about our services, please do not hesitate to contact us. Our customer service team is available to provide you with personalized assistance. You can reach us via the contact form below, by email or by phone. We are here to help you and look forward to serving all your needs and hope to hear from you soon!",
-     "location": "Our Location",  
-     "locationDesc": "Hollywood, FL, EE. UU.",
-     "phone": "Phone Number",
-     "phoneNumber": "(+1)954-400-1317",
-     "Email":"Email Address",
-     "EmailAdress":"danny@innovatechcorp.net"
-
+    "desc": "We would love to hear from you! If you have any questions, comments or would like more information about our services, please do not hesitate to contact us. Our customer service team is available to provide you with personalized assistance. You can reach us via the contact form below, by email or by phone. We are here to help you and look forward to serving all your needs and hope to hear from you soon!",
+    "location": "Our Location",
+    "locationDesc": "Hollywood, FL, EE. UU.",
+    "phone": "Phone Number",
+    "phoneNumber": "(+1) 954-400-1317",
+    "Email": "Email Address",
+    "EmailAdress": "info@innovatechcorp.net"
   },
-
   "Monitoring": {
     "prev": "TRUST THE BEST",
     "title": "24H MONITORING AND SURVEILLANCE",
     "desc": "Continuous protection for your peace of mind. At Innova Monitoring, we offer state-of-the-art monitoring, rapid response and customized solutions. Trust us to take care of what you value most.",
     "reports": "INCIDENT REPORT",
-    "reportsDesc":"Receive detailed incident reports with evidence of all events and incidents occurring on your property.",
+    "reportsDesc": "Receive detailed incident reports with evidence of all events and incidents occurring on your property.",
     "communication": "ACTIVE COMMUNICATION",
     "communicationDesc": "You will have direct communication 24 hours a day with our monitoring team, they will be in charge of keeping you informed all the time about what is happening in your property or business.",
     "response": "IMMEDIATE RESPONSE",
@@ -113,18 +109,17 @@
     "level2Desc": "Level two are more complex cases ranging from narcotics use, medical emergencies, vandalism and more.",
     "level3": "Level 3",
     "level3Desc": "These level three cases are more urgent cases that commonly require police assistance.",
-    "weapon":"Carrying Weapon",
-    "arrest":"Police Arrest",
-    "vandalism":"Vandalism",
+    "weapon": "Carrying Weapon",
+    "arrest": "Police Arrest",
+    "vandalism": "Vandalism",
     "thef": "Thef",
     "level4": "Level 4",
-    "shooting":"Shooting",
+    "shooting": "Shooting",
     "Death": "Death",
     "naturalDisasters": "Natural Disasters",
     "level4Desc": "Level 4 cases are the strongest cases we report, they are urgent cases ranging from fights, shootings, fires and robberies."
   },
-
-  "cta":{
+  "cta": {
     "title": "Let's start reducing crime",
     "message": "Enhance your company's security with our high-quality video surveillance monitoring service - request a free security assessment!"
   },
@@ -142,35 +137,33 @@
     "ctaTitle": "TRUST THE BEST",
     "ctaMessage": "Get in touch with Innova Monitoring's technical team and solve your doubts once and for all, the best technology and highly trained personnel are at your disposal!"
   },
-  
   "consulting": {
-    "title":" ADVICE AND CONSULTING FOR YOUR BUSINESS",
-    "Itemtitle1":"CONSULTING SERVICES",
-    "ItemDesc1":"At our monitoring company, we offer specialized consulting and advisory services to help you optimize your operations and get the most out of your monitoring systems. Our team of experts has extensive experience in the field and is committed to providing you with customized solutions that fit your organization's needs. Whether you need guidance in implementing an efficient monitoring system or are looking to improve your current practices, we are here to provide you with the support and knowledge you need.",
-    "Itemtitle2":"Support Throughout Your Monitoring Journey",
-    "ItemDesc2":"Our consulting and advisory services are not limited to the initial implementation, but we also offer ongoing support throughout your monitoring journey. We are committed to keeping you up to date with the latest trends and technological advances, and will provide you with guidance to adapt to changes in the business environment and maintain a competitive edge. Whether you are looking to optimize your existing infrastructure, enhance the security of your systems or expand your monitoring capabilities, our team will be there to help you achieve your goals and succeed in your monitoring operations.",
-    "Itemtitle3":"Technology At The Vanguard",
-    "ItemDesc3":"Skilled professionals and the best technology are available for your projects from Innova Monitoring."
+    "title": " ADVICE AND CONSULTING FOR YOUR BUSINESS",
+    "Itemtitle1": "CONSULTING SERVICES",
+    "ItemDesc1": "At our monitoring company, we offer specialized consulting and advisory services to help you optimize your operations and get the most out of your monitoring systems. Our team of experts has extensive experience in the field and is committed to providing you with customized solutions that fit your organization's needs. Whether you need guidance in implementing an efficient monitoring system or are looking to improve your current practices, we are here to provide you with the support and knowledge you need.",
+    "Itemtitle2": "Support Throughout Your Monitoring Journey",
+    "ItemDesc2": "Our consulting and advisory services are not limited to the initial implementation, but we also offer ongoing support throughout your monitoring journey. We are committed to keeping you up to date with the latest trends and technological advances, and will provide you with guidance to adapt to changes in the business environment and maintain a competitive edge. Whether you are looking to optimize your existing infrastructure, enhance the security of your systems or expand your monitoring capabilities, our team will be there to help you achieve your goals and succeed in your monitoring operations.",
+    "Itemtitle3": "Technology At The Vanguard",
+    "ItemDesc3": "Skilled professionals and the best technology are available for your projects from Innova Monitoring."
   },
-
   "footer": {
-    "message":" Innova Monitoring, Reinventing Security!",
-    "number":"(+1) 954-400-1317" ,
+    "message": " Innova Monitoring, Reinventing Security!",
+    "number": "(+1) 954-400-1317",
     "resources": "Resources",
     "support": " Tech Support",
-    "dashboard":"Dashboard",
-    "company":"Company",
+    "dashboard": "Dashboard",
+    "company": "Company",
     "about": " About us",
-    "services" : "Our Services",
+    "services": "Our Services",
     "contact": "Contact",
     "links": "Quick Links",
     "monitoring": "Monitoring",
-    "installations":"Installations",
-    "consulting":"Consulting",
-    "DataCenter":"Data Center",
+    "installations": "Installations",
+    "consulting": "Consulting",
+    "DataCenter": "Data Center",
     "Follow": "Follow Us On"
   },
-  "navbar":{
+  "navbar": {
     "home": "HOME",
     "about": "ABOUT",
     "support": "SUPPORT",
@@ -182,15 +175,80 @@
     "support": "Support Service",
     "consulting": "Advisory & Consulting"
   },
-  "login":{
+  "login": {
     "title": "Innova Monitoring Dashboard",
     "text": "Welcome to our data center, if you are an Innova Monitioring customer you will have access to our dashboard where you will be able to view all incident reports, camera status, statistics, notifications relevant to your property or business and more!"
   },
-  "buttons":{
+  "buttons": {
     "contact": "CONTACT US",
     "learn": "LEARN MORE",
-    "start":"GET STARTED!",
-    "message":"SEND MESSAGE",
-    "talk":"TALK TO SUPPORT"
+    "start": "GET STARTED!",
+    "message": "SEND MESSAGE",
+    "talk": "TALK TO SUPPORT"
+  },
+  "form_Page": {
+    "contact_Us": "Contact us",
+    "monitorin_plan": "Set up your monitoring plan!",
+    "friendly_Team": "Our friendly team is always here to chat, we’d love to hear from you"
+  },
+  "categories": {
+    "title": "What motivated you to hire a monitoring service?",
+    "personal_security": "Personal security",
+    "decrease_property_crime": "Decrease property crime",
+    "compliance_with_regulations": "Compliance with regulations and norms",
+    "theft_prevention": "Theft Prevention",
+    "protection_of_assets": "Protection of high-value assets",
+    "other": "Other",
+    "tell_us": "Tell us, what is the most important thing for you in a monitoring service?",
+    "text_box": "Obtain precise, real-time information about events occurring on my property at any moment."
+  },
+  "multiple_Step_Form": {
+    "First_step": "First step"
+  },
+  "plan_section": {
+    "cameras": "Cameras",
+    "hours": "Hours",
+    "number_cameras": "Enter the number of cameras to monitor",
+    "hours_monitoring": "Hours of monitoring per day",
+    "cameras_property": "Already have cameras on your property?",
+    "property_internet": "Does your property have internet service?"
+  },
+  "personal_section": {
+    "name_label": "First name",
+    "name_placeholder": "Enter your first name",
+    "last_name_label": "Last name",
+    "last_name_placeholder": "Enter your last name",
+    "country_label": "Country",
+    "country_placeholder": "Enter your country",
+    "state_label": "State",
+    "state_placeholder": "Enter your state"
+  },
+  "property_section": {
+    "property_header": "Type of property",
+    "property_placeholder": "Select the type of property",
+    "property_type_list1": "Residential complex",
+    "property_type_list2": "Building",
+    "property_type_list3": "Factory or warehouse",
+    "property_type_list4": "Property under construction",
+    "property_type_list5": "House",
+    "property_type_list6": "Other",
+    "property_name_label": "Property name",
+    "property_name_placeholder": "Enter the property name",
+    "property_address_label": "Property address",
+    "property_address_placeholder": "Enter the property address",
+    "property_size_label": "Property size",
+    "property_size_placeholder": "Enter the property size"
+  },
+  "contact_section": {
+    "e_mail_label": "E-mail",
+    "e_mail_placeholder": "Enter your email address",
+    "phone_number_label": "Phone number",
+    "phone_number_placeholder": "Enter your phone number",
+    "alternate_phone_label": "Alternate phone",
+    "alternate_phone_placeholder": "Enter another phone"
+  },
+  "form_button": {
+    "back": "Back",
+    "next": "Next"
   }
 }

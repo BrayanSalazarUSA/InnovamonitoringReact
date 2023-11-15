@@ -27,6 +27,12 @@ import { Link } from "react-router-dom";
 import { FormContext, FormProvider } from "../../context/FormProvide";
 import { motion } from "framer-motion";
 import { Resend } from "resend";
+import { useTranslation } from "react-i18next";
+import { t } from "i18next";
+
+
+
+
 
 const TextAnimation = () => {
   const text = "You got it!";
@@ -58,11 +64,10 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-function getSteps() {
-  return ["First Step", "Plan ", "Personal ", "Property ", "Contact "];
-}
+
 
 const First = ({ formPlan, setformPlan }) => {
+  const [t, i18n] = useTranslation("global");
   const onCategoryChange = (e) => {
     let _selectedCategories = [...formPlan.selectedCategories];
 
@@ -77,18 +82,19 @@ const First = ({ formPlan, setformPlan }) => {
   };
 
   const categories = [
-    { name: "Personal security", key: "1" },
-    { name: "Decrease property crime", key: "2" },
-    { name: "Compliance with regulations and norms", key: "3" },
-    { name: "Theft prevention", key: "4" },
-    { name: "Protection of high-value assets", key: "5" },
-    { name: "Other", key: "6" },
+    { name: t("categories.personal_security"), key: "1" },
+    { name: t("categories.decrease_property_crime"), key: "2" },
+    { name: t("categories.compliance_with_regulations"), key: "3" },
+    { name: t("categories.theft_prevention"), key: "4" },
+    { name: t("categories.protection_of_assets"), key: "5" },
+    { name: t("categories.other"), key: "6" },
   ];
   return (
+    
     <>
       <div className="card flex flex-col justify-content-center mb-5">
         <div className="font-semibold mb-3">
-          What motivated you to hire a monitoring service?
+          {t("categories.title")}
         </div>
         <div className="flex flex-col gap-3">
           {categories.map((category) => {
@@ -111,14 +117,12 @@ const First = ({ formPlan, setformPlan }) => {
           })}
         </div>
       </div>
-
       <div className="">
         <div className="font-semibold mb-3">
-          Tell us, what is the most important thing for you in a monitoring
-          service?
+          {t("categories.tell_us")}
         </div>
         <InputTextarea
-          placeholder="Obtain precise, real-time information about events occurring on my property at any moment."
+          placeholder={t("categories.text_box")}
           value={formPlan.textArea}
           onChange={(e) =>
             setformPlan({ ...formPlan, textArea: e.target.value })
@@ -128,16 +132,23 @@ const First = ({ formPlan, setformPlan }) => {
         />
       </div>
     </>
+    
   );
+  
 };
+function getSteps() {
+  
+  return ["First step", "Plan ", "Personal ", "Property ", "Contact "];
+}
 const BasicForm = ({ formPlan, setformPlan }) => {
+  const { t, i18n } = useTranslation("global");
   return (
     <>
       <TextField
         id="first-name"
-        label="First Name"
+        label={t("personal_section.name_label")}
         variant="outlined"
-        placeholder="Enter Your First Name"
+        placeholder={t("personal_section.name_placeholder")}
         fullWidth
         margin="normal"
         required
@@ -147,9 +158,9 @@ const BasicForm = ({ formPlan, setformPlan }) => {
 
       <TextField
         id="last-name"
-        label="Last Name"
+        label={t("personal_section.last_name_label")}
         variant="outlined"
-        placeholder="Enter Your Last Name"
+        placeholder={t("personal_section.last_name_placeholder")}
         fullWidth
         required
         margin="normal"
@@ -159,9 +170,9 @@ const BasicForm = ({ formPlan, setformPlan }) => {
 
       <TextField
         id="nick-name"
-        label="Country"
+        label={t("personal_section.country_placeholder")}
         variant="outlined"
-        placeholder="Enter Your Country"
+        placeholder={t("personal_section.country_placeholder")}
         fullWidth
         margin="normal"
         required
@@ -172,10 +183,10 @@ const BasicForm = ({ formPlan, setformPlan }) => {
       <div className="mb-4">
         <TextField
           id="nick-name"
-          label="State"
+          label={t("personal_section.state_label")}
           variant="outlined"
           required
-          placeholder="Enter Your State"
+          placeholder={t("personal_section.state_placeholder")}
           fullWidth
           margin="normal"
           value={formPlan.state}
@@ -186,13 +197,14 @@ const BasicForm = ({ formPlan, setformPlan }) => {
   );
 };
 const ContactForm = ({ formPlan, setformPlan }) => {
+  const { t, i18n } = useTranslation("global");
   return (
     <>
       <TextField
         id="email"
-        label="E-mail"
+        label={t("contact_section.e_mail_label")}
         variant="outlined"
-        placeholder="Enter Your E-mail Address"
+        placeholder={t("contact_section.e_mail_placeholder")}
         fullWidth
         required
         margin="normal"
@@ -202,10 +214,10 @@ const ContactForm = ({ formPlan, setformPlan }) => {
 
       <TextField
         id="phone-number"
-        label="Phone Number"
+        label={t("contact_section.phone_number_label")}
         variant="outlined"
         required
-        placeholder="Enter Your Phone Number"
+        placeholder={t("contact_section.phone_number_placeholder")}
         fullWidth
         value={formPlan.phone}
         onChange={(e) => setformPlan({ ...formPlan, phone: e.target.value })}
@@ -230,27 +242,28 @@ const ContactForm = ({ formPlan, setformPlan }) => {
 };
 const PropertyForm = ({ formPlan, setformPlan }) => {
   const [selectedProperty, setSelectedProperty] = useState(null);
+  const { t, i18n } = useTranslation("global");
   const properties = [
-    { name: "Residential complex", code: "1" },
-    { name: "Building", code: "2" },
-    { name: "Factory or warehouse", code: "3" },
-    { name: "Property under construction ", code: "4" },
-    { name: "House", code: "5" },
-    { name: "Other", code: "6" },
+    { name: t("property_section.property_type_list1"), code: "1" },
+    { name: t("property_section.property_type_list2"), code: "2" },
+    { name: t("property_section.property_type_list3"), code: "3" },
+    { name: t("property_section.property_type_list4"), code: "4" },
+    { name: t("property_section.property_type_list5"), code: "5" },
+    { name: t("property_section.property_type_list6"), code: "6" },
   ];
 
   return (
     <>
       <div className="card flex flex-col justify-content-center mb-2">
         <label htmlFor="integeronly" className="font-bold block mb-2">
-          Type of property
+         {t("property_section.property_header")}
         </label>
         <Dropdown
           value={formPlan.propertyType}
           onChange={(e) => setformPlan({ ...formPlan, propertyType: e.value })}
           options={properties}
           optionLabel="name"
-          placeholder="Select the type of property"
+          placeholder={t("property_section.property_placeholder")}
           className="w-full md:w-14rem"
           required
         />
@@ -258,9 +271,9 @@ const PropertyForm = ({ formPlan, setformPlan }) => {
 
       <TextField
         id="country"
-        label="Property Name"
+        label={t("property_section.property_name_label")}
         variant="outlined"
-        placeholder="Enter The Property Name"
+        placeholder={t("property_section.property_name_label")}
         fullWidth
         value={formPlan.propertyName}
         onChange={(e) =>
@@ -272,9 +285,9 @@ const PropertyForm = ({ formPlan, setformPlan }) => {
       <div className="">
         <TextField
           id=""
-          label="Property Address"
+          label={t("property_section.property_address_label")}
           variant="outlined"
-          placeholder="Enter The Property Address"
+          placeholder={t("property_section.property_address_label")}
           fullWidth
           margin="normal"
           required
@@ -288,9 +301,9 @@ const PropertyForm = ({ formPlan, setformPlan }) => {
       <div className="mb-4">
         <TextField
           id=""
-          label="Property Size"
+          label={t("property_section.property_size_label")}
           variant="outlined"
-          placeholder="Enter your property size"
+          placeholder={t("property_section.property_size_placeholder")}
           fullWidth
           margin="normal"
           value={formPlan.propertySize}
@@ -303,11 +316,12 @@ const PropertyForm = ({ formPlan, setformPlan }) => {
   );
 };
 const PlanInformation = ({ formPlan, setformPlan }) => {
+  const { t, i18n } = useTranslation("global");
   return (
     <>
       <div className=" flex  flex-col lg:flex-row gap-3 w-full">
         <div className=" flex flex-col">
-          <label htmlFor="username">Cameras</label>
+          <label htmlFor="username">{t("plan_section.cameras")}</label>
           <InputNumber
             inputStyle={{ width: "130px" }}
             className="w-2/3"
@@ -324,14 +338,14 @@ const PlanInformation = ({ formPlan, setformPlan }) => {
             }
           />
           <small id="username-help">
-            Enter the number of cameras to monitor
+            {t("plan_section.number_cameras")}
           </small>
         </div>
 
         <div className="w-5"> </div>
 
         <div className=" flex flex-col ">
-          <label htmlFor="username">Hours</label>
+          <label htmlFor="username">{t("plan_section.hours")}</label>
           <InputNumber
             inputStyle={{ width: "130px" }}
             className="w-2/3"
@@ -346,12 +360,12 @@ const PlanInformation = ({ formPlan, setformPlan }) => {
             min={0}
             max={100}
           />
-          <small id="username-help">Hours of monitoring per day</small>
+          <small id="username-help">{t("plan_section.hours_monitoring")}</small>
         </div>
       </div>
 
       <div className="my-5">
-        <div>Already have cameras on your property</div>
+        <div>{t("plan_section.cameras_property")}</div>
 
         <InputSwitch
           checked={formPlan.camerasInstalled}
@@ -364,7 +378,7 @@ const PlanInformation = ({ formPlan, setformPlan }) => {
       </div>
 
       <div className="my-5">
-        <div>Does your property have internet service?</div>
+        <div>{t("plan_section.property_internet")}</div>
 
         <InputSwitch
           checked={formPlan.internet}
@@ -629,11 +643,10 @@ export const MultiStepForm = () => {
             </Link>
           </div>
         ) : (
-          <>
-            <FormProvider {...methods}>
+          <FormProvider {...methods}>
               <form onSubmit={methods.handleSubmit(handleNext)}>
                 {GetStepContent(activeStep)}
-
+                
                 <Button
                   className={classes.button}
                   disabled={activeStep === 0}
@@ -641,16 +654,7 @@ export const MultiStepForm = () => {
                 >
                   back
                 </Button>
-                {/*   {isStepOptional(activeStep) && (
-                  <Button
-                    className={classes.button}
-                    variant="contained"
-                    onClick={handleSkip}
-                  >
-                    skip
-                  </Button>
-                )} */}
-
+            
                 {activeStep === steps.length - 1 ? (
                   <Button
                     className={classes.button}
@@ -671,7 +675,6 @@ export const MultiStepForm = () => {
                 )}
               </form>
             </FormProvider>
-          </>
         )}
       </div>
     </>
