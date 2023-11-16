@@ -13,7 +13,7 @@ const Footer = () => {
           <div class="w-full px-4 sm:w-2/3 lg:w-3/12">
             <div class="mb-10 w-full flex flex-col items-center justify-center">
               <a
-                href="javascript:void(0)"
+                href="http://localhost:3000/"
                 class="mb-6 inline-block max-w-[250px]"
               >
                 <img src={logo} alt="logo" class="max-w-full" />
@@ -57,7 +57,7 @@ const Footer = () => {
                     to={"/login"}
                     class="efecto-basic efecto2 text-body-color hover:text-primary mb-2 inline-block text-base leading-loose"
                   >
-                    Dashboard
+                    {t("footer.dashboard")}
                   </Link>
                 </li>
 
@@ -108,7 +108,7 @@ const Footer = () => {
                     href="javascript:void(0)"
                     class="efecto-basic efecto2 text-body-color hover:text-primary mb-2 inline-block text-base leading-loose"
                   >
-                    Setting & Privacy
+                    {t("footer.setting_privacy")}
                   </a>
                 </li>
               </ul>

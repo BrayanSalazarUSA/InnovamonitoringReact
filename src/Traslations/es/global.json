@@ -32,13 +32,15 @@
     "item3": "Estadísticas",
     "item3Desc": "Aquí dispondrás de estadísticas en los informes mes a mes para tener una visión global de lo que ocurre en su propiedad a lo largo del tiempo."
   },
-  "Offices": {
+  "locations": {
     "title": "Explora nuestras oficinas",
     "welcome": "Bienvenido a nuestros centros de operaciones, estamos ubicados en Florida en los Estados Unidos. Además de esto, tenemos una segunda ubicación en Medellín Colombia. Lo invitamos a visitarnos.",
     "mainTitle": "OFICINA PRINCIPAL",
     "mainDesc": "¡Nuestra oficina principal, que actualmente sirve a toda la ubicación del sur de Florida y en todo el mundo!",
     "secondTitle": "SEGUNDO CENTRO DE OPERACIONES",
-    "secondDesc": "¡Nuestra sede secundaria es un punto fuerte de nuestra oficina principal que ofrece asistencia continua a todos los clientes del mundo."
+    "secondDesc": "¡Nuestra sede secundaria es un punto fuerte de nuestra oficina principal que ofrece asistencia continua a todos los clientes del mundo.",
+    "schedule": "¡Programa un recorrido!",
+    "south_florida": "Florida del Sur"
   },
   "team": {
     "title": "SOBRE NOSOTROS",
@@ -47,7 +49,7 @@
     "desc1": "Bienvenido a Innova Monitoring, líderes en soluciones de monitoreo de cámaras y seguridad. Nos enorgullecemos de ofrecer fiabilidad y lo último en tecnología para proteger a nuestros clientes y garantizar su tranquilidad en un mundo cada vez más desafiante. En Innova, entendemos la importancia de la seguridad en todos los aspectos de la vida, ya sea en hogares, negocios o espacios públicos. Nuestro equipo altamente capacitado y dedicado se esfuerza por ofrecer soluciones personalizadas que se adapten a las necesidades individuales de cada cliente.",
     "desc2": "En la era digital actual, la vigilancia y la supervisión por vídeo son esenciales para garantizar la seguridad en diferentes entornos, ya sea en oficinas, tiendas, hogares o zonas públicas. Nuestros sistemas de cámaras de alta resolución y última generación proporcionan una visión clara y detallada de los acontecimientos en tiempo real, lo que nos permite detectar y responder rápidamente a situaciones potencialmente peligrosas. Además, ofrecemos servicios de supervisión remota 24 horas al día, 7 días a la semana, para proporcionar protección continua y tranquilidad a nuestros clientes.",
     "our": "Nuestra",
-    "culture": "Cultura",
+    "culture": "cultura",
     "security": "SEGURIDAD",
     "securityText": "La seguridad es nuestro valor fundamental y nuestra máxima prioridad. Reconocemos la importancia de proporcionar a nuestros clientes una protección fiable y una total tranquilidad. Nos comprometemos a garantizar la integridad de nuestros sistemas de vigilancia por cámara y la confidencialidad de la información captada.",
     "confidence": "CONFIANZA",
@@ -59,7 +61,7 @@
   },
   "support1": {
     "prev": "SOPORTE TÉCNICO",
-    "title": "¿YA ERES CLIENTE DE INNOVA?",
+    "title": "¿YA ERES CLIENTE DE INNOVA MONITORING?",
     "desc": "Si ya eres cliente de Innova Monitoring contaras con un excelente equipo técnico disponible para proporcionar el soporte más eficiente. Entrando en el siguiente enlace podrá solicitar ayuda a nuestro centro de operaciones técnicas.",
     "01": "Soporte IT",
     "02": "Asistencia en instalación",
@@ -74,10 +76,14 @@
     "desc": "Nos encantaría saber de usted. Si tiene alguna pregunta, comentario o desea más información sobre nuestros servicios, no dude en ponerse en contacto con nosotros. Nuestro equipo de atención al cliente está a su disposición para ofrecerle asistencia personalizada. Puede ponerse en contacto con nosotros a través del siguiente formulario, por correo electrónico o por teléfono. Estamos aquí para ayudarle y esperamos poder atender todas sus necesidades. ¡Esperamos tener noticias suyas pronto!",
     "location": "Nuestra ubicación",
     "locationDesc": "Sabaneta, Antioquia",
-    "phone": "Telefono",
-    "phoneNumber": "(+57) 3006304401",
+    "phone": "Teléfono",
+    "phoneNumber": "(en espera del numero)",
     "Email": "Correo Electrónico",
-    "EmailAdress": "info@innovatechcorp.net"
+    "EmailAdress": "info@innovatechcorp.net",
+    "name_form": "Nombre",
+    "email_form": "Correo",
+    "phone_form": "Celular",
+    "message_form": "Mensaje"
   },
   "Monitoring": {
     "prev": "CONFÍA EN LOS MEJORES",
@@ -103,7 +109,7 @@
     "level2": "Nivel 2",
     "narcotics": "Estupefacientes",
     "damage": "Daño a la propiedad",
-    "medical": "Emeregencias Médicas",
+    "medical": "Emergencias Médicas",
     "level2Desc": "Los niveles dos son casos de mayor complejidad que van desde el consumo de estupefacientes, urgencias médicas, vandalismos y más.",
     "level3": "Nivel 3",
     "weapon": "Porte de Armas",
@@ -146,19 +152,20 @@
   },
   "footer": {
     "message": "Innova Monitoring, reinventando la seguridad!",
-    "number": "+57 300 6304401",
+    "number": "(en espera del numero de telefono a colorcar)",
     "resources": "Recursos",
-    "support": "Soporte Tecnico",
-    "dashboard": "Dashboard",
+    "support": "Soporte Técnico",
+    "dashboard": "Iniciar sesión",
     "company": "Compañía",
     "about": "Sobre nosotros",
     "services": "Servicios",
     "contact": "Contacto",
+    "setting_privacy": "Configuración y privacidad",
     "links": "Links",
     "monitoring": "Monitoreo",
     "installations": "Instalaciones",
     "consulting": "Consultoría",
-    "DataCenter": "Centro de Datos",
+    "DataCenter": "Centro de datos",
     "Follow": "Siguenos"
   },
   "navbar": {
@@ -166,7 +173,8 @@
     "about": "NOSOTROS",
     "support": "SOPORTE",
     "contact": "CONTACTO",
-    "services": "SERVICIOS"
+    "services": "SERVICIOS",
+    "log_in": "INICIA SESIÓN"
   },
   "dropdown": {
     "monitoring": "Monitoreo y Vigilancia",
@@ -175,13 +183,23 @@
   },
   "login": {
     "title": "Innova Monitoring Dashboard",
-    "text": "Bienvenido a nuestro centro de datos, si es cliente de Innova Monitioring tendrá acceso a nuestro panel de control donde podrá ver todos los informes de incidentes, estado de las cámaras, estadísticas, notificaciones relevantes para su propiedad o negocio y mucho más."
+    "text": "Bienvenido a nuestro centro de datos, si es cliente de Innova Monitioring tendrá acceso a nuestro panel de control donde podrá ver todos los informes de incidentes, estado de las cámaras, estadísticas, notificaciones relevantes para su propiedad o negocio y mucho más.",
+    "header_sign_in": "Inicia sesión para acceder a tu cuenta.",
+    "email": "Correo",
+    "email_placeholder": "Ingresa tu correo",
+    "password": "Contraseña",
+    "password_placeholder":"Ingresa tu contraseña",
+    "forgot_password": "¿Olvidaste tu contraseña?",
+    "sign_in": "Iniciar sesión",
+    "required_fields": "Todos los campos son requeridos.",
+    "acount_yet": "¿aun no tienes cuenta?",
+    "join_us": "¡unete!"
   },
   "buttons": {
     "contact": "CONTACTO",
     "learn": "VER MÁS",
     "start": "EMPECEMOS!",
-    "message": "Enviar Mensaje",
+    "message": "Enviar mensaje",
     "talk": "SOLICITA SOPORTE"
   },
   "form_Page": {
@@ -189,64 +207,76 @@
     "monitorin_plan": "¡Configura tu plan de monitoreo!",
     "friendly_Team": "Nuestro equipo siempre está aquí para escucharte, nos encantaría saber de usted."
   },
-  "categories": {
-    "title": "¿Qué te motivó a contratar un servicio de monitoreo?",
-    "personal_security": "Seguridad personal",
-    "decrease_property_crime": "Disminuir los delitos en su propiedad",
-    "compliance_with_regulations": "Cumplimiento de las normas",
-    "theft_prevention": "Prevención de robos",
-    "protection_of_assets": "Protección de activos de alto valor",
-    "other": "Otros",
-    "tell_us": "Cuéntennos, ¿que es lo mas importante para ti en el servicio de monitoreo?",
-    "text_box": "Obtener información precisa y en tiempo real sobre los eventos que ocurran en mi propiedad en cualquier momento."
-  },
-  "multiple_Step_Form": {
-    "first_step": "Primer paso"
-  },
-  "plan_section": {
-    "cameras": "Camaras",
-    "hours": "Horas",
-    "number_cameras": "Ingresa el número de cámaras a monitorear.",
-    "hours_monitoring": "Horas de monitoreo por dia",
-    "cameras_property": "¿Actualmente cuentas con camaras en tu propiedad?",
-    "property_internet": "¿Tu propiedad cuenta con servicio de internet?"
-  },
-  "personal_section": {
-    "name_label": "Primer nombre",
-    "name_placeholder": "Ingresa tu primer nombre",
-    "last_name_label": "Segundo nombre",
-    "last_name_placeholder": "Ingresa tu segundo nombre",
-    "country_label": "Pais",
-    "country_placeholder": "Ingresa tu pais",
-    "state_label": "Estado",
-    "state_placeholder": "Ingresa tu estado/departamento"
-  },
-  "property_section": {
-    "property_header": "Tipo de propiedad",
-    "property_placeholder": "Seleccione el tipo de propiedad",
-    "property_type_list1": "Complejo residencial",
-    "property_type_list2": "Edificio",
-    "property_type_list3": "Fábrica o almacén",
-    "property_type_list4": "Propiedad en construccion",
-    "property_type_list5": "Casa",
-    "property_type_list6": "Otro",
-    "property_name_label": "Nombre de la propiedad",
-    "property_name_placeholder": "Ingresa el nombre de la propiedad",
-    "property_address_label": "Direccion de la propiedad",
-    "property_address_placeholder": "Ingresa la direccion de la propiedad",
-    "property_size_label": "Tamaño de la propiedad",
-    "property_size_placeholder": "Ingresa el tamaño de la propiedad"
-  },
-  "contact_section":{
-    "e_mail_label": "Correo electrónico",
-    "e_mail_placeholder": "Ingresa tu correo electrónico",
-    "phone_number_label": "Numero de celular",
-    "phone_number_placeholder": "Ingresa tu numero de celular",
-    "alternate_phone_label": "Numero alternativo",
-    "alternate_phone_placeholder": "Ingresa un numero alternativo"
-  },
-  "form_button": {
-    "back": "Anterior",
-    "next": "Siguiente"
+  "plan": {
+    "categories": {
+      "title": "¿Qué te motivó a contratar un servicio de monitoreo?",
+      "personal_security": "Seguridad personal",
+      "decrease_property_crime": "Disminuir los delitos en su propiedad",
+      "compliance_with_regulations": "Cumplimiento de las normas",
+      "theft_prevention": "Prevención de robos",
+      "protection_of_assets": "Protección de activos de alto valor",
+      "other": "Otros",
+      "tell_us": "Cuéntennos, ¿que es lo mas importante para ti en el servicio de monitoreo?",
+      "text_box": "Obtener información precisa y en tiempo real sobre los eventos que ocurran en mi propiedad en cualquier momento."
+    },
+    "multiple_step_form": {
+      "step_one": "Primer paso",
+      "step_two": "Plan",
+      "step_three": "Personal",
+      "step_four": "Propiedad",
+      "step_five": "Contacto"
+    },
+    "plan_section": {
+      "cameras": "Camaras",
+      "hours": "Horas",
+      "number_cameras": "Ingresa el número de cámaras a monitorear.",
+      "hours_monitoring": "Horas de monitoreo por dia",
+      "cameras_property": "¿Actualmente cuentas con camaras en tu propiedad?",
+      "property_internet": "¿Tu propiedad cuenta con servicio de internet?"
+    },
+    "personal_section": {
+      "name_label": "Primer nombre",
+      "name_placeholder": "Ingresa tu primer nombre",
+      "last_name_label": "Segundo nombre",
+      "last_name_placeholder": "Ingresa tu segundo nombre",
+      "country_label": "Pais",
+      "country_placeholder": "Ingresa tu pais",
+      "state_label": "Estado",
+      "state_placeholder": "Ingresa tu estado/departamento"
+    },
+    "property_section": {
+      "property_header": "Tipo de propiedad",
+      "property_placeholder": "Seleccione el tipo de propiedad",
+      "property_type_list1": "Complejo residencial",
+      "property_type_list2": "Edificio",
+      "property_type_list3": "Fábrica o almacén",
+      "property_type_list4": "Propiedad en construccion",
+      "property_type_list5": "Casa",
+      "property_type_list6": "Otro",
+      "property_name_label": "Nombre de la propiedad",
+      "property_name_placeholder": "Ingresa el nombre de la propiedad",
+      "property_address_label": "Direccion de la propiedad",
+      "property_address_placeholder": "Ingresa la direccion de la propiedad",
+      "property_size_label": "Tamaño de la propiedad",
+      "property_size_placeholder": "Ingresa el tamaño de la propiedad"
+    },
+    "contact_section": {
+      "e_mail_label": "Correo electrónico",
+      "e_mail_placeholder": "Ingresa tu correo electrónico",
+      "phone_number_label": "Numero de celular",
+      "phone_number_placeholder": "Ingresa tu numero de celular",
+      "alternate_phone_label": "Numero alternativo",
+      "alternate_phone_placeholder": "Ingresa un numero alternativo"
+    },
+    "plan_section_finish": {
+      "header_finish": "¡Lo tienes!",
+      "text_finish": "Has creado tu plan de seguimiento personalizado, nuestro equipo se pondrá en contacto contigo lo antes posible."
+    },
+    "form_button": {
+      "back": "Anterior",
+      "next": "Siguiente",
+      "finish": "Finalizar",
+      "back_home": "volver al inicio"
+    }
   }
 }

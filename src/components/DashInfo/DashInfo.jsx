@@ -65,17 +65,7 @@ const DashInfo = () => {
                   {""}
                   <dd className="inline pl-2">{t("DashInfo.item3Desc")}</dd>
                 </div> 
-                <div className="relative pl-9">
-                  <dt className="inline font-semibold text-gray-900">
-                    <BsCardImage
-                      className="absolute left-1 top-1 h-6 w-5 text-yellow-600"
-                      aria-hidden="true"
-                    />
-                    {t("DashInfo.item4")}
-                  </dt>
-                  {""}
-                  <dd className="inline pl-2">{t("DashInfo.item4Desc")}</dd>
-                </div>
+                
               </dl>
             </div>
           </div>

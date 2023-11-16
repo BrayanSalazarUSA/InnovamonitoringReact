@@ -22,14 +22,12 @@ const AboutPage = () => {
   return (
     <>
       <Navbar efecto="efecto2"></Navbar>
-
       <section className="w-full mt-5">
         <div className="h-52 banner-about ">
           <h1 className="text-6xl font-semibold text-white ml-3 sm:ml-40 py-16  ">
             {t("team.title")}
           </h1>
         </div>
-
         <div className="w-3/4 m-auto mt-20 h-auto">
           <h3 className="text-2xl text-yellow-700">{t("team.h1")}</h3>
           <h1 className="text-4xl font-semibold mt-2 text-gray-800">
@@ -47,12 +45,10 @@ const AboutPage = () => {
             </div>
           </Reveal>
         </div>
-
         <Fade left>
           <Features></Features>
         </Fade>
       </section>
-
     <CTA url="/plan"></CTA>
       <Footer></Footer>
     </>

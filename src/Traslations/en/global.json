@@ -34,13 +34,15 @@
     "item4": "Report Extractions",
     "item4Desc": "With this tool you will be able to extract any incident report with our written statement, videos and more."
   },
-  "Offices": {
+  "locations": {
     "title": "Take a tour of our offices",
     "welcome": "Welcome to our operation centers, we are located in Florida in the United States. In addition to this, we have a second location in Medellin Colombia. We encourage you to visit us.",
     "mainTitle": "MAIN OFFICE",
     "mainDesc": "Our main office, currently serving all of South Florida location and worldwide!",
     "secondTitle": "SECOND OPERATIONS CENTER",
-    "secondDesc": "Our secondary location is an strength to our Main office providing continued support for all clients worldwide."
+    "secondDesc": "Our secondary location is an strength to our Main office providing continued support for all clients worldwide.",
+    "schedule": "Schedule a Tour Now",
+    "south_florida": "South Florida"
   },
   "team": {
     "title": "ABOUT US",
@@ -61,7 +63,7 @@
   },
   "support1": {
     "prev": "INNOVA TECH SUPPORT",
-    "title": "ALREADY A CLIENT OF INNOVA?",
+    "title": "ALREADY A CLIENT OF INNOVA MONITORING?",
     "desc": "If you are already an Innova Monitoring customer you will have an excellent technical team available to provide the most efficient support. By clicking on the following link you can request assistance from our technical operations center.",
     "01": "IT Support",
     "02": "Installation assistance",
@@ -77,9 +79,13 @@
     "location": "Our Location",
     "locationDesc": "Hollywood, FL, EE. UU.",
     "phone": "Phone Number",
-    "phoneNumber": "(+1) 954-400-1317",
+    "phoneNumber": "(waiting for the phone number to place)",
     "Email": "Email Address",
-    "EmailAdress": "info@innovatechcorp.net"
+    "EmailAdress": "info@innovatechcorp.net",
+    "name_form": "Name",
+    "email_form": "Email",
+    "phone_form": "Phone",
+    "message_form": "Message"
   },
   "Monitoring": {
     "prev": "TRUST THE BEST",
@@ -148,14 +154,15 @@
   },
   "footer": {
     "message": " Innova Monitoring, Reinventing Security!",
-    "number": "(+1) 954-400-1317",
+    "number": "(waiting for the phone number to place)",
     "resources": "Resources",
     "support": " Tech Support",
-    "dashboard": "Dashboard",
+    "dashboard": "Log in",
     "company": "Company",
     "about": " About us",
     "services": "Our Services",
     "contact": "Contact",
+    "setting_privacy": "Setting & privacy",
     "links": "Quick Links",
     "monitoring": "Monitoring",
     "installations": "Installations",
@@ -168,7 +175,8 @@
     "about": "ABOUT",
     "support": "SUPPORT",
     "contact": "CONTACT",
-    "services": "SERVICES"
+    "services": "SERVICES",
+    "log_in": "LOG IN"
   },
   "dropdown": {
     "monitoring": "Monitoring Services",
@@ -177,7 +185,17 @@
   },
   "login": {
     "title": "Innova Monitoring Dashboard",
-    "text": "Welcome to our data center, if you are an Innova Monitioring customer you will have access to our dashboard where you will be able to view all incident reports, camera status, statistics, notifications relevant to your property or business and more!"
+    "text": "Welcome to our data center, if you are an Innova Monitioring customer you will have access to our dashboard where you will be able to view all incident reports, camera status, statistics, notifications relevant to your property or business and more!",
+    "header_sign_in": "Sign in to access your account",
+    "email": "Email",
+    "email_placeholder": "Your email",
+    "password": "Password",
+    "password_placeholder": "Your password",
+    "forgot_password": "Forgot password?",
+    "sign_in": "Sign in",
+    "required_fields": "All fields are requiered",
+    "acount_yet": "Don't have an account yet?",
+    "join_us": "Join us!"
   },
   "buttons": {
     "contact": "CONTACT US",
@@ -191,64 +209,76 @@
     "monitorin_plan": "Set up your monitoring plan!",
     "friendly_Team": "Our friendly team is always here to chat, we’d love to hear from you"
   },
-  "categories": {
-    "title": "What motivated you to hire a monitoring service?",
-    "personal_security": "Personal security",
-    "decrease_property_crime": "Decrease property crime",
-    "compliance_with_regulations": "Compliance with regulations and norms",
-    "theft_prevention": "Theft Prevention",
-    "protection_of_assets": "Protection of high-value assets",
-    "other": "Other",
-    "tell_us": "Tell us, what is the most important thing for you in a monitoring service?",
-    "text_box": "Obtain precise, real-time information about events occurring on my property at any moment."
-  },
-  "multiple_Step_Form": {
-    "First_step": "First step"
-  },
-  "plan_section": {
-    "cameras": "Cameras",
-    "hours": "Hours",
-    "number_cameras": "Enter the number of cameras to monitor",
-    "hours_monitoring": "Hours of monitoring per day",
-    "cameras_property": "Already have cameras on your property?",
-    "property_internet": "Does your property have internet service?"
-  },
-  "personal_section": {
-    "name_label": "First name",
-    "name_placeholder": "Enter your first name",
-    "last_name_label": "Last name",
-    "last_name_placeholder": "Enter your last name",
-    "country_label": "Country",
-    "country_placeholder": "Enter your country",
-    "state_label": "State",
-    "state_placeholder": "Enter your state"
-  },
-  "property_section": {
-    "property_header": "Type of property",
-    "property_placeholder": "Select the type of property",
-    "property_type_list1": "Residential complex",
-    "property_type_list2": "Building",
-    "property_type_list3": "Factory or warehouse",
-    "property_type_list4": "Property under construction",
-    "property_type_list5": "House",
-    "property_type_list6": "Other",
-    "property_name_label": "Property name",
-    "property_name_placeholder": "Enter the property name",
-    "property_address_label": "Property address",
-    "property_address_placeholder": "Enter the property address",
-    "property_size_label": "Property size",
-    "property_size_placeholder": "Enter the property size"
-  },
-  "contact_section": {
-    "e_mail_label": "E-mail",
-    "e_mail_placeholder": "Enter your email address",
-    "phone_number_label": "Phone number",
-    "phone_number_placeholder": "Enter your phone number",
-    "alternate_phone_label": "Alternate phone",
-    "alternate_phone_placeholder": "Enter another phone"
-  },
-  "form_button": {
-    "back": "Back",
-    "next": "Next"
+  "plan": {
+    "categories": {
+      "title": "What motivated you to hire a monitoring service?",
+      "personal_security": "Personal security",
+      "decrease_property_crime": "Decrease property crime",
+      "compliance_with_regulations": "Compliance with regulations and norms",
+      "theft_prevention": "Theft Prevention",
+      "protection_of_assets": "Protection of high-value assets",
+      "other": "Other",
+      "tell_us": "Tell us, what is the most important thing for you in a monitoring service?",
+      "text_box": "Obtain precise, real-time information about events occurring on my property at any moment."
+    },
+    "multiple_step_form": {
+      "step_one": "First step",
+      "step_two": "Plan",
+      "step_three": "Personal",
+      "step_four": "Property",
+      "step_five": "Contact"
+    },
+    "plan_section": {
+      "cameras": "Cameras",
+      "hours": "Hours",
+      "number_cameras": "Enter the number of cameras to monitor",
+      "hours_monitoring": "Hours of monitoring per day",
+      "cameras_property": "Already have cameras on your property?",
+      "property_internet": "Does your property have internet service?"
+    },
+    "personal_section": {
+      "name_label": "First name",
+      "name_placeholder": "Enter your first name",
+      "last_name_label": "Last name",
+      "last_name_placeholder": "Enter your last name",
+      "country_label": "Country",
+      "country_placeholder": "Enter your country",
+      "state_label": "State",
+      "state_placeholder": "Enter your state"
+    },
+    "property_section": {
+      "property_header": "Type of property",
+      "property_placeholder": "Select the type of property",
+      "property_type_list1": "Residential complex",
+      "property_type_list2": "Building",
+      "property_type_list3": "Factory or warehouse",
+      "property_type_list4": "Property under construction",
+      "property_type_list5": "House",
+      "property_type_list6": "Other",
+      "property_name_label": "Property name",
+      "property_name_placeholder": "Enter the property name",
+      "property_address_label": "Property address",
+      "property_address_placeholder": "Enter the property address",
+      "property_size_label": "Property size",
+      "property_size_placeholder": "Enter the property size"
+    },
+    "contact_section": {
+      "e_mail_label": "E-mail",
+      "e_mail_placeholder": "Enter your email address",
+      "phone_number_label": "Phone number",
+      "phone_number_placeholder": "Enter your phone number",
+      "alternate_phone_label": "Alternate phone",
+      "alternate_phone_placeholder": "Enter another phone"
+    },
+    "plan_section_finish": {
+      "header_finish": "you got it!!",
+      "text_finish": "You have created your personalized monitoring plan, our team will contact you as soon as possible."
+    },
+    "form_button": {
+      "back": "Back",
+      "next": "Next",
+      "finish": "Finish",
+      "back_home": "Back home!"
+    }
   }
 }

@@ -35,7 +35,8 @@ import { t } from "i18next";
 
 
 const TextAnimation = () => {
-  const text = "You got it!";
+  const [t, i18n] = useTranslation("global");
+  const text = t("plan.plan_section_finish.header_finish");
   return (
     <motion.div className="text">
       {text.split("").map((letter, index) => (
@@ -53,6 +54,7 @@ const TextAnimation = () => {
 };
 const useStyles = makeStyles((theme) => ({
   button: {
+    marginTop: "20px",
     marginRight: theme.spacing(1),
     backgroundColor: "goldenrod",
     color: "white",
@@ -82,19 +84,19 @@ const First = ({ formPlan, setformPlan }) => {
   };
 
   const categories = [
-    { name: t("categories.personal_security"), key: "1" },
-    { name: t("categories.decrease_property_crime"), key: "2" },
-    { name: t("categories.compliance_with_regulations"), key: "3" },
-    { name: t("categories.theft_prevention"), key: "4" },
-    { name: t("categories.protection_of_assets"), key: "5" },
-    { name: t("categories.other"), key: "6" },
+    { name: t("plan.categories.personal_security"), key: "1" },
+    { name: t("plan.categories.decrease_property_crime"), key: "2" },
+    { name: t("plan.categories.compliance_with_regulations"), key: "3" },
+    { name: t("plan.categories.theft_prevention"), key: "4" },
+    { name: t("plan.categories.protection_of_assets"), key: "5" },
+    { name: t("plan.categories.other"), key: "6" },
   ];
   return (
     
     <>
       <div className="card flex flex-col justify-content-center mb-5">
         <div className="font-semibold mb-3">
-          {t("categories.title")}
+          {t("plan.categories.title")}
         </div>
         <div className="flex flex-col gap-3">
           {categories.map((category) => {
@@ -119,10 +121,10 @@ const First = ({ formPlan, setformPlan }) => {
       </div>
       <div className="">
         <div className="font-semibold mb-3">
-          {t("categories.tell_us")}
+          {t("plan.categories.tell_us")}
         </div>
         <InputTextarea
-          placeholder={t("categories.text_box")}
+          placeholder={t("plan.categories.text_box")}
           value={formPlan.textArea}
           onChange={(e) =>
             setformPlan({ ...formPlan, textArea: e.target.value })
@@ -136,19 +138,26 @@ const First = ({ formPlan, setformPlan }) => {
   );
   
 };
-function getSteps() {
+
+function getSteps(t) {
   
-  return ["First step", "Plan ", "Personal ", "Property ", "Contact "];
+  return [
+    t("plan.multiple_step_form.step_one"),
+    t("plan.multiple_step_form.step_two"),
+    t("plan.multiple_step_form.step_three"), 
+    t("plan.multiple_step_form.step_four"), 
+    t("plan.multiple_step_form.step_five")
+  ];
 }
 const BasicForm = ({ formPlan, setformPlan }) => {
-  const { t, i18n } = useTranslation("global");
+  const [t, i18n] = useTranslation("global");
   return (
     <>
       <TextField
         id="first-name"
-        label={t("personal_section.name_label")}
+        label={t("plan.personal_section.name_label")}
         variant="outlined"
-        placeholder={t("personal_section.name_placeholder")}
+        placeholder={t("plan.personal_section.name_placeholder")}
         fullWidth
         margin="normal"
         required
@@ -158,9 +167,9 @@ const BasicForm = ({ formPlan, setformPlan }) => {
 
       <TextField
         id="last-name"
-        label={t("personal_section.last_name_label")}
+        label={t("plan.personal_section.last_name_label")}
         variant="outlined"
-        placeholder={t("personal_section.last_name_placeholder")}
+        placeholder={t("plan.personal_section.last_name_placeholder")}
         fullWidth
         required
         margin="normal"
@@ -170,9 +179,9 @@ const BasicForm = ({ formPlan, setformPlan }) => {
 
       <TextField
         id="nick-name"
-        label={t("personal_section.country_placeholder")}
+        label={t("plan.personal_section.country_placeholder")}
         variant="outlined"
-        placeholder={t("personal_section.country_placeholder")}
+        placeholder={t("plan.personal_section.country_placeholder")}
         fullWidth
         margin="normal"
         required
@@ -183,10 +192,10 @@ const BasicForm = ({ formPlan, setformPlan }) => {
       <div className="mb-4">
         <TextField
           id="nick-name"
-          label={t("personal_section.state_label")}
+          label={t("plan.personal_section.state_label")}
           variant="outlined"
           required
-          placeholder={t("personal_section.state_placeholder")}
+          placeholder={t("plan.personal_section.state_placeholder")}
           fullWidth
           margin="normal"
           value={formPlan.state}
@@ -202,9 +211,9 @@ const ContactForm = ({ formPlan, setformPlan }) => {
     <>
       <TextField
         id="email"
-        label={t("contact_section.e_mail_label")}
+        label={t("plan.contact_section.e_mail_label")}
         variant="outlined"
-        placeholder={t("contact_section.e_mail_placeholder")}
+        placeholder={t("plan.contact_section.e_mail_placeholder")}
         fullWidth
         required
         margin="normal"
@@ -214,10 +223,10 @@ const ContactForm = ({ formPlan, setformPlan }) => {
 
       <TextField
         id="phone-number"
-        label={t("contact_section.phone_number_label")}
+        label={t("plan.contact_section.phone_number_label")}
         variant="outlined"
         required
-        placeholder={t("contact_section.phone_number_placeholder")}
+        placeholder={t("plan.contact_section.phone_number_placeholder")}
         fullWidth
         value={formPlan.phone}
         onChange={(e) => setformPlan({ ...formPlan, phone: e.target.value })}
@@ -226,9 +235,9 @@ const ContactForm = ({ formPlan, setformPlan }) => {
       <div className="mb-4">
         <TextField
           id="alternate-phone"
-          label="Alternate Phone"
+          label={t("plan.contact_section.alternate_phone_label")}
           variant="outlined"
-          placeholder="Enter Your Alternate Phone"
+          placeholder={t("plan.contact_section.alternate_phone_placeholder")}
           fullWidth
           margin="normal"
           value={formPlan.alternativePhone}
@@ -244,26 +253,26 @@ const PropertyForm = ({ formPlan, setformPlan }) => {
   const [selectedProperty, setSelectedProperty] = useState(null);
   const { t, i18n } = useTranslation("global");
   const properties = [
-    { name: t("property_section.property_type_list1"), code: "1" },
-    { name: t("property_section.property_type_list2"), code: "2" },
-    { name: t("property_section.property_type_list3"), code: "3" },
-    { name: t("property_section.property_type_list4"), code: "4" },
-    { name: t("property_section.property_type_list5"), code: "5" },
-    { name: t("property_section.property_type_list6"), code: "6" },
+    { name: t("plan.property_section.property_type_list1"), code: "1" },
+    { name: t("plan.property_section.property_type_list2"), code: "2" },
+    { name: t("plan.property_section.property_type_list3"), code: "3" },
+    { name: t("plan.property_section.property_type_list4"), code: "4" },
+    { name: t("plan.property_section.property_type_list5"), code: "5" },
+    { name: t("plan.property_section.property_type_list6"), code: "6" },
   ];
 
   return (
     <>
       <div className="card flex flex-col justify-content-center mb-2">
         <label htmlFor="integeronly" className="font-bold block mb-2">
-         {t("property_section.property_header")}
+          {t("plan.property_section.property_header")}
         </label>
         <Dropdown
           value={formPlan.propertyType}
           onChange={(e) => setformPlan({ ...formPlan, propertyType: e.value })}
           options={properties}
           optionLabel="name"
-          placeholder={t("property_section.property_placeholder")}
+          placeholder={t("plan.property_section.property_placeholder")}
           className="w-full md:w-14rem"
           required
         />
@@ -271,9 +280,9 @@ const PropertyForm = ({ formPlan, setformPlan }) => {
 
       <TextField
         id="country"
-        label={t("property_section.property_name_label")}
+        label={t("plan.property_section.property_name_label")}
         variant="outlined"
-        placeholder={t("property_section.property_name_label")}
+        placeholder={t("plan.property_section.property_name_label")}
         fullWidth
         value={formPlan.propertyName}
         onChange={(e) =>
@@ -285,9 +294,9 @@ const PropertyForm = ({ formPlan, setformPlan }) => {
       <div className="">
         <TextField
           id=""
-          label={t("property_section.property_address_label")}
+          label={t("plan.property_section.property_address_label")}
           variant="outlined"
-          placeholder={t("property_section.property_address_label")}
+          placeholder={t("plan.property_section.property_address_label")}
           fullWidth
           margin="normal"
           required
@@ -301,9 +310,9 @@ const PropertyForm = ({ formPlan, setformPlan }) => {
       <div className="mb-4">
         <TextField
           id=""
-          label={t("property_section.property_size_label")}
+          label={t("plan.property_section.property_size_label")}
           variant="outlined"
-          placeholder={t("property_section.property_size_placeholder")}
+          placeholder={t("plan.property_section.property_size_placeholder")}
           fullWidth
           margin="normal"
           value={formPlan.propertySize}
@@ -321,7 +330,7 @@ const PlanInformation = ({ formPlan, setformPlan }) => {
     <>
       <div className=" flex  flex-col lg:flex-row gap-3 w-full">
         <div className=" flex flex-col">
-          <label htmlFor="username">{t("plan_section.cameras")}</label>
+          <label htmlFor="username">{t("plan.plan_section.cameras")}</label>
           <InputNumber
             inputStyle={{ width: "130px" }}
             className="w-2/3"
@@ -338,14 +347,14 @@ const PlanInformation = ({ formPlan, setformPlan }) => {
             }
           />
           <small id="username-help">
-            {t("plan_section.number_cameras")}
+            {t("plan.plan_section.number_cameras")}
           </small>
         </div>
 
         <div className="w-5"> </div>
 
         <div className=" flex flex-col ">
-          <label htmlFor="username">{t("plan_section.hours")}</label>
+          <label htmlFor="username">{t("plan.plan_section.hours")}</label>
           <InputNumber
             inputStyle={{ width: "130px" }}
             className="w-2/3"
@@ -360,14 +369,14 @@ const PlanInformation = ({ formPlan, setformPlan }) => {
             min={0}
             max={100}
           />
-          <small id="username-help">{t("plan_section.hours_monitoring")}</small>
+          <small id="username-help">{t("plan.plan_section.hours_monitoring")}</small>
         </div>
       </div>
 
       <div className="my-5">
-        <div>{t("plan_section.cameras_property")}</div>
-
-        <InputSwitch
+        <div>{t("plan.plan_section.cameras_property")}</div>
+        <InputSwitch 
+        // yo
           checked={formPlan.camerasInstalled}
           onChange={(e) =>
             setformPlan({ ...formPlan, camerasInstalled: e.value })
@@ -378,7 +387,7 @@ const PlanInformation = ({ formPlan, setformPlan }) => {
       </div>
 
       <div className="my-5">
-        <div>{t("plan_section.property_internet")}</div>
+        <div>{t("plan.plan_section.property_internet")}</div>
 
         <InputSwitch
           checked={formPlan.internet}
@@ -411,30 +420,30 @@ function GetStepContent(step) {
 }
 
 export const MultiStepForm = () => {
-
+  const { t, i18n } = useTranslation("global");
   const serviceId = "service_nk6ddhp";
   const templateId = "template_qb25ll4";
   const apiKey = "W_IsG6K1IaAL7xkOS";
 
-  /* const [formPlan, setformPlan] = useState({
-    selectedCategories:[],
-    textArea:"",
-    numCameras:0,
-    numHours:0,
-    camerasInstalled:true,
-    internet:true,
-    name:"",
-    lastName:"",
-    country:"",
-    state:"",
-    propertyType:"",
-    propertyName:"",
-    propertyAddress:"",
-    propertySize:"",
-    email:"",
-    phone:"",
-    alternativePhone:"",
-  }) */
+  //  const [formPlan, setformPlan] = useState({
+  //   selectedCategories:[],
+  //   textArea:"",
+  //   numCameras:0,
+  //   numHours:0,
+  //   camerasInstalled:true,
+  //   internet:true,
+  //   name:"",
+  //   lastName:"",
+  //   country:"",
+  //   state:"",
+  //   propertyType:"",
+  //   propertyName:"",
+  //   propertyAddress:"",
+  //   propertySize:"",
+  //   email:"",
+  //   phone:"",
+  //   alternativePhone:"",
+  // }) 
 
   const sendEmail = () => {
     let formulario = document.createElement("form");
@@ -559,7 +568,8 @@ export const MultiStepForm = () => {
   });
   const [activeStep, setActiveStep] = useState(0);
   const [skippedSteps, setSkippedSteps] = useState([]);
-  const steps = getSteps();
+  
+  const steps = getSteps(t);
 
   const isStepOptional = (step) => {
     return step === 1 || step === 2;
@@ -626,20 +636,18 @@ export const MultiStepForm = () => {
         </div>
 
         {activeStep === steps.length ? (
+          
           <div className="flex flex-col items-center justify-center my-10">
             <div>
               <TextAnimation />
             </div>
-            <div className="h-3"></div>
+            <div className="h-3"><br></br></div>
             <Typography align="center" className="flex  mt-8">
               <AiFillCheckCircle className="text-yellow-600 text-2xl h-12 w-12" />
-              You have created your personalized monitoring plan, our team will
-              contact you as soon as possible.
+              {t("plan.plan_section_finish.text_finish")}
             </Typography>
-            <div className="h-3"></div>
-        
             <Link to={"/"} reloadDocument>
-              <Button className={classes.button}>Back Home!</Button>
+              <Button className={classes.button}>{t("plan.form_button.back_home")}</Button>
             </Link>
           </div>
         ) : (
@@ -652,7 +660,7 @@ export const MultiStepForm = () => {
                   disabled={activeStep === 0}
                   onClick={handleBack}
                 >
-                  back
+                  {t("plan.form_button.back")}
                 </Button>
             
                 {activeStep === steps.length - 1 ? (
@@ -662,7 +670,7 @@ export const MultiStepForm = () => {
                     type="submit"
                     onClick={sendEmail}
                   >
-                    Finish
+                    {t("plan.form_button.finish")}
                   </Button>
                 ) : (
                   <Button
@@ -670,7 +678,7 @@ export const MultiStepForm = () => {
                     variant="contained"
                     type="submit"
                   >
-                    Next
+                      {t("plan.form_button.next")}
                   </Button>
                 )}
               </form>

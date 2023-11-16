@@ -11,7 +11,7 @@ const Culture = () => {
       <section class=" my-8">
         <div class=" container px-6 py-10 mx-auto">
           <h1 class="text-2xl font-semibold text-center text-gray-800 capitalize lg:text-5xl ">
-            Our <span class="text-yellow-600">Culture</span>
+            {t("team.our")} <span class="text-yellow-600">{t("team.culture")}</span>
           </h1>
 
           <div class="sm:mx-14 mx-3 grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-16 md:grid-cols-2 xl:grid-cols-3">

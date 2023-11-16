@@ -96,7 +96,7 @@ const Navbar = ({ TextColor = "text-gray-700", efecto = "efecto1" }) => {
                         to="/login"
                         className="text-xl font-bold leading-6 text-yellow-700 flex items-center hover:text-yellow-600 hover:scale-120"
                       >
-                        <span className="mr-2 text-base ">LOG IN</span>
+                      <span className="mr-2 text-base ">{t("navbar.log_in")}</span>
                         <BiLogInCircle></BiLogInCircle>
                       </Link>
                       <div className=" flex justify-end items-center">
@@ -164,7 +164,7 @@ const Navbar = ({ TextColor = "text-gray-700", efecto = "efecto1" }) => {
                   to={"/login"}
                   className="efecto-basic efecto1 flex px-3 text-2xl font-semibold leading-6 text-gray-300"
                 >
-                  <span className="mr-2 text-base">LOG IN</span>{" "}
+                <span className="mr-2 text-base">{t("navbar.log_in")}</span>{" "}
                   <BiLogInCircle></BiLogInCircle>
                 </Link>
                 <div className=" lg:flex lg:flex-1 lg:justify-end">

@@ -16,17 +16,17 @@ const Locations = () => {
           <div class="flex flex-wrap w-4/5 mx-auto mb-10 pt-20 ">
             <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
               <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-300">
-                {t("Offices.title")}
+                {t("locations.title")}
               </h1>
               <div class="h-1 w-20 bg-yellow-600 rounded"></div>
             </div>
 
             <div className="lg:w-1/2 p-4 w-full bg-half-transparent">
               <p class="text-xl mb-3 leading-relaxed text-gray-200">
-                {t("Offices.welcome")}
+                {t("locations.welcome")}
               </p>
               <Link target="_top" to="/contact">
-                <Button2 text={"Schedule a Tour Now"}></Button2>
+                <Button2 text={"locations.schedule"}></Button2>
               </Link>
             </div>
           </div>
@@ -39,13 +39,13 @@ const Locations = () => {
                   alt="content"
                 />
                 <h4 class="tracking-widest text-yellow-600 text-xs font-medium title-font">
-                  {t("Offices.mainTitle")}
+                  {t("locations.mainTitle")}
                 </h4>
                 <h2 class="text-lg text-gray-900 font-medium title-font mb-4">
-                  South Florida
+                  {t("locations.south_florida")}
                 </h2>
                 <p class="p-0 leading-relaxed text-base">
-                  {t("Offices.mainDesc")}
+                  {t("locations.mainDesc")}
                 </p>
               </div>
             </div>
@@ -58,13 +58,13 @@ const Locations = () => {
                   alt="content"
                 />
                 <h4 class="tracking-widest text-yellow-600 text-xs font-medium title-font">
-                  {t("Offices.secondTitle")}
+                  {t("locations.secondTitle")}
                 </h4>
                 <h2 class="text-lg text-gray-900 font-medium title-font mb-4">
                   Medellin, Colombia
                 </h2>
                 <p class="leading-relaxed text-base">
-                  {t("Offices.secondDesc")}
+                  {t("locations.secondDesc")}
                 </p>
               </div>
             </div>

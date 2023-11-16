@@ -9,16 +9,17 @@ import Footer from "../../components/Footer/Footer";
 import { useTranslation } from "react-i18next";
 const Support = () => {
   const [t, i18n] = useTranslation("global");
+  
   return (
     <>
-         <Navbar efecto="efecto2"></Navbar>
+        <Navbar efecto="efecto2"></Navbar>
       <section class=" 2xl:py-12 2xl:bg-gray-50">
         <div class="px-4 mx-auto  max-w-7xl sm:px-6 lg:px-8 2xl:rounded-xl">
           <div class="py-10 sm:py-10 ">
             <div class="grid items-center grid-cols-1 gap-y-8 lg:grid-cols-2 lg:gap-x-8 2xl:gap-x-20">
-              <div class="lg:order-2 2xl:-mr-24 absolute suport-image">
+              <div className="lg:order-2 2xl:-mr-24 support-image">
                 <img
-                  class="w-full shadow-xl rounded-xl suport-image"
+                  class="w-full"
                   src={support}
                   alt=""
                 />
@@ -28,10 +29,10 @@ const Support = () => {
                   {t("support1.prev")}
                 </p>
                 <h2 className="max-w-lg text-3xl font-bold  text-gray-700 sm:text-4xl ">
-                {t("support1.title")}
+                  {t("support1.title")}
                 </h2>
                 <p className="text-base py-4 text-gray-700 md:text-lg">
-                {t("support1.desc")}
+                  {t("support1.desc")}
                 </p>
                 <ul class="grid grid-cols-1 mt-4 sm:mt-10 sm:grid-cols-2 gap-x-10 xl:gap-x-16 gap-y-4 xl:gap-y-6">
                   <li class="flex items-center">
@@ -156,7 +157,7 @@ const Support = () => {
                   }
                   class="flex flex-col items-start mt-8 sm:space-x-4 sm:flex-row sm:items-center lg:mt-12"
                 >
-                  <Button2 ></Button2>
+                  <Button2 text="buttons.talk"></Button2>
                 </Link>
               </div>
             </div>

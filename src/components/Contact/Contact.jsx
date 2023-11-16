@@ -109,7 +109,7 @@ const Contact = () => {
                   <div class="mb-6">
                     <input
                       type="text"
-                      placeholder="Name"
+                      placeholder={t("Contact.name_form")}
                       name="from_name"
                       required
                       class="bg-transparent text-white border-[f0f0f0] focus:border-primary w-full rounded border py-3 px-[14px] text-base outline-none focus-visible:shadow-none"
@@ -120,7 +120,7 @@ const Contact = () => {
                       type="email"
                       name="email"
                       required
-                      placeholder="Email"
+                      placeholder={t("Contact.email_form")}
                       class="bg-transparent   border-[f0f0f0] focus:border-primary w-full rounded border py-3 px-[14px] text-base outline-none focus-visible:shadow-none text-white"
                     />
                   </div>
@@ -129,7 +129,7 @@ const Contact = () => {
                       type="text"
                       name="phone"
                       required
-                      placeholder="Phone"
+                      placeholder={t("Contact.phone_form")}
                       class="bg-transparent text-white border-[f0f0f0] focus:border-primary w-full rounded border py-3 px-[14px] text-base outline-none focus-visible:shadow-none text-white"
                     />
                   </div>
@@ -137,7 +137,7 @@ const Contact = () => {
                     <textarea
                       rows="6"
                       name="message"
-                      placeholder="Message"
+                      placeholder={t("Contact.message_form")}
                       required
                       class="bg-transparent text-white border-[f0f0f0] focus:border-primary w-full resize-none rounded border py-3 px-[14px] text-base outline-none focus-visible:shadow-none"
                     ></textarea>

@@ -48,7 +48,7 @@ const Header = () => {
               <p className="text-gray-300 text-center text-xl my-5 p-7">
                 {t("header.message2")}
               </p>
-              <div className=" flex justify-center items-center gap-4">
+              <div className="flex justify-center items-center gap-4">
                 <Link target="_top" to="/contact">
                   <Button text="buttons.contact" type="" />
                 </Link>

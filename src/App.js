@@ -9,6 +9,7 @@ import Installation from "./components/ServicesPages/Installactions/Installation
 import Consulting from "./components/ServicesPages/Consulting/Consulting";
 import MonitoringService from "./components/ServicesPages/MonitoringServices/MonitoringServices";
 import Dashboard from "./Dashboard/Dashboard";
+import Support from "./pages/Support/Support";
 
 //theme
 import "primereact/resources/themes/lara-light-indigo/theme.css";
@@ -51,13 +52,13 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path={"/services"} element={<Features />} />
             <Route path={"/about"} element={<Team />} />
-            {/*   <Route path={"/support"} element={<Support />} /> */}
             <Route path={"/contact"} element={<Contact />} />
             <Route path={"/plan"} element={<FormPage />} />
             <Route path={"/login"} element={<Login />} />
             <Route path={"/monitoring"} element={<MonitoringService />} />
             <Route path={"/installations"} element={<Installation />} />
             <Route path={"/consulting"} element={<Consulting />} />
+            <Route path={"/support"} element={<Support />} />
             <Route path={"/dashboard"} element={userLogged ? <Dashboard /> : <Login />}>
               {/* Dashboard */}
                <Route path="/dashboard" element={<Ecommerce />} />
