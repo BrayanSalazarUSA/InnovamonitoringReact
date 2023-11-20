@@ -11,7 +11,7 @@ import factory from "../../../assets/images/monitoring-factory.jpg";
 
 import building from "../../../assets/images/monitoring-building.webp";
 import fire from "../../../assets/images/monitoring-fire.jpg";
-import incident2 from "../../../assets/incident2.jpg";
+import incident2 from "../../../assets/images/ServicesPages/MonitoringServices/incident2.jpg";
 import incident3 from "../../../assets/incident3.png";
 
 import Footer from "../../Footer/Footer";

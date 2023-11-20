@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 import Footer from "../../components/Footer/Footer";
 import { useTranslation } from "react-i18next";
 const Support = () => {
-  const [t, i18n] = useTranslation("global");
+  const {t, i18n} = useTranslation("global");
   
   return (
     <>
@@ -20,7 +20,7 @@ const Support = () => {
               <div className="lg:order-2 2xl:-mr-24 support-image">
                 <img
                   class="w-full"
-                  src={support}
+                  src="https://tecnosoluciones.com/wp-content/uploads/2023/02/soporte-remoto.png"
                   alt=""
                 />
               </div>

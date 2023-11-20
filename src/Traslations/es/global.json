@@ -73,7 +73,8 @@
   "Contact": {
     "contact": "Contacto",
     "title": "PÓNGASE EN CONTACTO CON NOSOTROS",
-    "desc": "Nos encantaría saber de usted. Si tiene alguna pregunta, comentario o desea más información sobre nuestros servicios, no dude en ponerse en contacto con nosotros. Nuestro equipo de atención al cliente está a su disposición para ofrecerle asistencia personalizada. Puede ponerse en contacto con nosotros a través del siguiente formulario, por correo electrónico o por teléfono. Estamos aquí para ayudarle y esperamos poder atender todas sus necesidades. ¡Esperamos tener noticias suyas pronto!",
+    "desc": "Estamos ansiosos por conocer sus inquietudes. Si tiene preguntas, comentarios o desea obtener más detalles sobre nuestros servicios, no dude en contactarnos. Nuestro equipo de atención al cliente está listo para brindarle asistencia personalizada. Comuníquese con nosotros mediante el formulario, correo electrónico y teléfono. Estamos comprometidos en satisfacer todas sus necesidades. Esperamos recibir su mensaje pronto. Si deseas iniciar su plan con nosotros ",
+    "click_here": "¡Haga click aqui!",
     "location": "Nuestra ubicación",
     "locationDesc": "Sabaneta, Antioquia",
     "phone": "Teléfono",
@@ -278,5 +279,11 @@
       "finish": "Finalizar",
       "back_home": "volver al inicio"
     }
-  }
+  },
+    "not_found": {
+      "tittle": "404 - Pagina no encontrada",
+      "paragraph": "Esta pagina esta en medio",
+      "paragraph1": "del limbo.",
+      "paragraph2": "¡Click aqui para volver!"
+    }
 }

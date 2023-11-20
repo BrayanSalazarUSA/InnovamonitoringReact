@@ -74,13 +74,13 @@ const Navbar = ({ TextColor = "text-gray-700", efecto = "efecto1" }) => {
                       >
                         {t("navbar.about")}
                       </Link>
-                      {/*  <Link
+                        <Link
                         to="/support"
                         className=
                         {`efecto-basic ${efecto} rounded-md px-1 py-2 text-base tracking-wider font-semibold`}
                       >
                         {t("navbar.support")}
-                      </Link> */}
+                      </Link> 
                       <Link
                         to="/contact"
                         className={`efecto-basic ${efecto} rounded-md px-1 py-2 text-base tracking-wider font-semibold`}

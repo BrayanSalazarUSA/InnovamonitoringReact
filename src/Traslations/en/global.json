@@ -75,7 +75,8 @@
   "Contact": {
     "contact": "Contact Us",
     "title": "GET IN TOUCH WITH US",
-    "desc": "We would love to hear from you! If you have any questions, comments or would like more information about our services, please do not hesitate to contact us. Our customer service team is available to provide you with personalized assistance. You can reach us via the contact form below, by email or by phone. We are here to help you and look forward to serving all your needs and hope to hear from you soon!",
+    "desc": "We are enthusiastic about addressing your inquiries. Should you have any questions, comments, or require additional details about our services, please feel free to reach out. Our customer care team is prepared to offer personalized assistance. Contact us through the provided form, email, or phone. We are dedicated to fulfilling all your needs and eagerly anticipate receiving your message soon. if you want to start your plan with us ",
+    "click_here": "¡Click here!", 
     "location": "Our Location",
     "locationDesc": "Hollywood, FL, EE. UU.",
     "phone": "Phone Number",
@@ -144,7 +145,7 @@
     "ctaMessage": "Get in touch with Innova Monitoring's technical team and solve your doubts once and for all, the best technology and highly trained personnel are at your disposal!"
   },
   "consulting": {
-    "title": " ADVICE AND CONSULTING FOR YOUR BUSINESS",
+    "title": "ADVICE AND CONSULTING FOR YOUR BUSINESS",
     "Itemtitle1": "CONSULTING SERVICES",
     "ItemDesc1": "At our monitoring company, we offer specialized consulting and advisory services to help you optimize your operations and get the most out of your monitoring systems. Our team of experts has extensive experience in the field and is committed to providing you with customized solutions that fit your organization's needs. Whether you need guidance in implementing an efficient monitoring system or are looking to improve your current practices, we are here to provide you with the support and knowledge you need.",
     "Itemtitle2": "Support Throughout Your Monitoring Journey",
@@ -279,6 +280,16 @@
       "next": "Next",
       "finish": "Finish",
       "back_home": "Back home!"
+    },
+    "credentials_error":{
+      "header": "Credentials error",
+      "text": "Please verify that your username and password are correct and try again."
     }
+  },
+  "not_found": {
+    "tittle": "404 - Page not found",
+    "paragraph": "This page ",
+    "paragraph1": "is in limbo",
+    "paragraph2": "Click here to back!"
   }
 }

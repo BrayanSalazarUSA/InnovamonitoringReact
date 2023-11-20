@@ -1,0 +1,25 @@
+.section {
+  background: linear-gradient(0deg, rgba(43, 71, 24, 0.466), rgba(130, 71, 11, 0.3)), url(https://hips.hearstapps.com/es.h-cdn.co/fotoes/images/cinefilia/giros-de-guion-40-peliculas-con-final-sorpresa/peliculas_con_finales_sorprendentes_origen/138080218-1-esl-ES/peliculas_con_finales_sorprendentes_origen.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  color: #fff;
+}
+
+.titulo {
+   color: rgb(242, 255, 0);
+   font-size: 100px;
+}
+.paragraph {
+   color: brown;
+    font-size: 70px;
+}
+.paragraph2 {
+   color: brown;
+    font-size: 50px;
+}
+

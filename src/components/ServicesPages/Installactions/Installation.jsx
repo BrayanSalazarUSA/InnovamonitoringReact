@@ -16,7 +16,6 @@ import Footer from "../../Footer/Footer";
 import { MdOutlineInstallDesktop, MdUpdate } from "react-icons/md";
 import { BiSupport } from "react-icons/bi";
 import { BsCameraVideo } from "react-icons/bs";
-import image from "../../../assets/images/asesoria.webp";
 import vms4200 from "../../../assets/images/Logos/IVMS4200.png";
 import EZ_Station from "../../../assets/images/Logos/EZ_Station.jpeg";
 import OpenEye from "../../../assets/images/Logos/OpenEye.webp";
@@ -89,7 +88,7 @@ const Installation = () => {
               </div>
 
               <div class="space-y-3">
-                <span class="inline-block text-yellow-600 bg-gray-100 rounded-xl dark:text-white dark:bg-yellow-600">
+                <span class="inline-block p-3 text-yellow-600 bg-gray-100 rounded-xl dark:text-white dark:bg-yellow-600">
                   <MdUpdate className="w-8 h-8 p-0 object-cover"></MdUpdate>
                 </span>
 

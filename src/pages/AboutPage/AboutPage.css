@@ -1,6 +1,6 @@
 .team-section{
    
-    background: url(../../assets/Rectangle7.svg) bottom left / 450px no-repeat, url(../../assets/Rectangle8.svg) top right / 130px no-repeat;
+    background: url(../../assets/images/Index/AboutUs/Rectangle7.svg) bottom left / 450px no-repeat, url(../../assets/images/Index/AboutUs/Rectangle8.svg) top right / 130px no-repeat;
     
 }
 
@@ -12,7 +12,4 @@
     background-position: center;
     height: 180px;
     z-index: -10000;
-    
 }
-
-

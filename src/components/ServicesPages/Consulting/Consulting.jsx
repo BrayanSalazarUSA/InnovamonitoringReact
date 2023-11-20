@@ -1,11 +1,10 @@
 import React from "react";
-import consulting from "../../../assets/images/asesoria.webp";
+import consulting from "../../../assets/images/ServicesPages/Consulting/asesoria.webp";
 import Navbar from "../../Navbar/Navbar";
 import Footer from "../../Footer/Footer";
 import { Link } from "react-router-dom";
 import { Button2 } from "../../button/button";
 import { useTranslation } from "react-i18next";
-import imagen from "../../../assets/images/monitoring_images_page.jpg";
 import CTA from "../../CTA/CTA";
 const Consulting = () => {
   const [t, i18n] = useTranslation("global");

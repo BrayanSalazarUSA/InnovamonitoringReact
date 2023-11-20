@@ -10,6 +10,7 @@ import Consulting from "./components/ServicesPages/Consulting/Consulting";
 import MonitoringService from "./components/ServicesPages/MonitoringServices/MonitoringServices";
 import Dashboard from "./Dashboard/Dashboard";
 import Support from "./pages/Support/Support";
+import NotFound from "./pages/NotFound/Notfound";
 
 //theme
 import "primereact/resources/themes/lara-light-indigo/theme.css";
@@ -38,16 +39,13 @@ import { UserContext } from "./context/UserContext";
 import { useContext } from "react";
 import PieLevels from "./Dashboard/pages/Charts/PieLevels";
 import { Properties } from "./Dashboard/pages/Properties";
+
 function App() {
 
   const {userLogged} = useContext(UserContext);
-  
-
   return (
     <>
       <BrowserRouter>
-       
-          
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path={"/services"} element={<Features />} />
@@ -59,6 +57,8 @@ function App() {
             <Route path={"/installations"} element={<Installation />} />
             <Route path={"/consulting"} element={<Consulting />} />
             <Route path={"/support"} element={<Support />} />
+            <Route path={"/notfound"} element={<NotFound />} />
+            <Route path="*" element={<NotFound/>}/>
             <Route path={"/dashboard"} element={userLogged ? <Dashboard /> : <Login />}>
               {/* Dashboard */}
                <Route path="/dashboard" element={<Ecommerce />} />
@@ -72,6 +72,7 @@ function App() {
               <Route path="/dashboard/Agents" element={<Agents />} />
               <Route path="/dashboard/Cases" element={<Cases />} />
               <Route path="/dashboard/properties" element={<Properties />} />
+
               {/* Charts */}
               <Route path="/dashboard/line" element={<Line />} />
            
@@ -89,7 +90,6 @@ function App() {
               />
             </Route>
           </Routes>
-     
       </BrowserRouter>
     </>
   );

@@ -40,6 +40,13 @@ const Contact = () => {
                 </h2>
                 <p class="text-gray-700 mb-9 text-base leading-relaxed py-0">
                 {t("Contact.desc")}
+                
+                  <a
+                    href="http://localhost:3000/plan"
+                    className="text-yellow-600 focus:outline-none focus:underline hover:underline"
+                  >
+                    {t("Contact.click_here")}
+                  </a>
                 </p>
                 <div class="mb-8 flex w-full max-w-[370px]">
                   <div class="bg-yellow-600 text-primary mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded bg-opacity-5 sm:h-[70px] sm:max-w-[70px]">

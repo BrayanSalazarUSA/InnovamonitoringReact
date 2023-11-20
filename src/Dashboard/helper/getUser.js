@@ -27,7 +27,7 @@ export const getUser = async(user) => {
    }
 
     if(resp.status == 404){
-     
+
       Swal.fire({
         icon: 'error',
         title: 'Credentials error',

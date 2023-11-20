@@ -44,7 +44,7 @@ module.exports = {
         'hero-pattern':
         "url('http://www.pixelstalk.net/wp-content/uploads/2016/06/Light-Blue-Wallpaper-Backgrounds-Free-Download.jpg')",
         'hero-magnolia':
-        "url('/src/assets/images/securityImages.jpg')",
+        "url('assets/images/Index/AboutUs/securityImages.jpg')",
       },
     },
   },

@@ -1,4 +1,5 @@
 import React, { useContext, useRef } from "react";
+import { useTranslation } from "react-i18next";
 import {
   AiOutlineShoppingCart,
   AiOutlineAreaChart,
@@ -67,6 +68,7 @@ import { SiDialogflow } from "react-icons/si";
 import { getAgents } from "../helper/getAgents";
 import { postNewAgent } from "../helper/postNewAgent";
 import { postIncident } from "../helper/postIncident";
+
 
 export const gridOrderImage = (props) => (
   <div>
@@ -5801,7 +5803,9 @@ export const cameraGridAdmin = [
 
 ];
 let Permission = true;
+
 export const links = [
+  
   {
     title: "Dashboard",
     links: [
