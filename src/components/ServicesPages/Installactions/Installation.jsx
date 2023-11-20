@@ -21,8 +21,7 @@ import EZ_Station from "../../../assets/images/Logos/EZ_Station.jpeg";
 import OpenEye from "../../../assets/images/Logos/OpenEye.webp";
 import smartPSS from "../../../assets/images/Logos/smartPSS.jpg";
 import vms from "../../../assets/images/Logos/vms.png";
-import techTeam from "../../../assets/images/tech-team.jpg";
-import support from "../../../assets/images/support_image.jpg";
+import techTeam from "../../../assets/images/ServicesPages/Installation/tech-team.jpg";
 import { useTranslation } from "react-i18next";
 import CTA from "../../CTA/CTA";
 

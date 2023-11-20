@@ -1,19 +1,16 @@
 import "./MonitoringPage.css";
 import { useState } from "react";
 import { Button, Button2 } from "../../button/button";
-import monitoring from "../../../assets/medellin.jpg";
+import monitoring from "../../../assets/images/ServicesPages/MonitoringServices/medellin.jpg";
 import Navbar from "../../Navbar/Navbar";
-import garbage from "../../../assets/images/monitoring-garbage.jpg";
+import garbage from "../../../assets/images/ServicesPages/MonitoringServices/monitoring-garbage.jpg";
 import { HiDocumentReport } from "react-icons/hi";
 import InfoMonitoring from "../../InfoMonitoring/InfoMonitoring";
-import report1 from "../../../assets/report1.png";
-import factory from "../../../assets/images/monitoring-factory.jpg";
-
-import building from "../../../assets/images/monitoring-building.webp";
-import fire from "../../../assets/images/monitoring-fire.jpg";
+import report1 from "../../../assets/images/ServicesPages/MonitoringServices/report1.png";
+import factory from "../../../assets/images/ServicesPages/MonitoringServices/monitoring-factory.jpg";
+import building from "../../../assets/images/ServicesPages/MonitoringServices/monitoring-building.webp";
+import fire from "../../../assets/images/ServicesPages/MonitoringServices/monitoring-fire.jpg";
 import incident2 from "../../../assets/images/ServicesPages/MonitoringServices/incident2.jpg";
-import incident3 from "../../../assets/incident3.png";
-
 import Footer from "../../Footer/Footer";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";

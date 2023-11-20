@@ -2,7 +2,7 @@ import React from "react";
 import { MultiStepForm } from "../MultiStepForm/MultiStepForm";
 import Footer from "../Footer/Footer";
 import Navbar from "../Navbar/Navbar";
-import contract from "../../assets/images/contract.jpg"
+import contract from "../../assets/images/Components/FormPage/contract.jpg"
 import { FormProvider } from "../../context/FormProvide";
 import { useTranslation } from "react-i18next";
 export const FormPage = () => {

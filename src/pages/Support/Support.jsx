@@ -1,7 +1,7 @@
 import React from "react";
 import { Button, Button2 } from "../../components/button/button";
 import "./Support.css";
-import support from "../../assets/images/support_image.jpg";
+import support from "../../assets/images/Pages/Support/support.png";
 import Navbar from "../../components/Navbar/Navbar";
 import Reveal from "react-reveal/Reveal";
 import { Link } from "react-router-dom";
@@ -20,7 +20,7 @@ const Support = () => {
               <div className="lg:order-2 2xl:-mr-24 support-image">
                 <img
                   class="w-full"
-                  src="https://tecnosoluciones.com/wp-content/uploads/2023/02/soporte-remoto.png"
+                  src={support}
                   alt=""
                 />
               </div>

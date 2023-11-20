@@ -6,7 +6,7 @@ import { getUser } from "../../Dashboard/helper/getUser";
 import { UserContext } from "../../context/UserContext";
 import "./Login.css";
 import dasboardImage from "../../Dashboard/data/dashboardImage.webp";
-import logo from "../../assets/innova-monitoring.png";
+import logo from "../../assets/images/Logos/innova-monitoring.png";
 import Swal from "sweetalert2";
 
 

@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../../assets/innova-monitoring.png";
+import logo from "../../assets/images/Logos/innova-monitoring.png";
 import { TooltipComponent } from "@syncfusion/ej2-react-popups";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";

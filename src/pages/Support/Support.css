@@ -1,4 +1,9 @@
 .suport-image{
-    position: relative;
-    z-index:-1;
+     background-blend-mode: overlay;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 100;
+   position: relative;
+    
 }

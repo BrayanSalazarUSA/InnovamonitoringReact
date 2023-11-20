@@ -7,7 +7,7 @@ import ReactWhatsapp from "react-whatsapp";
 import Navbar from "../../components/Navbar/Navbar";
 import { Button, Button2 } from "../../components/button/button";
 import "./Header.css";
-import logo from "../../assets/innova-monitoring-removebg-preview.jpg";
+import logo from "../../assets/images/Pages/Header/innova-monitoring-removebg-preview.jpg";
 import Fade from "react-reveal/Fade";
 
 const style1 = {

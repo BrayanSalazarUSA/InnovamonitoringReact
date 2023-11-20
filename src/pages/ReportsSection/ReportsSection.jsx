@@ -1,8 +1,8 @@
 import React from "react";
 import Face from "react-reveal/Fade";
-import report1 from "../../assets/images/Index/ReportSection/incident.png";
-import weapon from "../../assets/images/Index/ReportSection/incident2.jpg";
-import Report3 from "../../assets/images/Index/ReportSection/Report3.jpg";
+import report1 from "../../assets/images/Pages/ReportSection/incident.png";
+import weapon from "../../assets/images/Pages/ReportSection/incident2.jpg";
+import Report3 from "../../assets/images/Pages/ReportSection/Report3.jpg";
 import { Button, Button2 } from "../../components/button/button";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";

@@ -4,9 +4,9 @@ import { useTranslation } from "react-i18next";
 import Face from "react-reveal/Fade";
 import { Button, Button2 } from "../../components/button/button";
 import "./Services.css";
-import consulting from "../../assets/images/Index/featuredServices/asesoria.jpg";
-import instalation from "../../assets/images/Index/featuredServices/cameras_instalation.jpg";
-import monitoring from "../../assets/images/Index/featuredServices/monitoring_images.jpg";
+import consulting from "../../assets/images/Pages/featuredServices/asesoria.jpg";
+import instalation from "../../assets/images/Pages/featuredServices/cameras_instalation.jpg";
+import monitoring from "../../assets/images/Pages/featuredServices/monitoring_images.jpg";
 const Services = () => {
   const navigate = useNavigate();
   const [t, i18n] = useTranslation("global");

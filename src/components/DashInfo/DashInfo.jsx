@@ -1,5 +1,5 @@
 import React from "react";
-import dashboardImage from "../../assets/Dashboard2.png";
+import dashboardImage from "../../assets/images/Components/DashInfo/Dashboard2.png";
 import {
   CloudArrowUpIcon,
   LockClosedIcon,

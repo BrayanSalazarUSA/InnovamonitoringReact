@@ -2,7 +2,7 @@ import React from "react";
 import { Button2 } from "../button/button";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import imagen from "../../assets/images/monitoring_images_page.jpg";
+import imagen from "../../assets/images/Components/CTA/monitoring_images_page.jpg";
 const CTA = ({url}) => {
   const [t, i18n] = useTranslation("global");
   return (

@@ -4,8 +4,6 @@ import Navbar from "../../components/Navbar/Navbar";
 import Features from "../../components/Culture/Culture";
 import Reveal from "react-reveal/Reveal";
 import Fade from "react-reveal/Fade";
-import imagen from "../../assets/images/monitoring_images_page.jpg";
-
 import { Button2 } from "../../components/button/button";
 import { Link } from "react-router-dom";
 import Footer from "../../components/Footer/Footer";

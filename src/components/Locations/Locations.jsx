@@ -2,8 +2,8 @@ import React from "react";
 import Fade from "react-reveal/Fade";
 import { Button2 } from "../button/button";
 import "./Locations.css";
-import medellinImg from "../../assets/images/medellin-locations.jpg";
-import floridaImg from "../../assets/images/florida-locations.jpg";
+import medellinImg from "../../assets/images/Components/Locations/medellin.jpg";
+import floridaImg from "../../assets/images/Components/Locations/florida-locations.jpg";
 
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";

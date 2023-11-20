@@ -1,7 +1,7 @@
 import React from "react";
 import "./About.css";
 import { Button, Button2 } from "../button/button";
-import logo from "../../assets/innova-monitoring.png";
+import logo from "../../assets/images/Logos/innova-monitoring.png";
 import Fade from "react-reveal/Fade";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
