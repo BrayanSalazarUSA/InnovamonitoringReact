@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import imagen from "../../assets/images/Components/CTA/monitoring_images_page.jpg";
 const CTA = ({url}) => {
-  const [t, i18n] = useTranslation("global");
+  const [t] = useTranslation("global");
   return (
     <section class="bg-white dark:bg-gray-700">
     <div class="container px-6 py-16 mx-auto text-center">

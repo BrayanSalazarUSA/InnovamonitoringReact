@@ -3,12 +3,12 @@ import Face from "react-reveal/Fade";
 import report1 from "../../assets/images/Pages/ReportSection/incident.png";
 import weapon from "../../assets/images/Pages/ReportSection/incident2.jpg";
 import Report3 from "../../assets/images/Pages/ReportSection/Report3.jpg";
-import { Button, Button2 } from "../../components/button/button";
+import { Button2 } from "../../components/button/button";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
 const ReportsSection = () => {
-  const [t, i18n] = useTranslation("global");
+  const [t] = useTranslation("global");
   return (
     <>
       <section className="my-20 w-full h-auto py-12 md:flex justify-center items-center logo-side">

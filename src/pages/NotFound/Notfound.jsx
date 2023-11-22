@@ -5,22 +5,22 @@ import { useTranslation } from "react-i18next";
 import "../NotFound/NotFound.css";
 
 const NotFound = () =>{
-    const [t, i18n] = useTranslation("global");
+    const [t] = useTranslation("global");
     return(
     <>
         <Navbar efecto="efecto2"></Navbar>
-        <section class="section">
+        <section className="section">
                 <div className="container px-4 py-20 mx-auto r mb-80">
-                            <h1 class="titulo">{t("not_found.tittle")}</h1>
-                            <div class="mt-2">
-                                <span class="inline-block w-80 h-2 bg-yellow-600 rounded-full"></span>
-                                <span class="inline-block w-11 h-2 ml-1 bg-yellow-600 rounded-full"></span>
-                                <span class="inline-block w-9 h-2 ml-1 bg-yellow-600 rounded-full"></span>
+                            <h1 className="titulo"> {t("not_found.tittle")}</h1>
+                            <div className="mt-2">
+                                <span className="inline-block w-80 h-2 bg-yellow-600 rounded-full"></span>
+                                <span className="inline-block w-11 h-2 ml-1 bg-yellow-600 rounded-full"></span>
+                                <span className="inline-block w-9 h-2 ml-1 bg-yellow-600 rounded-full"></span>
                             </div>
-                            <p class="paragraph">{t("not_found.paragraph")}</p>
-                            <p class="paragraph">{t("not_found.paragraph1")}</p>
+                            <p className="paragraph">{t("not_found.paragraph")}</p>
+                            <p className="paragraph">{t("not_found.paragraph1")}</p>
                             <a href="http://localhost:3000/">
-                                <p class="paragraph2 ">{t("not_found.paragraph2")}</p>
+                                <p className="paragraph2 ">{t("not_found.paragraph2")}</p>
                             </a> 
                 </div>
         </section>

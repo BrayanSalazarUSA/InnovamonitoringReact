@@ -10,6 +10,7 @@ import Consulting from "./components/ServicesPages/Consulting/Consulting";
 import MonitoringService from "./components/ServicesPages/MonitoringServices/MonitoringServices";
 import Dashboard from "./Dashboard/Dashboard";
 import Support from "./pages/Support/Support";
+import Achievements from "./pages/Achievements/Achievements";
 import NotFound from "./pages/NotFound/Notfound";
 
 //theme
@@ -58,6 +59,7 @@ function App() {
             <Route path={"/consulting"} element={<Consulting />} />
             <Route path={"/support"} element={<Support />} />
             <Route path={"/notfound"} element={<NotFound />} />
+            <Route path={"/achievements"} element={<Achievements />} />
             <Route path="*" element={<NotFound/>}/>
             <Route path={"/dashboard"} element={userLogged ? <Dashboard /> : <Login />}>
               {/* Dashboard */}

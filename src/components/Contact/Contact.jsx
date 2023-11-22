@@ -9,7 +9,7 @@ import { useTranslation } from "react-i18next";
 const Contact = () => {
 
   const refForm = useRef();
-  const [t, i18n] = useTranslation("global");
+  const [t] = useTranslation("global");
 
   const serviceId = "service_4j6ulup";
   const templateId = "template_mgdlvbj";

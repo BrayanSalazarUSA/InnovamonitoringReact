@@ -2,12 +2,9 @@
 module.exports = {
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
-  ],darkMode: 'class',
+  ],
+  darkMode: 'class',
   theme: {
-    fontFamily: {
-      display: ['Open Sans', 'sans-serif'],
-      body: ['Open Sans', 'sans-serif'],
-    },
     extend: {
       fontSize: {
         14: '14px',
@@ -46,6 +43,10 @@ module.exports = {
         'hero-magnolia':
         "url('/src/assets/images/Components/About/securityImages.jpg')"
       },
+    },
+    fontFamily: {
+      display: ['Open Sans', 'sans-serif'],
+      body: ['Open Sans', 'sans-serif'],
     },
   },
   plugins: [],

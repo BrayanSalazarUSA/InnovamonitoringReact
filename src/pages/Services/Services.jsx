@@ -1,15 +1,14 @@
 import React from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import Face from "react-reveal/Fade";
-import { Button, Button2 } from "../../components/button/button";
+import {  Button2 } from "../../components/button/button";
 import "./Services.css";
 import consulting from "../../assets/images/Pages/featuredServices/asesoria.jpg";
 import instalation from "../../assets/images/Pages/featuredServices/cameras_instalation.jpg";
 import monitoring from "../../assets/images/Pages/featuredServices/monitoring_images.jpg";
 const Services = () => {
-  const navigate = useNavigate();
-  const [t, i18n] = useTranslation("global");
+  const [t] = useTranslation("global");
 
 
   return (

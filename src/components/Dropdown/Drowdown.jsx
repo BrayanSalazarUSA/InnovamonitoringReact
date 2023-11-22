@@ -2,17 +2,14 @@ import { Fragment } from "react";
 import { Menu, Transition } from "@headlessui/react";
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
 import { MdSecurity } from "react-icons/md";
-import { MdOutlineHandshake } from "react-icons/md";
 import { TbDeviceCctv } from "react-icons/tb";
 import { Link } from "react-router-dom";
 import { GrTechnology } from "react-icons/gr";
 import { useTranslation } from "react-i18next";
-function classNames(...classes) {
-  return classes.filter(Boolean).join(" ");
-}
+
 
 export default function Dropdown({ TextColor = "text-gray-300", efecto = "efecto1" }) {
-  const [t, i18n] = useTranslation("global");
+  const [t] = useTranslation("global");
   return (
     <Menu as="div" className="z-50  inline-block text-left">
       <div>

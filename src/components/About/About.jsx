@@ -1,13 +1,13 @@
 import React from "react";
 import "./About.css";
-import { Button, Button2 } from "../button/button";
+import { Button2 } from "../button/button";
 import logo from "../../assets/images/Logos/innova-monitoring.png";
 import Fade from "react-reveal/Fade";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+ 
 const About = () => {
-
-  const [t, i18n] = useTranslation("global");
+  const [t] = useTranslation("global");
   return (
     <>
       <section className="mt-20 w-full h-auto about lg:flex justify-center items-center py-12">
