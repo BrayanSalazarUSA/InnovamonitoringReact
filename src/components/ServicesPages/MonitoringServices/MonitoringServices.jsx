@@ -113,23 +113,23 @@ export default function MonitoringService() {
           </div>
         </div>
 
-        <div class="px-4 py-24 sm:py-20 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-36">
-          <div class="grid grid-cols-2 row-gap-8 md:grid-cols-3">
-            <div class="text-center md:border-r">
-              <h6 class="flex flex-row mt-3 justify-center text-4xl font-bold lg:text-5xl xl:text-6xl">+<Number n={900} /></h6>
-              <p class="text-sm font-medium tracking-widest text-gray-700 uppercase lg:text-base">
+        <div className="px-4 py-24 sm:py-20 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-36">
+          <div className="grid grid-cols-2 row-gap-8 md:grid-cols-3">
+            <div className="text-center md:border-r">
+              <h6 className="flex flex-row mt-3 justify-center text-4xl font-bold lg:text-5xl xl:text-6xl">+<Number n={900} /></h6>
+              <p className="text-sm font-medium tracking-widest text-gray-700 uppercase lg:text-base">
                 {t("Monitoring.reportsNum")}S
               </p>
             </div>
-            <div class="text-center md:border-r">
-              <h6 class=" flex flex-row mt-3 justify-center text-4xl font-bold lg:text-5xl xl:text-6xl">+<Number n={800} /></h6>
-              <p class="text-sm font-medium tracking-widest text-gray-700 uppercase lg:text-base">
+            <div className="text-center md:border-r">
+              <h6 className=" flex flex-row mt-3 justify-center text-4xl font-bold lg:text-5xl xl:text-6xl">+<Number n={800} /></h6>
+              <p className="text-sm font-medium tracking-widest text-gray-700 uppercase lg:text-base">
                 {t("Monitoring.camerasNum")}
               </p>
             </div>
-            <div class="text-center md:border-r">
-              <h6 class="flex flex-row mt-3 justify-center  items-end text-4xl font-bold lg:text-5xl xl:text-6xl"><Number n={24} />h/<Number n={7} /></h6>
-              <p class="text-sm font-medium tracking-widest text-gray-700 uppercase lg:text-base">
+            <div className="text-center md:border-r">
+              <h6 className="flex flex-row mt-3 justify-center  items-end text-4xl font-bold lg:text-5xl xl:text-6xl"><Number n={24} />h/<Number n={7} /></h6>
+              <p className="text-sm font-medium tracking-widest text-gray-700 uppercase lg:text-base">
                 {t("Monitoring.monitoringTime")}
               </p>
             </div>
@@ -137,53 +137,53 @@ export default function MonitoringService() {
         </div>
         <InfoMonitoring></InfoMonitoring>
 
-        <div class="container mx-auto px-5 py-2 lg:px-40 lg:pt-12">
+        <div className="container mx-auto px-5 py-2 lg:px-40 lg:pt-12">
           {/* <p className="text-center text-3xl font-bold tracking-tight text-gray-700 sm:text-4xl py-7">
             SOME INCIDENTES REPORTED
           </p> */}
-          <div class="-m-1 flex flex-wrap md:-m-2">
-            <div class="flex w-1/2 flex-wrap">
-              <div class="w-1/2 p-1 md:p-2">
+          <div className="-m-1 flex flex-wrap md:-m-2">
+            <div className="flex w-1/2 flex-wrap">
+              <div className="w-1/2 p-1 md:p-2">
                 <img
                   alt="gallery"
-                  class="block h-full w-full rounded-lg object-cover object-center"
+                  className="block h-full w-full rounded-lg object-cover object-center"
                   src={report1}
                 />
               </div>
-              <div class="w-1/2 p-1 md:p-2">
+              <div className="w-1/2 p-1 md:p-2">
                 <img
                   alt="gallery"
-                  class="block h-full w-full rounded-lg object-cover object-center"
+                  className="block h-full w-full rounded-lg object-cover object-center"
                   src={incident2}
                 />
               </div>
-              <div class="w-full p-1 md:p-2">
+              <div className="w-full p-1 md:p-2">
                 <img
                   alt="gallery"
-                  class="block h-full w-full rounded-lg object-cover object-center"
+                  className="block h-full w-full rounded-lg object-cover object-center"
                   src={factory}
                 />
               </div>
             </div>
-            <div class="flex w-1/2 flex-wrap">
-              <div class="w-full p-1 md:p-2">
+            <div className="flex w-1/2 flex-wrap">
+              <div className="w-full p-1 md:p-2">
                 <img
                   alt="gallery"
-                  class="block h-full w-full rounded-lg object-cover object-center"
+                  className="block h-full w-full rounded-lg object-cover object-center"
                   src={building}
                 />
               </div>
-              <div class="w-1/2 p-1 md:p-2">
+              <div className="w-1/2 p-1 md:p-2">
                 <img
                   alt="gallery"
-                  class="block h-full w-full rounded-lg object-cover object-center"
+                  className="block h-full w-full rounded-lg object-cover object-center"
                   src={fire}
                 />
               </div>
-              <div class="w-1/2 p-1 md:p-2">
+              <div className="w-1/2 p-1 md:p-2">
                 <img
                   alt="gallery"
-                  class="block h-full w-full rounded-lg object-cover object-center"
+                  className="block h-full w-full rounded-lg object-cover object-center"
                   src={garbage}
                 />
               </div>
@@ -191,7 +191,7 @@ export default function MonitoringService() {
           </div>
         </div>
 
-        <CTA url="/plan"></CTA>
+        <CTA></CTA>
         <Footer></Footer>
       </div>
     </>

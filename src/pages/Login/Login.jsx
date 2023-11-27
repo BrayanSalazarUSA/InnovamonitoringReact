@@ -85,37 +85,37 @@ const Login = () => {
   return (
     <>
       <Navbar efecto="efecto2"></Navbar>
-      <div class="bg-white my-8">
-        <div class="flex justify-center h-screen">
-          <div class="hidden bg-cover lg:block lg:w-3/5" style={style1}>
-            <div class="flex items-center h-full px-20 ">
+      <div className="bg-white my-8">
+        <div className="flex justify-center h-screen">
+          <div className="hidden bg-cover lg:block lg:w-3/5" style={style1}>
+            <div className="flex items-center h-full px-20 ">
               <div>
               <p className=" text-3xl font-bold tracking-tight text-yellow-600 sm:text-4xl">
                 IDS - Innova Dashboard System
               </p>
           
-                <p class="max-w-xl mt-3 text-gray-300">{t("login.text")}</p>
+                <p className="max-w-xl mt-3 text-gray-300">{t("login.text")}</p>
               </div>
             </div>
           </div>
 
-          <div class="flex items-center w-full max-w-md px-6 mx-auto lg:w-2/6">
-            <div class="flex-1">
-              <div class="text-center">
-                <div class="flex justify-center mx-auto">
-                  <img class="h-52 w-52" src={logo} alt="" />
+          <div className="flex items-center w-full max-w-md px-6 mx-auto lg:w-2/6">
+            <div className="flex-1">
+              <div className="text-center">
+                <div className="flex justify-center mx-auto">
+                  <img className="h-52 w-52" src={logo} alt="Innova Monitoring" />
                 </div>
-                <p class="mt-3 text-gray-500 p-0">
+                <p className="mt-3 text-gray-500 p-0">
                   {t("login.header_sign_in")}
                 </p>
               </div>
 
-              <div class="mt-8">
+              <div className="mt-8">
                 <form>
                   <div>
                     <label
                       for="email"
-                      class="block mb-2 text-sm text-gray-600 "
+                      className="block mb-2 text-sm text-gray-600 "
                     >
                       {t("login.email")}
                     </label>
@@ -127,19 +127,18 @@ const Login = () => {
                       value={email}
                       required
                       onChange={(e) => setEmail(e.target.value)}
-                      class="block w-full px-4 py-2 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-lg  focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
+                      className="block w-full px-4 py-2 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-lg  focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
                     />
                   </div>
 
-                  <div class="mt-6">
-                    <div class="flex justify-between mb-2">
-                      <label for="password" class="text-sm text-gray-600 ">
+                  <div className="mt-6">
+                    <div className="flex justify-between mb-2">
+                      <label for="password" className="text-sm text-gray-600 ">
                         {t("login.password")}
                       </label>
                       <p
-
                         href="#"
-                        class="text-sm text-gray-400 focus:text-blue-500 hover:text-blue-500 hover:underline"
+                        className="text-sm text-gray-400 focus:text-blue-500 hover:text-blue-500 hover:underline"
                       >
                        {t("login.forgot_password")}
                       </p>
@@ -153,28 +152,28 @@ const Login = () => {
                       value={password}
                       required
                       onChange={(e) => setPassword(e.target.value)}
-                      class="block w-full px-4 py-2 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-lg  focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
+                      className="block w-full px-4 py-2 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-lg  focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
                     />
                   </div>
 
                   {error && (
-                    <>
-                      <div class="mt-6 text-red-700">{t("login.required_fields")}</div>
-                    </>
+                   
+                      <div className="mt-6 text-red-700">{t("login.required_fields")}</div>
+                   
                   )}
 
-                  <div class="mt-6">
+                  <div className="mt-6">
                     <button
                       type="submit"
                       onClick={handleOnSubmit}
-                      class="w-full px-4  py-2 tracking-wide text-white transition-colors duration-300 transform bg-yellow-600 rounded-lg hover:bg-blue-400 focus:outline-none focus:bg-blue-400 focus:ring focus:ring-blue-300 focus:ring-opacity-50"
+                      className="w-full px-4  py-2 tracking-wide text-white transition-colors duration-300 transform bg-yellow-600 rounded-lg hover:bg-blue-400 focus:outline-none focus:bg-blue-400 focus:ring focus:ring-blue-300 focus:ring-opacity-50"
                     >
                       {t("login.sign_in")}
                     </button>
                   </div>
                 </form>
 
-                <p class="mt-6 text-sm text-center text-gray-400">
+                <p className="mt-6 text-sm text-center text-gray-400">
                   {t("login.acount_yet")}
                  <br></br>
                   <a

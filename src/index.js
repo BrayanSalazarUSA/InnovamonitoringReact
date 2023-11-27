@@ -11,8 +11,7 @@ import { ThemeProvider } from "@material-ui/core/styles";
 import { createMuiTheme } from "@material-ui/core";
 import { UserProvider } from "./context/UserProvider";
 
-var idioma = navigator.language || navigator.userLanguage;
-
+const idioma = navigator.language || navigator.userLanguage;
 
 i18next.init({
   

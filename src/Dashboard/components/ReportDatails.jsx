@@ -102,7 +102,6 @@ export const ReportDatails = () => {
   });
 
   return (
-    <>
       <div className="m-20 md:m-10  md:p-0 bg-white rounded-3xl">
         {/*  <Header category="Report" title="Narcotics Consumption - #3345" /> */}
         <div>
@@ -362,7 +361,7 @@ export const ReportDatails = () => {
           </h2>
         </div>
         <hr />
-        <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
+        <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
           
           {
             dataVideos?.map( video => (
@@ -423,6 +422,6 @@ export const ReportDatails = () => {
           items={images?.length > 0 ? dataImages : noImages}
         />
       </div>
-    </>
+   
   );
 };

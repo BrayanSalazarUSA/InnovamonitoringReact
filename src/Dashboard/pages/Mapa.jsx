@@ -171,9 +171,9 @@ export const Mapa = () => {
                   className=" flex justify-center items-center"
                   autoPan={false}
                 >
-                  <div class="w-full flex flex-col m-0 p-0 items-center">
+                  <div className="w-full flex flex-col m-0 p-0 items-center">
                     <img
-                      class="w-full"
+                      className="w-full"
                       src={
                         element.EmployeeImage ||
                         offile
@@ -181,7 +181,7 @@ export const Mapa = () => {
                       alt="Sunset in the mountains"
                     />
 
-                    <p class="font-normal m-0 p-0 text-gray-300">
+                    <p className="font-normal m-0 p-0 text-gray-300">
                       {camera.name}
                     </p>
                   </div>

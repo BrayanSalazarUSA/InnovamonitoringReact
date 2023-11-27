@@ -3,36 +3,13 @@ import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { FloatingWhatsApp } from "react-floating-whatsapp";
 import ReactWhatsapp from "react-whatsapp";
-
 import Navbar from "../../components/Navbar/Navbar";
 import { Button, Button2 } from "../../components/button/button";
 import "./Header.css";
 import logo from "../../assets/images/Pages/Header/innova-monitoring-removebg-preview.jpg";
 import Fade from "react-reveal/Fade";
-
-const style1 = {
-  position: "absolute",
-  bottom: 0,
-  width: "100%",
-  height: "40px",
-  overflow: "hidden",
-};
-const style2 = {
-  height: "100%",
-  width: "100%",
-};
-const style3 = {
-  stroke: "none",
-  fill: "#fff",
-};
-
-const button2 = {
-  background: "#b785074f",
-  color: "#B78607",
-};
-
 const Header = () => {
-  const [t, i18n] = useTranslation("global");
+  const [t,] = useTranslation("global");
 
   return (
     <>

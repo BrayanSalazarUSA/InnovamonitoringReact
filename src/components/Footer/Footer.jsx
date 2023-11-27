@@ -44,7 +44,6 @@ const Footer = () => {
               <ul>
                 <li>
                   <Link
-                    reloadDocument
                     to={"/support"}
                     className="efecto-basic efecto2 text-body-color hover:text-primary mb-2 inline-block text-base leading-loose"
                   >
@@ -53,7 +52,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link
-                    reloadDocument
+                    
                     to={"/login"}
                     className="efecto-basic efecto2 text-body-color hover:text-primary mb-2 inline-block text-base leading-loose">
                     {t("footer.dashboard")}
@@ -62,7 +61,7 @@ const Footer = () => {
 
                 <li>
                   <Link
-                  reloadDocument
+                  
                     to={"/support"}
                     className="efecto-basic efecto2 text-body-color hover:text-primary mb-2 inline-block text-base leading-loose"
                   >  
@@ -78,7 +77,7 @@ const Footer = () => {
               <ul>
                 <li>
                   <Link
-                    reloadDocument
+                    
                     to={"/about"}
                     className="efecto-basic efecto2 text-body-color hover:text-primary mb-2 inline-block text-base leading-loose"
                   >
@@ -87,7 +86,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link
-                    reloadDocument
+                    
                     to={"/monitoring"}
                     className="efecto-basic efecto2 text-body-color hover:text-primary mb-2 inline-block text-base leading-loose"
                   >
@@ -96,16 +95,16 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link
-                    reloadDocument
+                    
                     to={"/contact"}
-                    class="efecto-basic efecto2 text-body-color hover:text-primary mb-2 inline-block text-base leading-loose"
+                    className="efecto-basic efecto2 text-body-color hover:text-primary mb-2 inline-block text-base leading-loose"
                   >
                     {t("footer.contact")}
                   </Link>
                 </li>
                 <li>
                   <Link
-                    reloadDocument
+                    
                     to={"/achievements"}
                     className="efecto-basic efecto2 text-body-color hover:text-primary mb-2 inline-block text-base leading-loose"
                   >
@@ -129,7 +128,7 @@ const Footer = () => {
               <ul>
                 <li>
                   <Link
-                    reloadDocument
+                    
                     to={"/monitoring"}
                     className="efecto-basic efecto2 text-body-color hover:text-primary mb-2 inline-block text-base leading-loose"
                   >
@@ -138,7 +137,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link
-                    reloadDocument
+                    
                     to={"/installations"}
                     className="efecto-basic efecto2 text-body-color hover:text-primary mb-2 inline-block text-base leading-loose"
                   >
@@ -147,7 +146,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link
-                    reloadDocument
+                    
                     to={"/consulting"}
                     className="efecto-basic efecto2 text-body-color hover:text-primary mb-2 inline-block text-base leading-loose"
                   >
@@ -156,9 +155,9 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link
-                    reloadDocument
+                    
                     to={"/login"}
-                    class="efecto-basic efecto2 text-body-color hover:text-primary mb-2 inline-block text-base leading-loose"
+                    className="efecto-basic efecto2 text-body-color hover:text-primary mb-2 inline-block text-base leading-loose"
                   >
                     {t("footer.DataCenter")}
                   </Link>

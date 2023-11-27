@@ -42,7 +42,8 @@
     "secondTitle": "SECOND OPERATIONS CENTER",
     "secondDesc": "Our secondary location is an strength to our Main office providing continued support for all clients worldwide.",
     "schedule": "Schedule a Tour Now",
-    "south_florida": "South Florida"
+    "south_florida": "South Florida",
+    "Medellin_Col": "Medellin, Colombia"
   },
   "team": {
     "title": "ABOUT US",
@@ -291,6 +292,14 @@
     "tittle": "404 - Page not found",
     "paragraph": "This page ",
     "paragraph1": "is in limbo",
+    "middle": "",
     "paragraph2": "Click here to back!"
+  },
+
+  "achievments":{
+    "tittle": "Recognitions and achievements",
+    "paragraph": "Innova Monitoring takes pride in its distinguished achievements and recognitions, showcasing a rich history of collaboration with esteemed security entities such as the DEA and FBI. Our commitment to excellence has earned us commendation from law enforcement agencies. Explore our awards and milestones, a testament to our unwavering dedication to cutting-edge security solutions.",
+    "paragraph2": "Empowering law enforcement, our collaborative efforts with police entities have been instrumental in enhancing security measures. Together, we've achieved milestones in creating safer communities through cutting-edge solutions and strategic partnerships",
+    "tittle_carrousel": "Entities with which we have collaborated:"
   }
 }

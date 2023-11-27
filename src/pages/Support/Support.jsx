@@ -3,6 +3,7 @@ import { Button2 } from "../../components/button/button";
 import "./Support.css";
 import support from "../../assets/images/Pages/Support/support.png";
 import Navbar from "../../components/Navbar/Navbar";
+import Reveal from "react-reveal/Reveal";
 import { Link } from "react-router-dom";
 import Fade from "react-reveal/Fade";
 import Footer from "../../components/Footer/Footer";
@@ -22,7 +23,7 @@ const Support = () => {
                   <img className="w-full" src={support} alt="support"/>
                 </div>
               </Fade>
-             
+             <Reveal>
               <div className="lg:order-1">
                 <p className="inline-block px-1 py-px mb-4 text-xs font-semibold tracking-wider text-yellow-600 uppercase rounded-full bg-teal-accent-400">
                   {t("support1.prev")}
@@ -154,11 +155,12 @@ const Support = () => {
                   to={
                     "https://assist.innovatechcorp.net/login/join.jsp?language=es"
                   }
-                  class="flex flex-col items-start mt-8 sm:space-x-4 sm:flex-row sm:items-center lg:mt-12"
+                  className="flex flex-col items-start mt-8 sm:space-x-4 sm:flex-row sm:items-center lg:mt-12"
                 >
                   <Button2 text="buttons.talk"></Button2>
                 </Link>
               </div>
+              </Reveal>
             </div>
           </div>
         </div>

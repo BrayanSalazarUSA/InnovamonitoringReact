@@ -40,7 +40,8 @@
     "secondTitle": "SEGUNDO CENTRO DE OPERACIONES",
     "secondDesc": "¡Nuestra sede secundaria es un punto fuerte de nuestra oficina principal que ofrece asistencia continua a todos los clientes del mundo.",
     "schedule": "¡Programa un recorrido!",
-    "south_florida": "Florida del Sur"
+    "south_florida": "Florida del Sur",
+    "Medellin_Col": "Medellin, Colombia"
   },
   "team": {
     "title": "SOBRE NOSOTROS",
@@ -283,8 +284,15 @@
   },
     "not_found": {
       "tittle": "404 - Pagina no encontrada",
-      "paragraph": "Esta pagina esta en medio",
-      "paragraph1": "del limbo.",
+      "paragraph": "Esta pagina esta en",
+      "middle": "medio",
+      "paragraph1": "el limbo.",
       "paragraph2": "¡Click aqui para volver!"
-    }
+    },
+  "achievments": {
+    "tittle": "Reconocimientos y logros",
+    "paragraph": "Innova Monitoring se enorgullece de sus distinguidos logros y reconocimientos, exhibiendo una rica historia de colaboración con prestigiosas entidades de seguridad como la DEA y el FBI. Nuestro compromiso con la excelencia nos ha valido el reconocimiento de agencias de aplicación de la ley. Explore nuestros premios y hitos, un testimonio de nuestra dedicación inquebrantable a soluciones de seguridad de vanguardia.",
+    "paragraph2": "Al empoderar a las fuerzas del orden, nuestros esfuerzos de colaboración con las entidades policiales han sido fundamentales para mejorar las medidas de seguridad. Juntos, hemos logrado hitos en la creación de comunidades más seguras a través de soluciones de vanguardia y asociaciones estratégicas.",
+    "tittle_carrousel": "Entidades policiales con las cuales hemos trabajado:"
+  }  
 }

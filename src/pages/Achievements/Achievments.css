@@ -16,7 +16,7 @@
 .slide-track {
     display: flex;
     width: calc(250 * 18);
-    animation: scroll 100s linear infinite;
+    animation: scroll 60s linear infinite;
 }
 
 .slide-track:hover {
@@ -29,7 +29,7 @@
     }
 
     100% {
-        transform: translateX(calc(-250px * 9));
+        transform: translateX(-5000px);
     }
 }
 
@@ -73,8 +73,132 @@
     margin-left: -50px;
 }
 
+.container-carrousel{
+    margin-left: 50px;
+    font-size: 30px;
+    color: chocolate;
+}
+
+.img-logo{
+    margin-top: -20px;
+    height: auto;
+    width: auto;
+    position: relative;
+    border-radius: 30px;
+}
+
+.tittle-info {
+    right: 15px
+}
 
 
 
 
+.txtinfo {
+    margin-top: 80px;
+}
 
+
+.info-tittle {
+  font-size: 25px;
+  color: #001f3f;
+  position: absolute;
+  right: 35%;
+  bottom: 90%;
+}
+
+
+/* 
+@media (max-width: 640px) {
+  .info-tittle {
+    right: 40%;
+    bottom: 90%;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1023px) {
+  .info-tittle {
+    right: 70%;
+    bottom: 90%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .info-tittle {
+    right: 30px;
+    bottom: 30px;
+  }
+} */
+
+
+.info-paragraph-ideas {
+    font-family: 'Poppins', sans-serif;
+    position: absolute;
+    right: 60%;
+    bottom: 75%;
+}
+
+.info-paragraph-ideas-1 {
+    position: absolute;
+    right: 58%;
+    bottom: 70%;
+     font-family: 'Poppins', sans-serif;
+}
+.info-paragraph-ideas-2 {
+    position: absolute;
+    right: 58%;
+    bottom: 65%;
+    font-family: 'Poppins', sans-serif; 
+}
+.info-paragraph-ideas-3 {
+    position: absolute;
+    right: 58%;
+    bottom: 60%;
+    font-family: 'Poppins', sans-serif; 
+}
+
+.info-paragraph-stadistics {
+    position: absolute;
+    right: 17%;
+    bottom: 75%;
+    font-family: 'Poppins', sans-serif; 
+}
+.info-paragraph-stadistics1 {
+    position: absolute;
+    right: 19%;
+    bottom: 70%;
+    font-family: 'Poppins', sans-serif; 
+}
+.info-paragraph-stadistics2 {
+    position: absolute;
+    right: 20%;
+    bottom: 65%;
+    font-family: 'Poppins', sans-serif; 
+}
+.info-paragraph-stadistics3 {
+    position: absolute;
+    right: 29%;
+    bottom: 60%;
+    font-family: 'Poppins', sans-serif; 
+}
+.info-paragraph-trophy {
+    position: absolute;
+    right: 75%;
+    bottom: 45%;
+    font-family: 'Poppins', sans-serif; 
+}
+
+.fontsize{
+        font-size: 20px;
+        color: #001f3f;
+}
+
+.info-container{
+    position: relative;
+}
+
+.infografia{
+    height: 600px;
+    width: 500px;
+    border-radius: 30px;
+}

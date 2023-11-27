@@ -4,8 +4,7 @@ import Navbar from "../../components/Navbar/Navbar";
 import Features from "../../components/Culture/Culture";
 import Reveal from "react-reveal/Reveal";
 import Fade from "react-reveal/Fade";
-import { Button2 } from "../../components/button/button";
-import { Link } from "react-router-dom";
+
 import Footer from "../../components/Footer/Footer";
 import { useTranslation } from "react-i18next";
 import CTA from "../../components/CTA/CTA";
@@ -47,7 +46,7 @@ const AboutPage = () => {
           <Features></Features>
         </Fade>
       </section>
-    <CTA url="/plan"></CTA>
+    <CTA></CTA>
       <Footer></Footer>
     </>
   );

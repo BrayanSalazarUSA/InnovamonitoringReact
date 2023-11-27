@@ -6,9 +6,8 @@ import contract from "../../assets/images/Components/FormPage/contract.jpg"
 import { FormProvider } from "../../context/FormProvide";
 import { useTranslation } from "react-i18next";
 export const FormPage = () => {
-  const [t, i18n] = useTranslation("global");
+  const [t] = useTranslation("global");
   return (
-    <>
     <FormProvider>
 
     <Navbar efecto="efecto2"></Navbar>
@@ -27,16 +26,13 @@ export const FormPage = () => {
             <p className="my-3 text-gray-300">
                   {t("form_Page.friendly_Team")}
             </p>
-            <img class="hidden my-3 object-cover mx-auto rounded-full lg:block shrink-0 w-96 h-96" src={contract} alt="" />
+                <img className="hidden my-3 object-cover mx-auto rounded-full lg:block shrink-0 w-96 h-96" src={contract} alt="Contract" />
             </div>
           </div>
-
           <MultiStepForm></MultiStepForm>
         </div>
       </section>
       <Footer></Footer>
     </FormProvider>
-    
-    </>
   );
 };

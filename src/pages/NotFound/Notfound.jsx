@@ -3,6 +3,7 @@ import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
 import { useTranslation } from "react-i18next";
 import "../NotFound/NotFound.css";
+import { Link } from "react-router-dom";
 
 const NotFound = () =>{
     const [t] = useTranslation("global");
@@ -19,9 +20,9 @@ const NotFound = () =>{
                             </div>
                             <p className="paragraph">{t("not_found.paragraph")}</p>
                             <p className="paragraph">{t("not_found.paragraph1")}</p>
-                            <a href="http://localhost:3000/">
-                                <p className="paragraph2 ">{t("not_found.paragraph2")}</p>
-                            </a> 
+                    <Link to={"/"}>
+                        <p className="paragraph2 ">{t("not_found.paragraph2")}</p>
+                    </Link>
                 </div>
         </section>
         <Footer></Footer>            

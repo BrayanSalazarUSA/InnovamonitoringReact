@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, useLocation, Routes } from "react-router-dom";
 import "./App.css";
 import Features from "./components/Culture/Culture";
 import Team from "./pages/AboutPage/AboutPage";
@@ -12,21 +12,11 @@ import Dashboard from "./Dashboard/Dashboard";
 import Support from "./pages/Support/Support";
 import Achievements from "./pages/Achievements/Achievements";
 import NotFound from "./pages/NotFound/Notfound";
-
 //theme
 import "primereact/resources/themes/lara-light-indigo/theme.css";
-
 //core
 import "primereact/resources/primereact.min.css";
-
-import {
-  Ecommerce,
-  Customers,
-  Bar,
-  Pie,
-  Line,
-  Reports,
-} from "./Dashboard/pages";
+import { Ecommerce,Customers,Bar,Pie,Line,Reports,} from "./Dashboard/pages";
 import { ReportDatails } from "./Dashboard/components/ReportDatails";
 import { Mapa } from "./Dashboard/pages/Mapa";
 import { CameraLiveView } from "./Dashboard/components/CameraLiveView";
@@ -40,13 +30,20 @@ import { UserContext } from "./context/UserContext";
 import { useContext } from "react";
 import PieLevels from "./Dashboard/pages/Charts/PieLevels";
 import { Properties } from "./Dashboard/pages/Properties";
-
+import React, { useLayoutEffect } from "react";
 function App() {
 
+  const Wrapper = ({ children }) => {
+    const location = useLocation();
+    useLayoutEffect(() => {
+      document.documentElement.scrollTo(0, 0);
+    }, [location.pathname]);
+    return children;
+  };
   const {userLogged} = useContext(UserContext);
   return (
-    <>
       <BrowserRouter>
+      <Wrapper>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path={"/services"} element={<Features />} />
@@ -92,8 +89,8 @@ function App() {
               />
             </Route>
           </Routes>
+        </Wrapper>
       </BrowserRouter>
-    </>
   );
 }
 
