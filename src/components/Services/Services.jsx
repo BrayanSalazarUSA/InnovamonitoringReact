@@ -54,7 +54,7 @@ const Services = () => {
                 className="h-72 w-full object-cover m-auto"
                 src={instalation}
                 alt=""
-                Amz-Al
+
                 />
             </div>
 

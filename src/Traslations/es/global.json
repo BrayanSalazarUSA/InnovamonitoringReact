@@ -72,7 +72,7 @@
     "06": "Asistencia personalizada"
   },
   "Contact": {
-    "contact": "Contacto",
+    "contact": "Contactanos",
     "title": "PÓNGASE EN CONTACTO CON NOSOTROS",
     "desc": "Estamos ansiosos por conocer sus inquietudes. Si tiene preguntas, comentarios o desea obtener más detalles sobre nuestros servicios, no dude en contactarnos. Nuestro equipo de atención al cliente está listo para brindarle asistencia personalizada. Comuníquese con nosotros mediante el formulario, correo electrónico y teléfono. Estamos comprometidos en satisfacer todas sus necesidades. Esperamos recibir su mensaje pronto. Si deseas iniciar su plan con nosotros ",
     "click_here": "¡Haga click aqui!",
@@ -175,8 +175,10 @@
     "home": "INICIO",
     "about": "NOSOTROS",
     "support": "SOPORTE",
-    "contact": "CONTACTO",
+    "contact_us": "Contactanos",
+    "plan": "Empieza tu plan",
     "services": "SERVICIOS",
+    "contact": "CONTACTO",
     "log_in": "INICIA SESIÓN"
   },
   "dropdown": {
@@ -186,7 +188,7 @@
   },
   "login": {
     "title": "Innova Monitoring Dashboard",
-    "text": "Bienvenido a nuestro centro de datos, si es cliente de Innova Monitioring tendrá acceso a nuestro panel de control donde podrá ver todos los informes de incidentes, estado de las cámaras, estadísticas, notificaciones relevantes para su propiedad o negocio y mucho más.",
+    "text": "Bienvenido a nuestro centro de datos, donde si es cliente de Innova Monitioring tendrá acceso a nuestro panel de control(IDS - Innova Dashboard System) donde podrá ver  los informes de incidentes, estado de las cámaras, estadísticas, notificaciones relevantes para su propiedad o negocio y mucho más.",
     "header_sign_in": "Inicia sesión para acceder a tu cuenta.",
     "email": "Correo",
     "email_placeholder": "Ingresa tu correo",
@@ -196,7 +198,8 @@
     "sign_in": "Iniciar sesión",
     "required_fields": "Todos los campos son requeridos.",
     "acount_yet": "¿aun no tienes cuenta?",
-    "join_us": "¡unete!"
+    "join_us": "¡unete!",
+    "IDS": "Inicia sesión en nuestro Dashboard"
   },
   "buttons": {
     "contact": "CONTACTO",
@@ -220,7 +223,8 @@
       "protection_of_assets": "Protección de activos de alto valor",
       "other": "Otros",
       "tell_us": "Cuéntennos, ¿que es lo mas importante para ti en el servicio de monitoreo?",
-      "text_box": "Obtener información precisa y en tiempo real sobre los eventos que ocurran en mi propiedad en cualquier momento."
+      "text_box": "Obtener información precisa y en tiempo real sobre los eventos que ocurran en mi propiedad en cualquier momento.",
+      "oneAtLeast": "Selecciona al menos un motivo que lo inspire a aprovechar nuestras soluciones excepcionales"
     },
     "multiple_step_form": {
       "step_one": "Primer paso",
@@ -261,7 +265,8 @@
       "property_address_label": "Direccion de la propiedad",
       "property_address_placeholder": "Ingresa la direccion de la propiedad",
       "property_size_label": "Tamaño de la propiedad",
-      "property_size_placeholder": "Ingresa el tamaño de la propiedad"
+      "property_size_placeholder": "Ingresa el tamaño de la propiedad",
+      "empty_property_text": "Selecciona un tipo de propiedad"
     },
     "contact_section": {
       "e_mail_label": "Correo electrónico",

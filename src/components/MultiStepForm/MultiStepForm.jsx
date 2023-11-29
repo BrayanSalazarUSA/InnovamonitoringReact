@@ -29,7 +29,7 @@ import { motion } from "framer-motion";
 import { Resend } from "resend";
 import { useTranslation } from "react-i18next";
 import { t } from "i18next";
-
+import Swal from "sweetalert2";
 
 
 
@@ -78,8 +78,6 @@ const First = ({ formPlan, setformPlan }) => {
       _selectedCategories = _selectedCategories.filter(
         (category) => category.key !== e.value.key
       );
-
-    setformPlan({ ...formPlan, selectedCategories: _selectedCategories });
     setformPlan({ ...formPlan, selectedCategories: _selectedCategories });
   };
 
@@ -91,8 +89,10 @@ const First = ({ formPlan, setformPlan }) => {
     { name: t("plan.categories.protection_of_assets"), key: "5" },
     { name: t("plan.categories.other"), key: "6" },
   ];
+
+
   return (
-    
+
     <>
       <div className="card flex flex-col justify-content-center mb-5">
         <div className="font-semibold mb-3">
@@ -134,18 +134,18 @@ const First = ({ formPlan, setformPlan }) => {
         />
       </div>
     </>
-    
+
   );
-  
+
 };
 
 function getSteps(t) {
-  
+
   return [
     t("plan.multiple_step_form.step_one"),
     t("plan.multiple_step_form.step_two"),
-    t("plan.multiple_step_form.step_three"), 
-    t("plan.multiple_step_form.step_four"), 
+    t("plan.multiple_step_form.step_three"),
+    t("plan.multiple_step_form.step_four"),
     t("plan.multiple_step_form.step_five")
   ];
 }
@@ -164,7 +164,6 @@ const BasicForm = ({ formPlan, setformPlan }) => {
         value={formPlan.name}
         onChange={(e) => setformPlan({ ...formPlan, name: e.target.value })}
       />
-
       <TextField
         id="last-name"
         label={t("plan.personal_section.last_name_label")}
@@ -274,7 +273,7 @@ const PropertyForm = ({ formPlan, setformPlan }) => {
           optionLabel="name"
           placeholder={t("plan.property_section.property_placeholder")}
           className="w-full md:w-14rem"
-          required
+          
         />
       </div>
 
@@ -285,6 +284,7 @@ const PropertyForm = ({ formPlan, setformPlan }) => {
         placeholder={t("plan.property_section.property_name_label")}
         fullWidth
         value={formPlan.propertyName}
+        required
         onChange={(e) =>
           setformPlan({ ...formPlan, propertyName: e.target.value })
         }
@@ -315,6 +315,7 @@ const PropertyForm = ({ formPlan, setformPlan }) => {
           placeholder={t("plan.property_section.property_size_placeholder")}
           fullWidth
           margin="normal"
+          required
           value={formPlan.propertySize}
           onChange={(e) =>
             setformPlan({ ...formPlan, propertySize: e.target.value })
@@ -339,8 +340,8 @@ const PlanInformation = ({ formPlan, setformPlan }) => {
             mode="decimal"
             required
             showButtons
-            min={0}
-            max={1000}
+            min={1}
+            max={24}
             value={formPlan.numCameras}
             onValueChange={(e) =>
               setformPlan({ ...formPlan, numCameras: e.value })
@@ -366,8 +367,8 @@ const PlanInformation = ({ formPlan, setformPlan }) => {
             onValueChange={(e) =>
               setformPlan({ ...formPlan, numHours: e.value })
             }
-            min={0}
-            max={100}
+            min={1}
+            max={24}
           />
           <small id="username-help">{t("plan.plan_section.hours_monitoring")}</small>
         </div>
@@ -375,8 +376,8 @@ const PlanInformation = ({ formPlan, setformPlan }) => {
 
       <div className="my-5">
         <div>{t("plan.plan_section.cameras_property")}</div>
-        <InputSwitch 
-        // yo
+        <InputSwitch
+          // yo
           checked={formPlan.camerasInstalled}
           onChange={(e) =>
             setformPlan({ ...formPlan, camerasInstalled: e.value })
@@ -489,37 +490,37 @@ export const MultiStepForm = () => {
     phone.setAttribute("value", formPlan.phone)
     phone.setAttribute("name", "phone")
 
-    let alternativePhone= document.createElement("input");
+    let alternativePhone = document.createElement("input");
     alternativePhone.setAttribute("value", formPlan.alternativePhone)
     alternativePhone.setAttribute("name", "alternativePhone")
 
-    let propertyName= document.createElement("input");
+    let propertyName = document.createElement("input");
     propertyName.setAttribute("value", formPlan.propertyName)
     propertyName.setAttribute("name", "propertyName")
 
     let propertySize = document.createElement("input");
     propertySize.setAttribute("value", formPlan.propertySize)
-    propertySize .setAttribute("name", "propertySize")
+    propertySize.setAttribute("name", "propertySize")
 
     let camerasInstalled = document.createElement("input");
     camerasInstalled.setAttribute("value", formPlan.camerasInstalled ? "Yes" : "No")
-    camerasInstalled .setAttribute("name", "camerasInstalled")
+    camerasInstalled.setAttribute("name", "camerasInstalled")
 
-    let internet= document.createElement("input");
+    let internet = document.createElement("input");
     internet.setAttribute("value", formPlan.internet ? "Yes" : "No")
-    internet .setAttribute("name", "internet")
+    internet.setAttribute("name", "internet")
 
-    let textArea= document.createElement("input");
+    let textArea = document.createElement("input");
     textArea.setAttribute("value", formPlan.textArea)
-    textArea .setAttribute("name", "textArea")
+    textArea.setAttribute("name", "textArea")
 
 
     let list = ""
     formPlan.selectedCategories?.forEach(element => {
-      list+=` "${element.name}" `
+      list += ` "${element.name}" `
     })
 
-    let selectedCategories= document.createElement("input");
+    let selectedCategories = document.createElement("input");
     selectedCategories.setAttribute("value", list)
     selectedCategories.setAttribute("name", "selectedCategories")
 
@@ -541,8 +542,8 @@ export const MultiStepForm = () => {
     formulario.appendChild(textArea);
     formulario.appendChild(selectedCategories);
 
-    
-    
+
+
     emailjs
       .sendForm(serviceId, templateId, formulario, apiKey)
       .then((res) => console.log("Good"))
@@ -568,7 +569,7 @@ export const MultiStepForm = () => {
   });
   const [activeStep, setActiveStep] = useState(0);
   const [skippedSteps, setSkippedSteps] = useState([]);
-  
+
   const steps = getSteps(t);
 
   const isStepOptional = (step) => {
@@ -580,24 +581,41 @@ export const MultiStepForm = () => {
   };
 
   const handleNext = (data) => {
-    if (activeStep == steps.length - 1) {
+    const categorySelected = formPlan.selectedCategories.length > 0;
+      if (!categorySelected) {
+        Swal.fire("", t("plan.categories.oneAtLeast"), "info")
+        return;
+      } 
+    if (activeStep === 3) {
+      if (formPlan.propertyType === "") {
+        Swal.fire("", t("plan.property_section.empty_property_text"), "info")
+        return;
+      } 
+    }
+
+    if (activeStep === steps.length - 1) {
       fetch("https://jsonplaceholder.typicode.com/comments")
         .then((data) => data.json())
         .then((res) => {
-          setActiveStep(activeStep + 1);
+          setTimeout(() => {
+            setActiveStep(activeStep + 1);
+          }, 150);
         });
     } else {
-      setActiveStep(activeStep + 1);
-      setSkippedSteps(
-        skippedSteps.filter((skipItem) => skipItem !== activeStep)
-      );
+      setTimeout(() => {
+        setActiveStep(activeStep + 1);
+        setSkippedSteps(
+          skippedSteps.filter((skipItem) => skipItem !== activeStep)
+        );
+      }, 150);
     }
   };
 
   const handleBack = () => {
-    setActiveStep(activeStep - 1);
+    setTimeout(() => {
+      setActiveStep(activeStep - 1);
+    }, 150);
   };
-
   const handleSkip = () => {
     if (!isStepSkipped(activeStep)) {
       setSkippedSteps([...skippedSteps, activeStep]);
@@ -636,7 +654,7 @@ export const MultiStepForm = () => {
         </div>
 
         {activeStep === steps.length ? (
-          
+
           <div className="flex flex-col items-center justify-center my-10">
             <div>
               <TextAnimation />
@@ -652,37 +670,37 @@ export const MultiStepForm = () => {
           </div>
         ) : (
           <FormProvider {...methods}>
-              <form onSubmit={methods.handleSubmit(handleNext)}>
-                {GetStepContent(activeStep)}
-                
+            <form onSubmit={methods.handleSubmit(handleNext)}>
+              {GetStepContent(activeStep)}
+
+              <Button
+                className={classes.button}
+                disabled={activeStep === 0}
+                onClick={handleBack}
+              >
+                {t("plan.form_button.back")}
+              </Button>
+
+              {activeStep === steps.length - 1 ? (
                 <Button
                   className={classes.button}
-                  disabled={activeStep === 0}
-                  onClick={handleBack}
+                  variant="contained"
+                  type="submit"
+                  onClick={sendEmail}
                 >
-                  {t("plan.form_button.back")}
+                  {t("plan.form_button.finish")}
                 </Button>
-            
-                {activeStep === steps.length - 1 ? (
-                  <Button
-                    className={classes.button}
-                    variant="contained"
-                    type="submit"
-                    onClick={sendEmail}
-                  >
-                    {t("plan.form_button.finish")}
-                  </Button>
-                ) : (
-                  <Button
-                    className={classes.button}
-                    variant="contained"
-                    type="submit"
-                  >
-                      {t("plan.form_button.next")}
-                  </Button>
-                )}
-              </form>
-            </FormProvider>
+              ) : (
+                <Button
+                  className={classes.button}
+                  variant="contained"
+                  type="submit"
+                >
+                  {t("plan.form_button.next")}
+                </Button>
+              )}
+            </form>
+          </FormProvider>
         )}
       </div>
     </>

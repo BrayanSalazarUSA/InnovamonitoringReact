@@ -23,18 +23,24 @@ const Support = () => {
                   <img className="w-full" src={support} alt="support"/>
                 </div>
               </Fade>
-             <Reveal>
+             
               <div className="lg:order-1">
-                <p className="inline-block px-1 py-px mb-4 text-xs font-semibold tracking-wider text-yellow-600 uppercase rounded-full bg-teal-accent-400">
+                <Fade left>
+                <p className="inline-block px-1 py-px mb-4 text-xs font-semibold tracking-wider text-yellow-600 uppercase rounded-full bg-teal-accent-400 tamaño">
                   {t("support1.prev")}
                 </p>
                 <h2 className="max-w-lg text-3xl font-bold  text-gray-700 sm:text-4xl ">
                   {t("support1.title")}
                 </h2>
+               
+                <Reveal>
                 <p className="text-base py-4 text-gray-700 md:text-lg">
                   {t("support1.desc")}
                 </p>
+                </Reveal>
+                 </Fade>
                 <ul className="grid grid-cols-1 mt-4 sm:mt-10 sm:grid-cols-2 gap-x-10 xl:gap-x-16 gap-y-4 xl:gap-y-6">
+                  <Fade left>
                   <li className="flex items-center">
                     <svg
                       className="flex-shrink-0 w-5 h-5 text-yellow-600"
@@ -53,7 +59,8 @@ const Support = () => {
                       {t("support1.01")}
                     </span>
                   </li>
-
+                  </Fade>
+                  <Fade right>
                   <li className="flex items-center">
                     <svg
                       className="flex-shrink-0 w-5 h-5 text-yellow-600"
@@ -72,7 +79,8 @@ const Support = () => {
                       {t("support1.02")}
                     </span>
                   </li>
-
+                  </Fade>
+                  <Fade left>
                   <li className="flex items-center">
                     <svg
                       className="flex-shrink-0 w-5 h-5 text-yellow-600"
@@ -91,7 +99,8 @@ const Support = () => {
                       {t("support1.03")}
                     </span>
                   </li>
-
+                  </Fade>
+                  <Fade right>
                   <li className="flex items-center">
                     <svg
                       className="flex-shrink-0 w-5 h-5 text-yellow-600"
@@ -110,7 +119,8 @@ const Support = () => {
                       {t("support1.04")}
                     </span>
                   </li>
-
+                  </Fade>
+                  <Fade left>
                   <li className="flex items-center">
                     <svg
                       className="flex-shrink-0 w-5 h-5 text-yellow-600"
@@ -129,7 +139,8 @@ const Support = () => {
                       {t("support1.05")}
                     </span>
                   </li>
-
+                  </Fade>
+                  <Fade right>
                   <li className="flex items-center">
                     <svg
                       className="flex-shrink-0 w-5 h-5 text-yellow-600"
@@ -148,6 +159,7 @@ const Support = () => {
                       {t("support1.06")}
                     </span>
                   </li>
+                  </Fade>
                 </ul>
 
                 <Link
@@ -160,7 +172,7 @@ const Support = () => {
                   <Button2 text="buttons.talk"></Button2>
                 </Link>
               </div>
-              </Reveal>
+             
             </div>
           </div>
         </div>

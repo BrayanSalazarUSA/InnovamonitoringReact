@@ -5,10 +5,9 @@ import Navbar from "../../components/Navbar/Navbar";
 import { getUser } from "../../Dashboard/helper/getUser";
 import { UserContext } from "../../context/UserContext";
 import "./Login.css";
-import dasboardImage from "../../Dashboard/data/dashboardImage.webp";
 import logo from "../../assets/images/Logos/innova-monitoring.png";
 import Swal from "sweetalert2";
-
+import Reveal from "react-reveal/Reveal";
 
 const Login = () => {
   localStorage.clear("propertySelected")
@@ -74,30 +73,25 @@ const Login = () => {
     navigate("/"); */
   };
 
-  let style1 = {
-    background: `url(${dasboardImage}) top, linear-gradient(rgba(6, 6, 6, 0.705),rgba(16, 16, 16, 0.708))`,
-    backgroundBlendMode: "overlay",
-    backgroundRepeat: "no-repeat",
-    backgroundSize: "cover",
-  };
-
 
   return (
     <>
       <Navbar efecto="efecto2"></Navbar>
       <div className="bg-white my-8">
         <div className="flex justify-center h-screen">
-          <div className="hidden bg-cover lg:block lg:w-3/5" style={style1}>
+            <Reveal>
+          <div className="hidden bg-cover lg:block lg:w-3/5 photo-login img-container">
             <div className="flex items-center h-full px-20 ">
               <div>
-              <p className=" text-3xl font-bold tracking-tight text-yellow-600 sm:text-4xl">
-                IDS - Innova Dashboard System
+              <p className=" text-3xl font-bold tracking-tight text-yellow-600 sm:text-4xl text-center">
+                {t("login.IDS")}                
               </p>
           
-                <p className="max-w-xl mt-3 text-gray-300">{t("login.text")}</p>
+                <p className="max-w-xl mt-3 text-gray-300 text-center">{t("login.text")}</p>
               </div>
             </div>
           </div>
+            </Reveal>
 
           <div className="flex items-center w-full max-w-md px-6 mx-auto lg:w-2/6">
             <div className="flex-1">
@@ -114,7 +108,7 @@ const Login = () => {
                 <form>
                   <div>
                     <label
-                      for="email"
+                      htmlFor="email"
                       className="block mb-2 text-sm text-gray-600 "
                     >
                       {t("login.email")}
@@ -133,7 +127,7 @@ const Login = () => {
 
                   <div className="mt-6">
                     <div className="flex justify-between mb-2">
-                      <label for="password" className="text-sm text-gray-600 ">
+                      <label htmlFor="password" className="text-sm text-gray-600 ">
                         {t("login.password")}
                       </label>
                       <p

@@ -188,7 +188,7 @@
   },
   "login": {
     "title": "Innova Monitoring Dashboard",
-    "text": "Welcome to our data center, if you are an Innova Monitioring customer you will have access to our dashboard where you will be able to view all incident reports, camera status, statistics, notifications relevant to your property or business and more!",
+    "text": "Welcome to our data center, were you can enter into IDS - Innova Dashboard System if you are an Innova Monitioring customer you will get access to our dashboard where you will be able to view all incident reports, camera status, statistics, notifications relevant to your property or business and more!",
     "header_sign_in": "Sign in to access your account",
     "email": "Email",
     "email_placeholder": "Your email",
@@ -198,7 +198,8 @@
     "sign_in": "Sign in",
     "required_fields": "All fields are requiered",
     "acount_yet": "Don't have an account yet?",
-    "join_us": "Join us!"
+    "join_us": "Join us!",
+    "IDS": "Log into our dashboard."
   },
   "buttons": {
     "contact": "CONTACT US",
@@ -222,7 +223,8 @@
       "protection_of_assets": "Protection of high-value assets",
       "other": "Other",
       "tell_us": "Tell us, what is the most important thing for you in a monitoring service?",
-      "text_box": "Obtain precise, real-time information about events occurring on my property at any moment."
+      "text_box": "Obtain precise, real-time information about events occurring on my property at any moment.",
+      "oneAtLeast": "Tell us one reason that motivated you to choose us"
     },
     "multiple_step_form": {
       "step_one": "First step",
@@ -263,7 +265,8 @@
       "property_address_label": "Property address",
       "property_address_placeholder": "Enter the property address",
       "property_size_label": "Property size",
-      "property_size_placeholder": "Enter the property size"
+      "property_size_placeholder": "Enter the property size",
+      "empty_property_text": "Select a type of property"
     },
     "contact_section": {
       "e_mail_label": "E-mail",

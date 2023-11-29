@@ -7,8 +7,8 @@ import { createContext, useState } from "react";
       const [formPlan, setformPlan] = useState({
         selectedCategories:[],
         textArea:"",
-        numCameras:0,
-        numHours:0,
+        numCameras:1,
+        numHours:1,
         camerasInstalled:true,
         internet:true,
         name:"",

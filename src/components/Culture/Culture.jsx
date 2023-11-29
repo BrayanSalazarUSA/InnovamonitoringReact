@@ -15,7 +15,7 @@ const Culture = () => {
           <div className="sm:mx-14 mx-3 grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-16 md:grid-cols-2 xl:grid-cols-3">
             <div className="flex flex-col items-center  space-y-3 text-center justify-center items-center drop-shadow-lg bg-gray-100 rounded-xl">
               <span className="h-20 w-20 inline-block p-3 text-yellow-600 bg-gray-200 rounded-full drop-shadow-lg">
-                <MdSecurity size={{ size: "50px" }} />
+                <MdSecurity size={"50px"} />
               </span>
 
               <h1 className="text-xl font-semibold text-gray-700 capitalize ">
@@ -29,7 +29,7 @@ const Culture = () => {
 
             <div className="flex flex-col items-center p-6 space-y-3 text-center bg-gray-100 rounded-xl drop-shadow-lg">
               <span className=" h-20 w-20 inline-block p-3 text-yellow-600 bg-gray-200 rounded-full drop-shadow-lg">
-                <MdOutlineHandshake size={{ size: "50px" }} />
+                <MdOutlineHandshake size={"50px"}/>
               </span>
 
               <h1 className="text-xl font-semibold text-gray-700 capitalize ">
@@ -43,7 +43,7 @@ const Culture = () => {
 
             <div className="flex flex-col items-center p-6 space-y-3 text-center bg-gray-100 rounded-xl drop-shadow-lg">
               <span className=" h-20 w-20 inline-block p-3 text-yellow-600 bg-gray-200 rounded-full drop-shadow-lg">
-                <TbDeviceCctv size={{ size: "50px" }} />
+                <TbDeviceCctv size={"50px"}/>
               </span>
 
               <h1 className="text-xl font-semibold text-gray-700 capitalize ">

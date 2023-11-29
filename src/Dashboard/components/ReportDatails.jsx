@@ -102,6 +102,7 @@ export const ReportDatails = () => {
   });
 
   return (
+    <>
       <div className="m-20 md:m-10  md:p-0 bg-white rounded-3xl">
         {/*  <Header category="Report" title="Narcotics Consumption - #3345" /> */}
         <div>
@@ -422,6 +423,6 @@ export const ReportDatails = () => {
           items={images?.length > 0 ? dataImages : noImages}
         />
       </div>
-   
+    </>
   );
 };

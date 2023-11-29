@@ -3,6 +3,7 @@ import "./About.css";
 import logo from "../../assets/images/Logos/innova-monitoring.png";
 import Fade from "react-reveal/Fade";
 import { useTranslation } from "react-i18next";
+import Pulse from 'react-reveal/Pulse';
 
 const About = () => {
   const [t] = useTranslation("global");
@@ -22,11 +23,11 @@ const About = () => {
             
           </div>
         </Fade>
-        <Fade clear>
+        <Pulse >
           <div className="w-full lg:w-1/3 mr-32 flex justify-center">
             <img className="logo-about" src={logo} alt="Logo" />
           </div>
-        </Fade>
+      </Pulse>
       </section>
   );
 };

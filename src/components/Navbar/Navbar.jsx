@@ -10,19 +10,13 @@ import { BiLogInCircle } from "react-icons/bi";
 import { useTranslation } from "react-i18next";
 import { TooltipComponent } from "@syncfusion/ej2-react-popups";
 
-const navigation = [
-  { name: "HOME", href: "/", current: false },
-  { name: "ABOUT", href: "/about", current: false },
-  { name: "SUPPORT", href: "/support", current: false },
-  { name: "CONTACT", href: "/contact", current: false },
-];
+
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
 const Navbar = ({ TextColor = "text-gray-700", efecto = "efecto1" }) => {
-
     const [t, i18n] = useTranslation("global");
     const handleChangeLanguge = (lang) => {
       i18n.changeLanguage(lang);
