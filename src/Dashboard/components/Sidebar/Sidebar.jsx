@@ -3,12 +3,13 @@ import { Link, NavLink, useNavigate } from "react-router-dom";
 import { SiShopware } from "react-icons/si";
 import { MdOutlineCancel } from "react-icons/md";
 import { TooltipComponent } from "@syncfusion/ej2-react-popups";
-
-import  SidebarLinks  from "../data/sliderbar";
-import { useStateContext } from "../../context/ContextProvider";
+import Logo from "../../../assets/images/Logos/Logo short.png"
+import  SidebarLinks  from "../../data/sliderbar";
+import { useStateContext } from "../../../context/ContextProvider";
 import { FiShoppingBag } from "react-icons/fi";
 import { BiLogOut } from "react-icons/bi";
 import { useTranslation } from "react-i18next";
+import './Siderbar.css'
 const Sidebar = () => {
   const { currentColor, activeMenu, setActiveMenu, screenSize } =
     useStateContext();
@@ -45,7 +46,7 @@ const Sidebar = () => {
               onClick={handleCloseSideBar}
               className="items-center gap-3 ml-3 mt-4 flex text-xl font-extrabold tracking-tight dark:text-white text-slate-900"
             >
-              <SiShopware /> <span>Innova Monitoring</span>
+              <img className="logodash" src={Logo} alt="Logo" /> <span>Innova Monitoring</span>
             </Link>
             <TooltipComponent content="Menu" position="BottomCenter">
               <button
@@ -112,7 +113,7 @@ const Sidebar = () => {
             ))}
 
             <div
-              key={"logout"}
+              
               onClick={logout}
               className="flex cursor-pointer items-center gap-5 pl-4 pt-3  rounded-lg text-md text-gray-700 dark:text-gray-200 dark:hover:text-black hover:bg-light-gray m-2"
             >

@@ -1,7 +1,8 @@
 import React, { useContext, useEffect } from "react";
 import { Outlet, useNavigate } from "react-router-dom";
 import "./style.css";
-import { FooterDash, NavbarDash, Sidebar } from "./components";
+import  Sidebar  from "./components/Sidebar/Sidebar.jsx";
+import { FooterDash, NavbarDash } from "./components";
 import { UserContext } from "../context/UserContext";
 import { useStateContext } from "../context/ContextProvider";
 import useFetchProperty from "./Hooks/useFetchProperty";

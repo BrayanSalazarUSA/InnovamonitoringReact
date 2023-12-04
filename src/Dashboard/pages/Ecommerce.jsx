@@ -14,14 +14,16 @@ import { TbDeviceCctv, TbDeviceCctvOff } from "react-icons/tb";
 import { GiPoliceCar } from "react-icons/gi";
 import { useTranslation } from "react-i18next";
 import { Link } from 'react-router-dom';
+
 let mag = {
   id: 2,
   name: "Bell Air",
   direction: "Fl 1231 Opa-Loka",
   img: "https://drive.google.com/uc?export=view&id=1y3mtI4oTCz9Dk_ME4bHuw9q0aW44-sur",
 };
+
 const Ecommerce = () => {
-  const [t, i18n] = useTranslation("global");
+  const [t] = useTranslation("global");
   const { currentColor, currentMode } = useStateContext();
   const navigate = useNavigate();
   const { propertyContext, setPropertyContext, prueba, setPrueba } =
@@ -33,6 +35,7 @@ const Ecommerce = () => {
   let idStorage = propertyStorage.id;
   let id = propertyContext.id || idStorage;
 let propertyImage = ""
+  
   useEffect(() => {
     earningData[0].amount = propertyContext.cameras?.length || 0;
     GetPropertyInfo(propertyContext.id || idStorage, userRole).then((data) =>

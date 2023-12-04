@@ -1,30 +1,13 @@
 import React, { useContext, useEffect, useState } from "react";
-
-import {
-  GridComponent,
-  ColumnsDirective,
-  ColumnDirective,
-  Resize,
-  Sort,
-  ContextMenu,
-  Filter,
-  Page,
-  Search,
-  PdfExport,
-  Inject,
-  Toolbar,
-} from "@syncfusion/ej2-react-grids";
-
+import {GridComponent, ColumnsDirective, ColumnDirective, Resize, Sort, ContextMenu, Filter, Page,Search,PdfExport, Inject, Toolbar,} from "@syncfusion/ej2-react-grids";
 import { contextMenuItems, reportsGrid, reportsGridAdmin } from "../data/dummy";
 import { Header } from "../components";
 import { UserContext } from "../../context/UserContext";
 import { Button } from "primereact/button";
 import { AiOutlinePlusCircle } from "react-icons/ai";
 import "primeicons/primeicons.css";
-
 import { Dialog } from "primereact/dialog";
 import { useNavigate } from "react-router-dom";
-
 import { FooterReportForm } from "../components/Forms/FooterReportForm";
 import { ReportFormEvidences } from "../components/Forms/ReportFormEvidences";
 import useFetchProperties from "../Hooks/useFetchProperties";
@@ -34,6 +17,7 @@ import { GetReports } from "../helper/GetReports";
 import { ReportFormEdit } from "../components/Forms/ReportFormEdit";
 import { ReportFormEvidencesEdit } from "../components/Forms/ReportFormEvidencesEdit";
 import { ReportForm } from "../components/Forms/ReportForm";
+import { useTranslation } from "react-i18next";
 
 const Reports = () => {
   const navigate = useNavigate();
@@ -79,10 +63,11 @@ const Reports = () => {
 
     });
   }, [propertyContext, reportSaved]);
+  const [t] = useTranslation("global");
   return (
     <>
       <Dialog
-        header="Add Report"
+        header={"hola"}
         visible={reportFormVisible}
         style={{ width: "50vw" }}
         onHide={() => {

@@ -307,8 +307,11 @@
   "dashboard": {
     "dashboard-navbar": {
       "hi": "Hi,",
-      "profile": "My profile",
-      "account": "Account settings"
+      "user-profile":{
+        "profile": "My profile",
+        "account": "Account settings",
+        "logout-button": "Logout"
+      }
       },
       "dashboard-sliderbar": {
         "dashboard-section": {
@@ -340,6 +343,11 @@
       "cameras-on": "Cameras Online",
       "cameras-off": "Cameras Offline",
       "vandalized-cameras": "Vandalized Cameras"
+    },
+    "reports": {
+      "reports-tittle": "",
+      "add-report": "Add report",
+      "eddit-report": ""
     },
     "footer": "All rights reserved by Innova Monitoring"
   }

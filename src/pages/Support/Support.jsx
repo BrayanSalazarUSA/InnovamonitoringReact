@@ -169,7 +169,9 @@ const Support = () => {
                   }
                   className="flex flex-col items-start mt-8 sm:space-x-4 sm:flex-row sm:items-center lg:mt-12"
                 >
+                  <Fade bottom>
                   <Button2 text="buttons.talk"></Button2>
+                  </Fade>
                 </Link>
               </div>
              

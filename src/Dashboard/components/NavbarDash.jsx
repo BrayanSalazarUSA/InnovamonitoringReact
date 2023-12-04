@@ -9,6 +9,7 @@ import { useTranslation, i18n } from "react-i18next";
 import { Cart, Chat, Notification, UserProfile } from '.';
 import { useStateContext } from '../../context/ContextProvider';
 import { UserProvider } from '../../context/UserProvider';
+import { styled } from '@material-ui/core';
 
 
 const NavButton = ({ title, customFunc, icon, color, dotColor }) => (
@@ -66,6 +67,7 @@ const Navbar = () => {
     i18n.changeLanguage(lang);
   };
 
+
   return (
 
     <div className="flex justify-between p-2 md:ml-6 md:mr-6 relative">
@@ -88,14 +90,7 @@ const Navbar = () => {
         <NavButton title="Chat" dotColor="red" customFunc={() => handleClick('chat')} color={currentColor} icon={<BsChatLeft />} />
 
         <TooltipComponent content="Profile" position="BottomCenter">
-          <div className="flex items-center gap-2 cursor-pointer p-1 hover:bg-light-gray rounded-lg" onClick={() => handleClick('userProfile')}>
-            
-            <img
-              className="rounded-full w-8 h-8"
-              src={userImg}
-              alt="user-profile"
-/>
-
+          <div className="flex items-center gap-2 cursor-pointer p-1 hover:bg-light-gray rounded-lg mt-2" onClick={() => handleClick('userProfile')}>
             <p className='p-0'>
               <span className="p-0 text-gray-400 text-14">{t("dashboard.dashboard-navbar.hi")}</span>{' '}
               <span className="p-0 text-gray-400 font-bold ml-1 text-14">

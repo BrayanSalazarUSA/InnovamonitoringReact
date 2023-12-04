@@ -1,29 +1,34 @@
-// UserProfile.jsx
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { MdOutlineCancel } from "react-icons/md";
+import { Button } from "..";
+import { useStateContext } from "../../../context/ContextProvider";
+import avatar from "../../data/avatar.jpg";
+import useUserProfileData from "../UserProfileData";
+import { SiShopware } from "react-icons/si";
+import Shortlogo from "../../../assets/images/Logos/Logo short.png"
+import LogoutButton from "../LogoutButton";
+import { useTranslation } from "react-i18next";
+import './UserProfile.css'
 
-import { Button } from ".";
-import { useStateContext } from "../../context/ContextProvider";
-import avatar from "../data/avatar.jpg";
-import useUserProfileData from "../components/UserProfileData";
 
 const UserProfile = ({ userProfile }) => {
   const { currentColor } = useStateContext();
   let link = userProfile.image?.split("/");
-
+  const [t] = useTranslation("global");
   let userImg = "";
 
   if (link) {
     let idImg = link[5];
     userImg = "https://drive.google.com/uc?export=view&id=" + idImg;
   }
-
+  const [propertyFecthed, setPropertyFecthed] = useState({});
+  
   const translatedUserProfileData = useUserProfileData();
 
   return (
     <div className="nav-item absolute right-1 top-16 bg-white dark:bg-[#42464D] p-8 rounded-lg w-96">
       <div className="flex justify-between items-center">
-        <p className="font-semibold text-lg dark:text-gray-200">User Profile</p>
+        <img style={{ height: '10%', width: '10%', marginLeft: '10%', marginRight: '-15%' }} src={Shortlogo} alt="Logo" /><p className="font-semibold text-lg dark:text-gray-200">Innova Monitoring</p>
         <Button
           icon={<MdOutlineCancel />}
           color="rgb(153, 171, 180)"
@@ -34,7 +39,7 @@ const UserProfile = ({ userProfile }) => {
       </div>
       <div className="flex gap-5 items-center mt-6 border-color border-b-1 pb-6">
         <img
-          className="rounded-full h-24 w-24"
+          className="rounded-full h-24 w-24 userimg"
           src={userImg}
           alt="user-profile"
         />
@@ -78,10 +83,10 @@ const UserProfile = ({ userProfile }) => {
         ))}
       </div>
       <div className="mt-5">
-        <Button
+        <LogoutButton
           color="white"
           bgColor={currentColor}
-          text="Logout"
+          text={t("dashboard.dashboard-navbar.user-profile.logout-button")}
           borderRadius="10px"
           width="full"
         />

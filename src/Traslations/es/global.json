@@ -304,10 +304,12 @@
 
     "dashboard-navbar": {
       "hi": "Hola,",
+        "user-profile": {
       "profile":"Mi perfil",
-      "account": "Configuraciones de la cuenta"
+      "account": "Configuraciones de la cuenta",
+      "logout-button": "Cerrar sesión"
+    }
     },
-
     "dashboard-sliderbar": {
 
       "dashboard-section": {
@@ -339,13 +341,18 @@
     },
 
     "dashboard-index": {
-
       "home": "Inicio",
       "number-reports": "Numero de reportes",
       "total-cameras": "Cámaras totales",
       "cameras-on": "Cámaras en línea",
       "cameras-off": "Cámaras fuera de línea",
       "vandalized-cameras": "Cámaras vandalizadas"
+    },
+    "reports":{
+      "reports-tittle": "Informes",
+      "add-report": "Agregar reporte",
+      "eddit-report": ""
+
     },
 
     "footer": "Todos los derechos reservados por Innova Monitioring"
