@@ -77,7 +77,7 @@
     "contact": "Contact Us",
     "title": "GET IN TOUCH WITH US",
     "desc": "We are enthusiastic about addressing your inquiries. Should you have any questions, comments, or require additional details about our services, please feel free to reach out. Our customer care team is prepared to offer personalized assistance. Contact us through the provided form, email, or phone. We are dedicated to fulfilling all your needs and eagerly anticipate receiving your message soon. if you want to start your plan with us ",
-    "click_here": "¡Click here!", 
+    "click_here": "¡Click here!",
     "location": "Our Location",
     "locationDesc": "Hollywood, FL, EE. UU.",
     "phone": "Phone Number",
@@ -164,7 +164,7 @@
     "about": " About us",
     "services": "Our Services",
     "contact": "Contact",
-    "achievements":"Achievements",
+    "achievements": "Achievements",
     "setting_privacy": "Setting & privacy",
     "links": "Quick Links",
     "monitoring": "Monitoring",
@@ -286,7 +286,7 @@
       "finish": "Finish",
       "back_home": "Back home!"
     },
-    "credentials_error":{
+    "credentials_error": {
       "header": "Credentials error",
       "text": "Please verify that your username and password are correct and try again."
     }
@@ -298,11 +298,49 @@
     "middle": "",
     "paragraph2": "Click here to back!"
   },
-
-  "achievments":{
+  "achievments": {
     "tittle": "Recognitions and achievements",
     "paragraph": "Innova Monitoring takes pride in its distinguished achievements and recognitions, showcasing a rich history of collaboration with esteemed security entities such as the DEA and FBI. Our commitment to excellence has earned us commendation from law enforcement agencies. Explore our awards and milestones, a testament to our unwavering dedication to cutting-edge security solutions.",
     "paragraph2": "Empowering law enforcement, our collaborative efforts with police entities have been instrumental in enhancing security measures. Together, we've achieved milestones in creating safer communities through cutting-edge solutions and strategic partnerships",
     "tittle_carrousel": "Entities with which we have collaborated:"
+  },
+  "dashboard": {
+    "dashboard-navbar": {
+      "hi": "Hi,",
+      "profile": "My profile",
+      "account": "Account settings"
+      },
+      "dashboard-sliderbar": {
+        "dashboard-section": {
+          "dashboard-tittle": "Dashboard",
+          "home": "Home"
+        },
+        "integral-management-section": {
+          "integral-tittle": "Integral management",
+          "reports": "Reports",
+          "map": "Map",
+          "agents": "Agents",
+          "users": "Users",
+          "cases": "Types of Cases",
+          "properties": "Properties"
+        },
+        "graphical-insights-section": {
+          "graphical-tittle": "Report chart",
+          "report-bar": "Report bar",
+          "types-of-cases": "Types of cases",
+          "types-of-levels": "Cases by level",
+          "reports-per-month": "Timeline of reports",
+          "logout": "Logout"
+        }
+      },
+    "dashboard-index": {
+      "home": "Home",
+      "number-reports": "Number of reports",
+      "total-cameras": "Total Cameras",
+      "cameras-on": "Cameras Online",
+      "cameras-off": "Cameras Offline",
+      "vandalized-cameras": "Vandalized Cameras"
+    },
+    "footer": "All rights reserved by Innova Monitoring"
   }
 }

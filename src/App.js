@@ -30,20 +30,22 @@ import { UserContext } from "./context/UserContext";
 import { useContext } from "react";
 import PieLevels from "./Dashboard/pages/Charts/PieLevels";
 import { Properties } from "./Dashboard/pages/Properties";
-import React, { useLayoutEffect } from "react";
+import React, { useEffect } from "react";
 function App() {
 
-  const Wrapper = ({ children }) => {
-    const location = useLocation();
-    useLayoutEffect(() => {
-      document.documentElement.scrollTo(0, 0);
-    }, [location.pathname]);
-    return children;
-  };
+
+// No activar wrapper, genera un error al entrar al dashboard
+  // const Wrapper = ({ children }) => {
+  //   const location = useLocation();
+  //   useEffect(() => {
+  //     document.documentElement.scrollTo(0, 0);
+  //   }, [location.pathname]);
+  //   return children;
+  // };
   const {userLogged} = useContext(UserContext);
   return (
       <BrowserRouter>
-      <Wrapper>
+      {/* <Wrapper> */}
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path={"/services"} element={<Features />} />
@@ -81,15 +83,10 @@ function App() {
               <Route path="/dashboard/stacked" element={<Stacked />} />
               <Route
                 path="/dashboard/report-details/:id"
-                element={<ReportDatails />}
-              />
-              <Route
-                path="/dashboard/camera/live-view"
-                element={<CameraLiveView />}
-              />
-            </Route>
+                element={<ReportDatails />}/>
+              <Route path="/dashboard/camera/live-view" element={<CameraLiveView />}/> </Route>
           </Routes>
-        </Wrapper>
+        {/* </Wrapper> */}
       </BrowserRouter>
   );
 }

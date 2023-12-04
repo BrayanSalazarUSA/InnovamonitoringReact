@@ -163,7 +163,7 @@ const Support = () => {
                 </ul>
 
                 <Link
-                  target="_blank"
+                  target="_top"
                   to={
                     "https://assist.innovatechcorp.net/login/join.jsp?language=es"
                   }

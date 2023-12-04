@@ -37,7 +37,6 @@ import { ReportForm } from "../components/Forms/ReportForm";
 
 const Reports = () => {
   const navigate = useNavigate();
-
   const { cases } = useFetchIncidents(navigate);
   const { agents } = useFetchAgents(navigate);
   const toolbarOptions = ["Search"];
@@ -133,7 +132,7 @@ const Reports = () => {
       </Dialog>
 
       <div className="m-20 md:m-10 mt-14 p-2 md:p-0 bg-white rounded-3xl">
-        <Header category="Page" title={"Reports - " + propertyContext.name} />
+        <Header category="Pagee" title={"Reports - " + propertyContext.name} />
         <div className="card flex justify-end py-2 mb-7">
           {userRole == "Admin" ? (
             <Button

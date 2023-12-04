@@ -5,7 +5,7 @@ import { BsChatLeft } from 'react-icons/bs';
 import { RiNotification3Line } from 'react-icons/ri';
 import { MdKeyboardArrowDown } from 'react-icons/md';
 import { TooltipComponent } from '@syncfusion/ej2-react-popups';
-
+import { useTranslation, i18n } from "react-i18next";
 import { Cart, Chat, Notification, UserProfile } from '.';
 import { useStateContext } from '../../context/ContextProvider';
 import { UserProvider } from '../../context/UserProvider';
@@ -34,13 +34,13 @@ const Navbar = () => {
   /* const { userContext, setUserContext } = useContext(UserContext); */
   const userProfile = JSON.parse(localStorage.getItem("user"))
   let userImage = "";
-        let link = userProfile.image?.split("/");
-        let userImg = "";
-        if(link){
-
-          let idImg = link[5] ? link[5] : "";
-          userImg = "https://drive.google.com/uc?export=view&id=" + idImg;
-        }
+  
+  let link = userProfile.image?.split("/");
+  let userImg = "";
+  if (link) {
+    let idImg = link[5] ? link[5] : "";
+    userImg = "https://drive.google.com/uc?export=view&id=" + idImg;
+  }
   useEffect(() => {
 
     const handleResize = () => setScreenSize(window.innerWidth);
@@ -61,6 +61,10 @@ const Navbar = () => {
   }, [screenSize]);
 
   const handleActiveMenu = () => setActiveMenu(!activeMenu);
+  const [t, i18n] = useTranslation("global");
+  const handleChangeLanguge = (lang) => {
+    i18n.changeLanguage(lang);
+  };
 
   return (
 
@@ -68,29 +72,40 @@ const Navbar = () => {
 
       <NavButton title="Menu" customFunc={handleActiveMenu} color={currentColor} icon={<AiOutlineMenu />} />
       <div className="flex">
+        <button
+          className="text-yellow-700 mx-2 hover:text-yellow-600"
+          onClick={() => handleChangeLanguge("en")}
+        >
+          ENG
+        </button>
+        <button
+          className=" text-yellow-700 hover:text-yellow-600"
+          onClick={() => handleChangeLanguge("es")}
+        >
+          ESP
+        </button>
         <NavButton title="Property" customFunc={() => handleClick('cart')} color={currentColor} icon={<BsBuildings />} />
         <NavButton title="Chat" dotColor="red" customFunc={() => handleClick('chat')} color={currentColor} icon={<BsChatLeft />} />
+
         <TooltipComponent content="Profile" position="BottomCenter">
-          <div
-            className="flex items-center gap-2 cursor-pointer p-1 hover:bg-light-gray rounded-lg"
-            onClick={() => handleClick('userProfile')}
-          >
+          <div className="flex items-center gap-2 cursor-pointer p-1 hover:bg-light-gray rounded-lg" onClick={() => handleClick('userProfile')}>
+            
             <img
               className="rounded-full w-8 h-8"
               src={userImg}
               alt="user-profile"
-            />
+/>
+
             <p className='p-0'>
-              <span className="p-0 text-gray-400 text-14">Hi,</span>{' '}
+              <span className="p-0 text-gray-400 text-14">{t("dashboard.dashboard-navbar.hi")}</span>{' '}
               <span className="p-0 text-gray-400 font-bold ml-1 text-14">
-              {userProfile.name || ""}
+                {userProfile.name || ""}
               </span>
             </p>
             <MdKeyboardArrowDown className="text-gray-400 text-14" />
           </div>
         </TooltipComponent>
-
-        {isClicked.cart && (<Cart properties={userProfile.properties}/>)}
+        {isClicked.cart && (<Cart properties={userProfile.properties} />)}
         {isClicked.chat && (<Chat />)}
         {/* {isClicked.notification && (<Notification />)} */}
         {isClicked.userProfile && (<UserProfile userProfile={userProfile} />)}

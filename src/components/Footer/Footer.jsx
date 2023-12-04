@@ -44,6 +44,7 @@ const Footer = () => {
               <ul>
                 <li>
                   <Link
+                    target="_top"
                     to={"/support"}
                     className="efecto-basic efecto2 text-body-color hover:text-primary mb-2 inline-block text-base leading-loose"
                   >
@@ -52,7 +53,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link
-                    
+                    target="_top"
                     to={"/login"}
                     className="efecto-basic efecto2 text-body-color hover:text-primary mb-2 inline-block text-base leading-loose">
                     {t("footer.dashboard")}
@@ -61,7 +62,7 @@ const Footer = () => {
 
                 <li>
                   <Link
-                  
+                    target="_top"
                     to={"/support"}
                     className="efecto-basic efecto2 text-body-color hover:text-primary mb-2 inline-block text-base leading-loose"
                   >  
@@ -77,7 +78,7 @@ const Footer = () => {
               <ul>
                 <li>
                   <Link
-                    
+                    target="_top"
                     to={"/about"}
                     className="efecto-basic efecto2 text-body-color hover:text-primary mb-2 inline-block text-base leading-loose"
                   >
@@ -86,7 +87,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link
-                    
+                    target="_top"
                     to={"/monitoring"}
                     className="efecto-basic efecto2 text-body-color hover:text-primary mb-2 inline-block text-base leading-loose"
                   >
@@ -95,7 +96,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link
-                    
+                    target="_top"
                     to={"/contact"}
                     className="efecto-basic efecto2 text-body-color hover:text-primary mb-2 inline-block text-base leading-loose"
                   >
@@ -104,6 +105,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link 
+                    target="_top"
                     to={"/achievements"} 
                     className="efecto-basic efecto2 text-body-color hover:text-primary mb-2 inline-block text-base leading-loose">
                     {t("footer.achievements")}
@@ -111,6 +113,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link
+                    target="_top"
                     to={"/"}
                     className="efecto-basic efecto2 text-body-color hover:text-primary mb-2 inline-block text-base leading-loose">
                     {t("footer.setting_privacy")}
@@ -125,7 +128,7 @@ const Footer = () => {
               <ul>
                 <li>
                   <Link
-                    
+                    target="_top"
                     to={"/monitoring"}
                     className="efecto-basic efecto2 text-body-color hover:text-primary mb-2 inline-block text-base leading-loose"
                   >
@@ -134,7 +137,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link
-                    
+                    target="_top"
                     to={"/installations"}
                     className="efecto-basic efecto2 text-body-color hover:text-primary mb-2 inline-block text-base leading-loose"
                   >
@@ -143,7 +146,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link
-                    
+                    target="_top"
                     to={"/consulting"}
                     className="efecto-basic efecto2 text-body-color hover:text-primary mb-2 inline-block text-base leading-loose"
                   >
@@ -152,7 +155,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link
-                    
+                    target="_top"
                     to={"/login"}
                     className="efecto-basic efecto2 text-body-color hover:text-primary mb-2 inline-block text-base leading-loose"
                   >
@@ -168,6 +171,7 @@ const Footer = () => {
               <div className="mb-6 flex items-center">
                 <TooltipComponent content="Facebook" position="Top">
                   <Link
+                    target="_top"
                     to={"/"}
                     className="text-dark hover:bg-primary hover:border-primary mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-[#E5E5E5] hover:text-yellow-600 hover:scale-130 sm:mr-4 lg:mr-3 xl:mr-4"
                   >
@@ -183,6 +187,7 @@ const Footer = () => {
                 </TooltipComponent>
                 <TooltipComponent content="Twitter" position="Top">
                   <Link
+                    target="_top"
                     to={"/"}
                     className="text-dark hover:bg-primary hover:border-primary mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-[#E5E5E5] hover:text-yellow-600 hover:scale-130 sm:mr-4 lg:mr-3 xl:mr-4"
                   >
@@ -201,6 +206,7 @@ const Footer = () => {
                 <TooltipComponent content="YouTube" position="Top">
                   
                   <Link
+                    target="_top"
                     to={"/"}
                     className="text-dark hover:bg-primary hover:border-primary mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-[#E5E5E5] hover:text-yellow-600 hover:scale-130 sm:mr-4 lg:mr-3 xl:mr-4">
                     <svg
@@ -215,6 +221,7 @@ const Footer = () => {
                 </TooltipComponent>
                 <TooltipComponent content="Instagram" position="Top">
                   <Link
+                    target="_top"
                     to={"/"}
                     className="text-dark hover:bg-primary hover:border-primary mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-[#E5E5E5] hover:text-yellow-600 hover:scale-130 sm:mr-4 lg:mr-3 xl:mr-4">
                     <svg

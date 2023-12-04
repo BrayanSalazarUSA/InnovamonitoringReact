@@ -1,14 +1,7 @@
 import React, { useContext, useRef } from "react";
 import { useTranslation } from "react-i18next";
-import {
-  AiOutlineShoppingCart,
-  AiOutlineAreaChart,
-  AiOutlineBarChart,
-  AiOutlineStock,
-  AiFillFilePdf,
-  AiFillEdit,
-  AiFillCheckCircle,
-} from "react-icons/ai";
+
+import { AiOutlineBarChart, AiFillFilePdf, AiFillEdit, AiFillCheckCircle } from "react-icons/ai";
 import {
   FiShoppingBag,
   FiPieChart,
@@ -17,7 +10,6 @@ import {
   FiShoppingCart,
   FiUsers,
 } from "react-icons/fi";
-
 import {
   BsCurrencyDollar,
   BsShield,
@@ -148,6 +140,7 @@ export const GridDetails = ({ Details }) => {
 
   return (
     <Link
+      target="_top"
       className="flex justify-center m-0 p-0"
       to={`/dashboard/report-details/${id}`}
     >
@@ -5347,6 +5340,7 @@ export const GridLiveView = ({ LiveView }) => {
       onClick={() => {
         setCameraContext(LiveView);
       }}
+      target="_top"
       to={`/dashboard/camera/live-view`}
     >
       <HiOutlineEye className="text-lg"></HiOutlineEye>
@@ -5804,99 +5798,9 @@ export const cameraGridAdmin = [
 ];
 let Permission = true;
 
-export const links = [
-  
-  {
-    title: "Dashboard",
-    links: [
-      {
-        name: "Dashboard",
-        icon: <FiShoppingBag />,
-        url: "",
-        permit: "Yes",
-      },
-    ],
-  },
 
-  {
-    title: "Pages",
-    links: [
-      {
-        name: "reports",
-        icon: <HiDocumentReport />,
-        url: "reports",
-        permit: "Yes",
-      },
-      {
-        name: "cameras",
-        icon: <GiCctvCamera />,
-        url: "cameras",
-        permit: "Yes",
-      },
 
-      {
-        name: "Map",
-        icon: <BsMap />,
-        url: "Mapa",
-        permit: "Yes",
-      },
-      {
-        name: "Agents",
-        icon: <HiUserCircle />,
-        url: "Agents",
-        permit: "No",
-      },
-      {
-        name: "Users",
-        icon: <FiUsers />,
-        url: "Users",
-        permit: "No",
-      },
-      {
-        name: "Cases",
-        icon: <GiPoliceBadge />,
-        url: "Cases",
-        permit: "No",
-      },
-      {
-        name: "properties",
-        icon: <BsFillBuildingsFill />,
-        url: "properties",
-        permit: "No",
-      },
-    ],
-  },
-  {
-    title: "Reports Charts",
-    links: [
-      {
-        name: "bar",
-        icon: <AiOutlineBarChart />,
-        url: "bar",
-        permit: "Yes",
-      },
-      {
-        name: "pie-reports",
-        icon: <FiPieChart />,
-        url: "pie-reports",
-        permit: "Yes",
-      },
-      {
-        name: "pie-levels",
-        icon: <FiPieChart />,
-        url: "pie-levels",
-        permit: "Yes",
-      },
 
-      {
-        name: "stacked",
-        icon: <AiOutlineBarChart />,
-        url: "stacked",
-        permit: "Yes",
-      },
-    ],
-  },
-];
 
 export const chatData = [
   {
@@ -6079,6 +5983,28 @@ export const userProfileData = [
     iconBg: "#E5FAFB",
   },
 ];
+
+
+
+const useUserProfileData = () => {
+  const [t, i18n] = useTranslation("global");
+
+  const userProfileData = [
+    {
+      icon: <BsCurrencyDollar />,
+      title: t("Contact.contact"),
+      desc: t("userProfile.accountSettings"),
+      iconColor: "#03C9D7",
+      iconBg: "#E5FAFB",
+    },
+  ];
+
+  return userProfileData;
+};
+
+export default useUserProfileData;
+
+
 
 export const userGrid = [
   {

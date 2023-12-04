@@ -20,7 +20,7 @@ const NotFound = () =>{
                             </div>
                             <p className="paragraph">{t("not_found.paragraph")}</p>
                             <p className="paragraph">{t("not_found.paragraph1")}</p>
-                    <Link to={"/"}>
+                    <Link target="_top" to={"/"}>
                         <p className="paragraph2 ">{t("not_found.paragraph2")}</p>
                     </Link>
                 </div>

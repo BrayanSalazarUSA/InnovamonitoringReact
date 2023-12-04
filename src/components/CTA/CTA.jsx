@@ -15,7 +15,7 @@ const CTA = () => {
         <p className="my-6 text-gray-500 dark:text-gray-300">
           {t("team.CTAText")}
         </p>
-        <Link to={"/plan"}>
+          <Link target="_top" to={"/plan"}>
           <Button2 text="buttons.start"></Button2>
         </Link>
       </div>

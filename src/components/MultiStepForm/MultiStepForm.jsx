@@ -664,7 +664,7 @@ export const MultiStepForm = () => {
               <AiFillCheckCircle className="text-yellow-600 text-2xl h-12 w-12" />
               {t("plan.plan_section_finish.text_finish")}
             </Typography>
-            <Link to={"/"}>
+            <Link target="_top" to={"/"}>
               <Button className={classes.button}>{t("plan.form_button.back_home")}</Button>
             </Link>
           </div>

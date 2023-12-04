@@ -1,35 +1,27 @@
 import React, { useContext, useEffect, useState } from "react";
-
+import { NavLink } from "react-router-dom";
 import { GoPrimitiveDot } from "react-icons/go";
 import { Stacked, Pie, Button, SparkLine, Header } from "../components";
 import imagen from "../../assets/arrest.jpg";
-import {
-  earningData,
-  SparklineAreaData,
-  ecomPieChartData,
-} from "../data/dummy";
-
+import { earningData,SparklineAreaData,ecomPieChartData,} from "../data/dummy";
 import { useStateContext } from "../../context/ContextProvider";
-import {
-  HiDocumentReport,
-  HiStatusOffline,
-  HiStatusOnline,
-} from "react-icons/hi";
+import { HiDocumentReport, HiStatusOffline, HiStatusOnline,} from "react-icons/hi";
 import { UserContext } from "../../context/UserContext";
 import useFetchProperty from "../Hooks/useFetchProperty";
 import { useNavigate } from "react-router-dom";
 import { GetPropertyInfo } from "../helper/getPropertyInfo";
 import { TbDeviceCctv, TbDeviceCctvOff } from "react-icons/tb";
 import { GiPoliceCar } from "react-icons/gi";
-
+import { useTranslation } from "react-i18next";
+import { Link } from 'react-router-dom';
 let mag = {
   id: 2,
   name: "Bell Air",
   direction: "Fl 1231 Opa-Loka",
   img: "https://drive.google.com/uc?export=view&id=1y3mtI4oTCz9Dk_ME4bHuw9q0aW44-sur",
 };
-
 const Ecommerce = () => {
+  const [t, i18n] = useTranslation("global");
   const { currentColor, currentMode } = useStateContext();
   const navigate = useNavigate();
   const { propertyContext, setPropertyContext, prueba, setPrueba } =
@@ -50,9 +42,10 @@ let propertyImage = ""
 
   
   return (
+    
     <div className="m-10 md:m-8 mt-5 p-2 md:p-0 bg-white rounded-3xl">
       
-      <Header category="Dashboard" title={propertyFecthed.name || "Property"} />
+      <Header category={t("dashboard.dashboard-index.home")} title={propertyFecthed.name || "Property"} />
       <div className="mt-3 ">
         <div
           className="flex flex-wrap lg:flex-nowrap justify-center bg-no-repeat bg-cover bg-center py-20"
@@ -61,19 +54,21 @@ let propertyImage = ""
           <div className="h-44 rounded-xl w-full lg:w-96 p-8 pt-9 m-3 bg-gray-800/60  bg-no-repeat bg-cover bg-center">
             <div className="flex justify-between items-center py-5">
               <div>
-                <p className="p-0 font-bold text-gray-300">Number of reports</p>
+                <p className="p-0 font-bold text-gray-300">{t("dashboard.dashboard-index.number-reports")}</p>
                 <p className="p-0 text-2xl rounded-md  text-gray-300">
                   {propertyFecthed.numOfReports?.length || 0}
                 </p>
               </div>
-
+              <NavLink
+                to="/dashboard/reports"
+              >
               <button
                 type="button"
                 style={{ backgroundColor: "goldenrod" }}
-                className="text-2xl opacity-0.9 text-white hover:drop-shadow-xl rounded-full  p-4 ml-3"
-              >
-                <HiDocumentReport />
+                className="text-2xl opacity-0.9 text-white hover:drop-shadow-xl rounded-full  p-4 ml-3">
+                  <HiDocumentReport />
               </button>
+                </NavLink>
             </div>
           </div>
 
@@ -85,24 +80,28 @@ let propertyImage = ""
               key={1}
               className="bg-white/75
                    dar:text-gray-200 dark:bg-secondary-dark-bg
-                   md:w-52 p-4 pt-9 rounded-2xl"
-            >
+                   md:w-52 p-4 pt-9 rounded-2xl">
+              <NavLink to="/dashboard/cameras"
+              >
               <button
-                type="button"
+            
+            type="button"
                 style={{
                   color: "#03C9D7",
                   backgroundColor: "#E5FAFB",
                 }}
                 className="text-2xl opacity-0.9 rounded-full p-4 hover:drop-shadow-xl"
               >
-                <TbDeviceCctv />
+             
+                  <TbDeviceCctv />
               </button>
+                </NavLink>
               <p className="p-0 mt-3">
                 <span className="text-lg font-semibold">
                   {propertyFecthed.cameras?.length || 0}
                 </span>
               </p>
-              <p className="p-0 text-md text-gray-700 mt-1">Total Cameras</p>
+              <p className="p-0 text-md text-gray-700 mt-1">{t("dashboard.dashboard-index.total-cameras")}</p>
             </div>
             <div
               key={2}
@@ -118,7 +117,9 @@ let propertyImage = ""
                 }}
                 className="text-2xl opacity-0.9 rounded-full p-4 hover:drop-shadow-xl"
               >
+                <Link to={`/dashboard/`}>
                 <HiStatusOnline />
+                </Link>
               </button>
               <p className="p-0 mt-3">
                 <span className="text-lg font-semibold">
@@ -126,7 +127,7 @@ let propertyImage = ""
             
                 </span>
               </p>
-              <p className="p-0 text-md text-gray-700 mt-1">Cameras Online</p>
+              <p className="p-0 text-md text-gray-700 mt-1">{t("dashboard.dashboard-index.cameras-on")}</p>
             </div>
             <div
               key={3}
@@ -149,7 +150,7 @@ let propertyImage = ""
                 {propertyFecthed.numCamerasOffline || 0}
                 </span>
               </p>
-              <p className="p-0 text-md text-gray-700 mt-1">Cameras Offline</p>
+              <p className="p-0 text-md text-gray-700 mt-1">{t("dashboard.dashboard-index.cameras-off")}</p>
             </div>
 
             <div
@@ -174,7 +175,7 @@ let propertyImage = ""
                 </span>
               </p>
               <p className="p-0 text-base text-gray-700 mt-1">
-                Vandalized Cameras{" "}
+                {t("dashboard.dashboard-index.vandalized-cameras")}
               </p>
             </div>
           </div>

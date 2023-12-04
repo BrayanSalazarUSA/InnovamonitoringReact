@@ -39,7 +39,7 @@ export const verifyReport = async(report) => {
      
       Swal.fire({
         icon: 'error',
-        title: 'Credentials errsor',
+        title: 'Credentials Error',
         text: 'Error saving the report, verify that all fields are completed and try again.',
   
       })

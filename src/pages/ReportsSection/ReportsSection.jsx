@@ -28,7 +28,7 @@ const ReportsSection = () => {
             <p className="rounded-md  text-gray-700 text-lg text-base py-2  mb-6">
               {t("reports.desc2")}
             </p>
-            <Link to={"/monitoring"}>
+          <Link target="_top" to={"/monitoring"}>
               <Button2 text="buttons.learn"></Button2>
             </Link>
           </div>

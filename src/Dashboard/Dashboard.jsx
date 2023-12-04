@@ -1,12 +1,9 @@
 import React, { useContext, useEffect } from "react";
 import { Outlet, useNavigate } from "react-router-dom";
-
 import "./style.css";
 import { FooterDash, NavbarDash, Sidebar } from "./components";
-
 import { UserContext } from "../context/UserContext";
 import { useStateContext } from "../context/ContextProvider";
-
 import useFetchProperty from "./Hooks/useFetchProperty";
 
 const Dashboard = () => {
@@ -22,12 +19,9 @@ const Dashboard = () => {
 
   const propertyid = propertyStorage.id || 0;
   const { property, isLoading } = useFetchProperty(propertyid, navigate);
-console.log(property)
+
 
   if (Object.keys(propertyContext).length === 0) {
-    console.log(propertyContext)
-    console.log(property)
-
     setPropertyContext(property);
   }
 
@@ -66,7 +60,7 @@ console.log(property)
         <div>
           <Outlet />
         </div>
-        <FooterDash />
+        <FooterDash/>
       </div>
     </div>
   );

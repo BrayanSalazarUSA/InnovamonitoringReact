@@ -193,7 +193,7 @@
     "email": "Correo",
     "email_placeholder": "Ingresa tu correo",
     "password": "Contraseña",
-    "password_placeholder":"Ingresa tu contraseña",
+    "password_placeholder": "Ingresa tu contraseña",
     "forgot_password": "¿Olvidaste tu contraseña?",
     "sign_in": "Iniciar sesión",
     "required_fields": "Todos los campos son requeridos.",
@@ -287,17 +287,68 @@
       "back_home": "volver al inicio"
     }
   },
-    "not_found": {
-      "tittle": "404 - Pagina no encontrada",
-      "paragraph": "Esta pagina esta en",
-      "middle": "medio",
-      "paragraph1": "el limbo.",
-      "paragraph2": "¡Click aqui para volver!"
-    },
+  "not_found": {
+    "tittle": "404 - Pagina no encontrada",
+    "paragraph": "Esta pagina esta en",
+    "middle": "medio",
+    "paragraph1": "el limbo.",
+    "paragraph2": "¡Click aqui para volver!"
+  },
   "achievments": {
     "tittle": "Reconocimientos y logros",
     "paragraph": "Innova Monitoring se enorgullece de sus distinguidos logros y reconocimientos, exhibiendo una rica historia de colaboración con prestigiosas entidades de seguridad como la DEA y el FBI. Nuestro compromiso con la excelencia nos ha valido el reconocimiento de agencias de aplicación de la ley. Explore nuestros premios y hitos, un testimonio de nuestra dedicación inquebrantable a soluciones de seguridad de vanguardia.",
     "paragraph2": "Al empoderar a las fuerzas del orden, nuestros esfuerzos de colaboración con las entidades policiales han sido fundamentales para mejorar las medidas de seguridad. Juntos, hemos logrado hitos en la creación de comunidades más seguras a través de soluciones de vanguardia y asociaciones estratégicas.",
     "tittle_carrousel": "Entidades policiales con las cuales hemos trabajado:"
-  }  
+  },
+  "dashboard": {
+
+    "dashboard-navbar": {
+      "hi": "Hola,",
+      "profile":"Mi perfil",
+      "account": "Configuraciones de la cuenta"
+    },
+
+    "dashboard-sliderbar": {
+
+      "dashboard-section": {
+        "dashboard-tittle": "Panel de control",
+        "home": "Inicio"
+      },
+
+      "integral-management-section": {
+
+        "integral-tittle": "Gestión Integral",
+        "reports": "Informes",
+        "map": "Mapa",
+        "agents": "Agentes",
+        "users": "Usuarios",
+        "cases": "Categoria de casos",
+        "properties": "Propiedades"
+      },
+
+      "graphical-insights-section":{
+
+        "graphical-tittle": "Informes gráficos",
+        "report-bar": "Barra de reportes",
+        "types-of-cases": "Tipos de casos",
+        "types-of-levels": "Niveles de los reportes",
+        "reports-per-month": "Cronología de los informes",
+        "logout": "Cerrar sesión"
+      }
+
+    },
+
+    "dashboard-index": {
+
+      "home": "Inicio",
+      "number-reports": "Numero de reportes",
+      "total-cameras": "Cámaras totales",
+      "cameras-on": "Cámaras en línea",
+      "cameras-off": "Cámaras fuera de línea",
+      "vandalized-cameras": "Cámaras vandalizadas"
+    },
+
+    "footer": "Todos los derechos reservados por Innova Monitioring"
+    
+  }
 }

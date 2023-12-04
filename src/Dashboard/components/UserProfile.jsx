@@ -1,10 +1,11 @@
+// UserProfile.jsx
 import React from "react";
 import { MdOutlineCancel } from "react-icons/md";
 
 import { Button } from ".";
-import { userProfileData } from "../data/dummy";
 import { useStateContext } from "../../context/ContextProvider";
 import avatar from "../data/avatar.jpg";
+import useUserProfileData from "../components/UserProfileData";
 
 const UserProfile = ({ userProfile }) => {
   const { currentColor } = useStateContext();
@@ -16,6 +17,8 @@ const UserProfile = ({ userProfile }) => {
     let idImg = link[5];
     userImg = "https://drive.google.com/uc?export=view&id=" + idImg;
   }
+
+  const translatedUserProfileData = useUserProfileData();
 
   return (
     <div className="nav-item absolute right-1 top-16 bg-white dark:bg-[#42464D] p-8 rounded-lg w-96">
@@ -51,7 +54,7 @@ const UserProfile = ({ userProfile }) => {
         </div>
       </div>
       <div>
-        {userProfileData.map((item, index) => (
+        {translatedUserProfileData.map((item, index) => (
           <div
             key={index}
             className="flex gap-5 border-b-1 border-color p-4 hover:bg-light-gray cursor-pointer  dark:hover:bg-[#42464D]"

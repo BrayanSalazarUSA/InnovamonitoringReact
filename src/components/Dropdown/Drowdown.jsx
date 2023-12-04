@@ -36,6 +36,7 @@ export default function Dropdown({ TextColor = "text-gray-300", efecto = "efecto
             <Menu.Item>
               {({ active }) => (
                 <Link
+                  target="_top"
                   to="/monitoring"
                   className={
                     (active ? "bg-gray-100 text-gray-900" : "text-gray-700",
@@ -52,6 +53,7 @@ export default function Dropdown({ TextColor = "text-gray-300", efecto = "efecto
             <Menu.Item>
               {({ active }) => (
                 <Link
+                  target="_top"
                   to="/installations"
                   className={
                     (active ? "bg-gray-100 text-gray-900" : "text-gray-700",
@@ -67,6 +69,7 @@ export default function Dropdown({ TextColor = "text-gray-300", efecto = "efecto
             <Menu.Item>
               {({ active }) => (
                 <Link
+                  target="_top"
                   to="/consulting"
                   className={
                     (active ? "bg-gray-100 text-gray-900" : "text-gray-700",

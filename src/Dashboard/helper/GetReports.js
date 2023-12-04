@@ -9,13 +9,11 @@ export const GetReports = async (id, userRol) => {
   let reportsMapped = [];
   
   console.log(id);
-  console.log("HOla")
   console.log(userRol);
   const url = `${process.env.REACT_APP_SERVER_IP}/reports/property/${id}`;
   let data = {};
   try {
     resp = await fetch(url);
-
     data = await resp.json();
     
     console.log(data)

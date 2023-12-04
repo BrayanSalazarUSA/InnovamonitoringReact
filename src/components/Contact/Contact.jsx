@@ -48,6 +48,7 @@ const Contact = () => {
                   <Swing>
                     <p className="text-gray-700 mb-9 text-base leading-relaxed py-0">
                       <Link
+                        target="_top"
                         to={"/plan"}
                         className="text-yellow-600 focus:outline-none focus:underline hover:underline text-xl">
                         {t("Contact.click_here")}

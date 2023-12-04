@@ -7,7 +7,7 @@ import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
 import Dropdown from "../Dropdown/Drowdown";
 import { Link } from "react-router-dom";
 import { BiLogInCircle } from "react-icons/bi";
-import { useTranslation } from "react-i18next";
+import { useTranslation, i18n } from "react-i18next";
 import { TooltipComponent } from "@syncfusion/ej2-react-popups";
 
 
@@ -48,6 +48,7 @@ const Navbar = ({ TextColor = "text-gray-700", efecto = "efecto1" }) => {
                   <div className=" mt-6 hidden sm:ml-6 sm:block ">
                     <div className="flex space-x-3">
                       <Link
+                      target="_top"
                         to={"/"}
                         className={`efecto-basic ${efecto} rounded-md px-1 py-2 text-base tracking-wider font-semibold`}
                       >
@@ -55,12 +56,14 @@ const Navbar = ({ TextColor = "text-gray-700", efecto = "efecto1" }) => {
                       </Link>
 
                       <Link
+                      target="_top"
                         to="/about"
                         className={`efecto-basic ${efecto} rounded-md px-1 py-2 text-base tracking-wider font-semibold`}
                       >
                         {t("navbar.about")}
                       </Link>
                         <Link
+                      target="_top"
                         to="/support"
                         className=
                         {`efecto-basic ${efecto} rounded-md px-1 py-2 text-base tracking-wider font-semibold`}
@@ -68,6 +71,7 @@ const Navbar = ({ TextColor = "text-gray-700", efecto = "efecto1" }) => {
                         {t("navbar.support")}
                       </Link> 
                       <Link
+                      target="_top"
                         to="/contact"
                         className={`efecto-basic ${efecto} rounded-md px-1 py-2 text-base tracking-wider font-semibold`}
                       >
@@ -79,6 +83,7 @@ const Navbar = ({ TextColor = "text-gray-700", efecto = "efecto1" }) => {
                         efecto={efecto}
                       ></Dropdown>
                       <Link
+                      target="_top"
                         to="/login"
                         className="text-xl font-bold leading-6 text-yellow-700 flex items-center hover:text-yellow-600 hover:scale-120"
                       >
@@ -94,7 +99,7 @@ const Navbar = ({ TextColor = "text-gray-700", efecto = "efecto1" }) => {
                             className="text-yellow-700 mx-2 hover:text-yellow-600"
                             onClick={() => handleChangeLanguge("en")}
                           >
-                            EN
+                            ENG
                           </button>
                         </TooltipComponent>
                         <TooltipComponent
@@ -105,7 +110,7 @@ const Navbar = ({ TextColor = "text-gray-700", efecto = "efecto1" }) => {
                             className=" text-yellow-700 hover:text-yellow-600"
                             onClick={() => handleChangeLanguge("es")}
                           >
-                            ES
+                            ESP
                           </button>
                         </TooltipComponent>
                       </div>
@@ -119,6 +124,7 @@ const Navbar = ({ TextColor = "text-gray-700", efecto = "efecto1" }) => {
             <Disclosure.Panel className="md:hidden">
               <div className=" space-y-1 absolute px-2 pb-3 pt-2 flex justify-center items-center flex-col w-full bg-yellow-600 z-50">
                 <Link
+                target="_top"
                   to={"/"}
                   className={classNames(
                     "efecto-basic efecto1 block rounded-md px-3 py-2 text-base font-medium"
@@ -128,6 +134,7 @@ const Navbar = ({ TextColor = "text-gray-700", efecto = "efecto1" }) => {
                 </Link>
 
                 <Link
+                target="_top"
                   to="/about"
                   className={classNames(
                     `${TextColor} hover:text-yellow-600 `,
@@ -138,6 +145,7 @@ const Navbar = ({ TextColor = "text-gray-700", efecto = "efecto1" }) => {
                 </Link>
               
                 <Link
+                target="_top"
                   to="/contact"
                   className={classNames(
                     "efecto-basic efecto1 rounded-md px-1 py-2 text-base tracking-wider font-semibold"
@@ -147,6 +155,7 @@ const Navbar = ({ TextColor = "text-gray-700", efecto = "efecto1" }) => {
                 </Link>
                 <Dropdown></Dropdown>
                 <Link
+                target="_top"
                   to={"/login"}
                   className="efecto-basic efecto1 flex px-3 text-2xl font-semibold leading-6 text-gray-300"
                 >
